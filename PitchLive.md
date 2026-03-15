@@ -9,7 +9,7 @@
 
 - 350 million people. Still lonely.
 - The app wins when you stay. You win when you leave. That's the problem.
-- You can't fake the content you consume. You can fake a bio.
+- You can fake a bio. You can't fake the content you consume.
 - That behaviour is sitting inside every publisher's subscriber data. Untouched.
 
 ---
@@ -73,7 +73,7 @@ Every couple is a new ad. The flywheel never stops.
 - Someone paying for journalism in 2026 is already telling you who they are.
 - Education. Curiosity. Urban. Intentional.
 - Raya is a velvet rope, not a matchmaker. The flex is the membership, not the match.
-- Times Two has the curation built in. We added the part Raya skipped: actually connecting people.
+- Times Two doesn't curate the pool. The paywall already did.
 
 ---
 
@@ -82,23 +82,22 @@ Every couple is a new ad. The flywheel never stops.
 # For publishers. Not bolted on. Built in.
 
 - **Retention.** Meet someone through your NYT account and try cancelling. You won't.
-- **Gen Z.** They use Games on academic access. When it expires, the NYT isn't homework. It's where something real happened.
-- **Revenue.** NYT Relationships. Guardian Connect. We build the engine. They keep the brand.
-- CrossPlay launched in 2026. Pairing strangers inside a trusted publisher. "Publishers would never" is officially dead.
+- **Gen Z.** They play Games via NYT academic licensing. They want to stay when they graduate.
+- **Revenue.** NYT Relationships. Guardian Connect.
+- CrossPlay launched in 2026. Pairing strangers inside a trusted publisher. "Publishers would never..." is dead.
 
-NYT 12.78M · Guardian 1.3M · WSJ 4.29M · FT 1.4M · Economist 1.25M
+We build the engine. They keep the brand. NYT 12.78M · Guardian 1.3M · WSJ 4.29M · FT 1.4M · Economist 1.25M
 
 ---
 
 ## SLIDE 8
 
-# Your data works for you. Not on you.
+# Your data works for you.
 
-- Every other algorithm tracks you to sell ads. This one tracks you to find you a better person.
+- Most algorithms track you to sell ads. We invert that model so your data works for YOU.
 - Every signal you generate yields a better introduction. Not a better ad.
 - One OAuth scope. Read-only. Never touches ad systems.
 - GDPR clean. CCPA clean. The simplest consent architecture possible.
-- The algorithm sees everything. The Wingman only says what you've chosen to show.
 
 ---
 
@@ -117,7 +116,7 @@ NYT 12.78M · Guardian 1.3M · WSJ 4.29M · FT 1.4M · Economist 1.25M
 
 Under 1% of SAM by Year 3. We'd rather be credible than impressive.
 
-**Dating apps are losing users. Publishers already have the people. We match them on what they actually do.**
+**Digital publishers have the people. We match them on what they actually do.**
 
 ---
 
@@ -133,7 +132,7 @@ Under 1% of SAM by Year 3. We'd rather be credible than impressive.
 | Publisher licensing | SaaS fee or revenue share per partner |
 | Venue referrals | OpenTable, Resy, TimeOut. Warm leads, not cold ads. |
 
-**The moat:** Multi-publisher signal aggregation. FT alone can't build what NYT + FT + Guardian builds together.
+**The moat:** Multi-publisher signal aggregation. FT alone can't build what NYT + FT + Guardian build together.
 
 ---
 
@@ -145,7 +144,7 @@ Under 1% of SAM by Year 3. We'd rather be credible than impressive.
 - 15 qualitative interviews at TCD Business School. 10 countries represented. The thesis holds.
 - Guardian validates. NYT scales.
 
-**$50K** removes the behavioural uncertainty before asking publishers to take a risk.
+**$60K** removes the behavioural uncertainty before asking publishers to take a risk.
 
 **NYT is an accelerant, not a prerequisite.**
 
