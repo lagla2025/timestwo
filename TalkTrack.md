@@ -27,7 +27,9 @@ Match Group and Bumble have lost 50 billion dollars in market cap since 2021. No
 
 Revenue tells the same story. Match Group did three and a half billion last year. Flat. Bumble did just under a billion. Down ten percent. Between them, they lost one and a half million paying users in a single year.
 
-She hate-swipes. He ego-swipes. Neither they nor the business wins. The swipe became the dopamine hit. The date was always the point. It just never materialised.
+She hate-swipes. He ego-swipes. Neither they nor the business wins.
+
+[REVISIT — bridge line from closer to "That's the gap we're walking into." Parked for fresh eyes.]
 
 That's the gap we're walking into.
 
