@@ -21,7 +21,7 @@
 - Match Group: $3.5B revenue (FY2025). Flat. Losing users. Market cap down 79%.
 - Bumble: $966M (FY2025). Down 10%. Losing users faster. Market cap down 92%.
 - $50B in market cap lost since 2021. 1.5M paying users gone in a single year.
-- The apps don't fail despite the frustration. They monetise it.
+- She hate-swipes. He ego-swipes. Neither they nor the business wins.
 
 ---
 
