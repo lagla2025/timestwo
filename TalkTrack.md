@@ -9,7 +9,7 @@ Raise your hand if you've ever been on a dating app. Keep it up if you enjoyed i
 
 Right.
 
-350 million people are on dating apps right now. Most of them are having a terrible time. 78 percent of users report burnout. 80 percent of college students have stopped using them entirely. And the reason is simple: every app asks you to sell yourself. Best photo. Best bio. Best version of you that isn't really you. And then you match with someone who did the same thing, and you sit across from a stranger wondering where the person from the profile went.
+80 percent of college students have stopped using dating apps. The next generation has already walked away. And the ones still on them? 78 percent report burnout. The reason is simple: every app asks you to sell yourself. Best photo. Best bio. Best version of you that isn't really you. And then you match with someone who did the same thing, and you sit across from a stranger wondering where the person from the profile went.
 
 But here's what's interesting. Every one of those people also subscribes to things. They read articles. They listen to podcasts. They play Wordle at 7am before they've spoken to anyone. And none of that is performed. Nobody reads an opinion piece to impress a match. They read it because something in it mattered to them.
 

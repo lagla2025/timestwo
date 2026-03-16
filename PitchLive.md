@@ -7,7 +7,7 @@
 
 # Dating apps optimised for the swipe. Not the spark.
 
-- 350 million people. Still lonely.
+- 80% of college students have stopped using dating apps. The next generation has already walked away.
 - The app wins when you stay. You win when you leave. That's the problem.
 - You can fake a bio. You can't fake the content you consume.
 - That behaviour is sitting inside every publisher's subscriber data. Untouched.
