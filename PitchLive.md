@@ -59,6 +59,7 @@ The Wingman is looking out for you and knows when to step in.
 - The story becomes content. Modern Love. A 30-second video. An ad.
 - That content brings the next couple.
 - The publisher gets fresh material. For free.
+- It doesn't stay digital. Singles supper clubs. Meet cute meetups. Storytime nights (The Moth meets Modern Love).
 
 > *"We both saved the same soup recipe. Neither of us knew. Three months later, we made it together."*
 
@@ -131,6 +132,7 @@ Under 1% of SAM by Year 3. We'd rather be credible than impressive.
 | User subscription | ~$12/month (indicative, validated with publisher) |
 | Publisher licensing | SaaS fee or revenue share per partner |
 | Venue referrals | OpenTable, Resy, TimeOut. Warm leads, not cold ads. |
+| Live events | Supper clubs, meetups, storytime. Tickets + sponsorship. |
 
 **The moat:** Multi-publisher signal aggregation. FT alone can't build what NYT + FT + Guardian build together.
 

@@ -67,6 +67,8 @@ That story is a Modern Love essay. It's a 30-second video. It's an ad. And it's 
 
 That story attracts the next couple. And the next one. The publisher gets fresh, emotionally resonant content for free. Every couple that meets through Times Two is a story. Every story is content. Every piece of content brings the next couple.
 
+And it doesn't stay digital. Singles supper clubs for Wordlers. Meet cute meetups at galleries for Culture readers. Storytime nights where couples get up on stage and tell the story of how they met. The Moth meets Modern Love. Live audience. Recorded. Published. More content. More couples. More stories.
+
 The flywheel never stops.
 
 ---
@@ -127,7 +129,7 @@ That's under one percent of SAM by year three. We'd rather be credible than impr
 
 The model is B2B SaaS. We build the matching engine and the Wingman voice layer. Publishers license it and launch their own branded product.
 
-Three revenue lines. User subscriptions, indicative at around 12 dollars a month. Publisher licensing as a SaaS fee or revenue share. And venue referrals. When the Wingman suggests a cooking class or a rugby match, that's a warm lead to OpenTable, Resy, TimeOut. Not a cold ad.
+Four revenue lines. User subscriptions, indicative at around 12 dollars a month. Publisher licensing as a SaaS fee or revenue share. Venue referrals. When the Wingman suggests a cooking class or a rugby match, that's a warm lead to OpenTable, Resy, TimeOut. Not a cold ad. And live events. Supper clubs, meetups, storytime nights. Ticket sales and sponsorship. Revenue from day one, before the app is even built.
 
 The moat is multi-publisher signal aggregation. The FT alone can't build what NYT plus FT plus Guardian build together. The more publishers join, the richer the signal, the better the matches, the harder it is to replicate.
 
