@@ -261,6 +261,15 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s20-world-desc{font-size:11px;color:#888;margin-top:1px;line-height:1.4}
 .s20-world-check{width:20px;height:20px;border-radius:4px;border:1.5px solid #ccc;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;transition:all 0.15s}
 .s20-world-row.checked .s20-world-check{background:#b8960a;border-color:#b8960a}
+
+.s20-section[style*="1a1a2e"] .s20-world-row{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.08)}
+.s20-section[style*="1a1a2e"] .s20-world-row.checked{border-color:#c9a84c}
+.s20-section[style*="1a1a2e"] .s20-world-name{color:#f5f2eb}
+.s20-section[style*="1a1a2e"] .s20-world-desc{color:rgba(255,255,255,0.4)}
+.s20-section[style*="1a1a2e"] .s20-world-check{border-color:rgba(255,255,255,0.2)}
+.s20-section[style*="1a1a2e"] .s20-world-row.checked .s20-world-check{background:#c9a84c;border-color:#c9a84c}
+.s20-section[style*="1a1a2e"] .s20-world-icon span{color:#f5f2eb!important}
+.s20-section[style*="1a1a2e"] .s20-min-note{color:#c9a84c}
 .s20-min-note{font-size:10px;color:#b8960a;font-weight:600;text-align:center;margin-top:8px;letter-spacing:0.3px}
 .s20-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
 .s20-chip{padding:7px 14px;border-radius:20px;border:1.5px solid #d0cdc6;background:#fff;font-size:12px;font-weight:500;color:#555;cursor:pointer;transition:all 0.15s;font-family:Georgia,serif}
@@ -2405,70 +2414,75 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     <div class="s20-divider"></div>
 
     <!-- Section 3: Content Worlds -->
-    <div class="s20-section">
-      <div class="s20-section-num">Your content worlds</div>
-      <div class="s20-section-heading">What content do you want to match on?</div>
-      <div class="s20-section-sub">Read, listen, watch, play. Your Wingman picks up on all of it.</div>
+    <div class="s20-section" style="background:#1a1a2e;margin:0 -16px;padding:18px 16px;border-radius:0">>
+      <div class="s20-section-num" style="color:#c9a84c">Your content worlds</div>
+      <div class="s20-section-heading" style="color:#f5f2eb;border-left-color:#c9a84c">What content do you want to match on?</div>
+      <div class="s20-section-sub" style="color:rgba(255,255,255,0.5)">Read, listen, watch, play. Your Wingman picks up on all of it.</div>
 
       <div class="s20-worlds" id="s20-worlds">
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#128240;</div>
+          <div class="s20-world-icon"><span style="font-family:'UnifrakturMaguntia',Georgia,serif;font-size:18px;color:#1a1a2e">N</span></div>
           <div class="s20-world-text"><div class="s20-world-name">News</div><div class="s20-world-desc">U.S., World, Politics, New York</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#128188;</div>
-          <div class="s20-world-text"><div class="s20-world-name">Business Day</div><div class="s20-world-desc">Economics, finance, markets, companies</div></div>
+          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#1a1a2e">B</span></div>
+          <div class="s20-world-text"><div class="s20-world-name">Business</div><div class="s20-world-desc">Economics, finance, markets, companies</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#128187;</div>
+          <div class="s20-world-icon"><span style="font-family:'Inter',sans-serif;font-size:16px;font-weight:700;color:#1a1a2e;letter-spacing:-0.5px">T.</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Technology</div><div class="s20-world-desc">Tech news, AI, startups, digital culture</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#128172;</div>
+          <div class="s20-world-icon"><span style="font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;font-style:italic;color:#1a1a2e">Op</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Opinion</div><div class="s20-world-desc">Columnists, editorials, guest essays</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#127917;</div>
+          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:16px;color:#1a1a2e">&#9733;</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Culture &amp; Arts</div><div class="s20-world-desc">Film, books, art, TV, music, theatre</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#129513;</div>
+          <div class="s20-world-icon"><span style="display:inline-grid;grid-template-columns:repeat(3,6px);gap:1.5px"><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#c9b458;border-radius:1px"></span><span style="width:6px;height:6px;background:#787c7e;border-radius:1px"></span><span style="width:6px;height:6px;background:#787c7e;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#c9b458;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span></span></div>
           <div class="s20-world-text"><div class="s20-world-name">Games</div><div class="s20-world-desc">Wordle, Connections, Spelling Bee, Strands</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#127859;</div>
+          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:14px;color:#c4391d;font-weight:700">NYT</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Cooking</div><div class="s20-world-desc">Recipes, meal plans, food writing</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#127941;</div>
+          <div class="s20-world-icon"><span style="font-family:'Inter',sans-serif;font-size:16px;font-weight:900;font-style:italic;color:#1a1a2e;letter-spacing:-1px">A</span></div>
           <div class="s20-world-text"><div class="s20-world-name">The Athletic</div><div class="s20-world-desc">In-depth sports coverage and analysis</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#127911;</div>
+          <div class="s20-world-icon"><span style="display:inline-flex;align-items:center;gap:1.5px;height:16px"><span style="width:2.5px;height:6px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:12px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:8px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:14px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:5px;background:#1a1a2e;border-radius:1px"></span></span></div>
           <div class="s20-world-text"><div class="s20-world-name">Audio</div><div class="s20-world-desc">The Daily, Serial, The Ezra Klein Show</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#128300;</div>
+          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:16px;color:#1a1a2e">&#9883;</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Science</div><div class="s20-world-desc">Health, climate, cosmos, Science Times</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#128149;</div>
+          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:16px;color:#c4391d">&#9825;</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Modern Love</div><div class="s20-world-desc">Essays on relationships, love, loss</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon">&#9992;&#65039;</div>
+          <div class="s20-world-icon"><span style="font-family:'Playfair Display',Georgia,serif;font-size:17px;font-style:italic;color:#1a1a2e">T</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Travel &amp; Style</div><div class="s20-world-desc">Destinations, fashion, T Magazine</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-icon"><span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:800;color:#1a1a2e;letter-spacing:-0.3px">W</span></div>
+          <div class="s20-world-text"><div class="s20-world-name">Wirecutter</div><div class="s20-world-desc">Product reviews, recommendations, buying guides</div></div>
           <div class="s20-world-check"></div>
         </div>
       </div>
@@ -2501,7 +2515,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
     <!-- CTA -->
     <div class="s20-cta-area">
-      <button class="s5-cta" id="s20-cta" onclick="show(10)" style="opacity:0.4;pointer-events:none">Let your Wingman begin</button>
+      <button class="s5-cta" id="s20-cta" onclick="show(10)" style="opacity:0.4;pointer-events:none">Let the fun begin</button>
       <div class="s5-fine">You can change these settings any time in your profile.</div>
     </div>
 
