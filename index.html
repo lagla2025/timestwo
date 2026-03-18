@@ -270,8 +270,10 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s20-section[style*="1a1a2e"] .s20-world-row.checked .s20-world-check{background:#c9a84c;border-color:#c9a84c}
 .s20-section[style*="1a1a2e"] 
 /* Dual range slider */
-#s20-range-min::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#b8960a;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);cursor:pointer;pointer-events:auto}
-#s20-range-max::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#b8960a;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);cursor:pointer;pointer-events:auto}
+#s20-range-min,#s20-range-max{-webkit-appearance:none;appearance:none;background:transparent}
+#s20-range-min::-webkit-slider-runnable-track,#s20-range-max::-webkit-slider-runnable-track{height:4px;background:transparent;border:none}
+#s20-range-min::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#b8960a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.25);cursor:pointer;pointer-events:auto;margin-top:-9px}
+#s20-range-max::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#b8960a;border:2.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.25);cursor:pointer;pointer-events:auto;margin-top:-9px}
 .s20-min-note{color:#c9a84c}
 .s20-min-note{font-size:10px;color:#b8960a;font-weight:600;text-align:center;margin-top:8px;letter-spacing:0.3px}
 .s20-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
@@ -2273,7 +2275,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     <!-- Eyebrow + main heading -->
     <div class="s5-eyebrow" style="color:#b8960a">Step 2 of 2</div>
     <div class="s5-heading" style="font-size:22px">Tell your Wingman what matters.</div>
-    <div class="s5-sub">This shapes who you meet. You can change everything later.</div>
+    <div class="s5-sub">This shapes who you meet. You can always change it up.</div>
 
     <!-- Section 1: About You -->
     <div class="s20-section">
@@ -2349,9 +2351,11 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
       <div class="s20-field">
         <div class="s20-field-label">Distance</div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <input type="range" min="5" max="200" value="25" oninput="document.getElementById('s20-km').textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
-          <span style="font-family:Georgia,serif;font-size:13px;color:#1a1a2e;min-width:50px;text-align:right"><span id="s20-km">25</span> km</span>
+        <div class="s20-option-row" style="flex-wrap:nowrap">
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Home turf</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Nearish by</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Out of town</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Far off</div>
         </div>
       </div>
 
@@ -2513,7 +2517,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     <!-- CTA -->
     <div class="s20-cta-area">
       <button class="s5-cta" id="s20-cta" onclick="show(10)" style="opacity:0.4;pointer-events:none">Let the fun begin</button>
-      <div class="s5-fine">You can change these settings any time in your profile.</div>
+      <div class="s5-fine">You can always change it up.</div>
     </div>
 
   </div>
