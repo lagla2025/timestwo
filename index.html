@@ -3054,17 +3054,30 @@ function revealPersonals(el, targetScreen, prefix) {
 
 
 function revealBroadsheetPersonals(el, targetScreen, prefix) {
-  if (el.classList.contains('revealed')) {
+  if (el.classList.contains('phase2')) {
     show(targetScreen);
     return;
   }
-  el.classList.add('revealed');
-  var tapHint = el.parentNode.querySelector('div[style*="font-size:7px"]');
-  if (tapHint) tapHint.style.display = 'none';
-  setTimeout(function() {
+  if (el.classList.contains('revealed')) {
+    // Second tap: hide photo area, show personals
+    el.classList.add('phase2');
+    var xwordArea = document.getElementById(prefix + '-xword-area');
+    if (xwordArea) xwordArea.style.display = 'none';
     var textArea = document.getElementById(prefix + '-broadsheet-personals');
     if (textArea) textArea.style.display = 'block';
-  }, 500);
+    return;
+  }
+  // First tap: reveal face + name
+  el.classList.add('revealed');
+  var tapHint = el.parentNode.querySelector('div[style*="font-size:7px"]');
+  if (tapHint) tapHint.textContent = prefix === 's18' ? 'Cian, 24' : 'Saoirse, 23';
+  if (tapHint) {
+    tapHint.style.fontStyle = 'normal';
+    tapHint.style.fontWeight = '700';
+    tapHint.style.fontSize = '10px';
+    tapHint.style.color = '#1a1a1a';
+    tapHint.style.marginTop = '5px';
+  }
 }
 
 </script>
