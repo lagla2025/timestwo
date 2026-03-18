@@ -248,12 +248,12 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s5-fine{font-size:10px;color:#bbb;text-align:center;margin-top:10px;line-height:1.5}
 
 /* ── Screen 20 — Onboarding Step 2: Tell your Wingman ── */
-.s20-section{margin-bottom:24px}
+.s20-section{margin-bottom:18px}
 .s20-section-num{font-size:9px;font-weight:700;color:#b8960a;text-transform:uppercase;letter-spacing:1.8px;margin-bottom:6px}
-.s20-section-heading{font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1a1a2e;line-height:1.25;margin-bottom:4px}
+.s20-section-heading{font-family:Georgia,serif;font-size:18px;font-weight:700;color:#1a1a2e;line-height:1.25;margin-bottom:4px;border-left:3px solid #b8960a;padding-left:10px}
 .s20-section-sub{font-size:12px;color:#888;line-height:1.5;margin-bottom:14px}
-.s20-worlds{display:flex;flex-direction:column;gap:8px}
-.s20-world-row{display:flex;align-items:center;gap:12px;background:#fff;border-radius:6px;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,0.06);cursor:pointer;transition:border-color 0.15s;border:1.5px solid transparent}
+.s20-worlds{display:flex;flex-direction:column;gap:6px}
+.s20-world-row{display:flex;align-items:center;gap:12px;background:#fff;border-radius:8px;padding:10px 12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:border-color 0.15s;border:1.5px solid rgba(0,0,0,0.04)}
 .s20-world-row.checked{border-color:#b8960a}
 .s20-world-icon{font-size:20px;flex-shrink:0;width:28px;text-align:center}
 .s20-world-text{flex:1}
@@ -267,7 +267,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s20-chip.active{border-color:#b8960a;color:#b8960a;background:#faf5e8}
 .s20-chip-note{font-size:10.5px;color:#aaa;font-style:italic;line-height:1.5}
 .s20-privacy-options{display:flex;flex-direction:column;gap:8px}
-.s20-privacy-row{display:flex;align-items:flex-start;gap:12px;background:#fff;border-radius:6px;padding:13px 14px;box-shadow:0 1px 4px rgba(0,0,0,0.06);cursor:pointer;transition:border-color 0.15s;border:1.5px solid transparent}
+.s20-privacy-row{display:flex;align-items:flex-start;gap:12px;background:#fff;border-radius:8px;padding:12px 14px;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:border-color 0.15s;border:1.5px solid rgba(0,0,0,0.04)}
 .s20-privacy-row.selected{border-color:#b8960a}
 .s20-privacy-radio{width:18px;height:18px;border-radius:50%;border:1.5px solid #ccc;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:all 0.15s}
 .s20-privacy-row.selected .s20-privacy-radio{border-color:#b8960a}
@@ -276,23 +276,25 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s20-privacy-label{font-size:13px;font-weight:700;color:#1a1a2e}
 .s20-privacy-desc{font-size:11px;color:#888;margin-top:2px;line-height:1.4}
 .s20-recommended{font-size:9px;font-weight:700;color:#b8960a;text-transform:uppercase;letter-spacing:1px;margin-left:6px}
-.s20-divider{height:1px;background:#e0dcd4;margin:4px 0 20px}
+.s20-divider{height:1.5px;background:#d0cbc0;margin:4px 0 14px}
 .s20-cta-area{padding-top:8px}
 /* ── Screen 20 biodata fields ── */
-.s20-field{margin-bottom:16px}
+.s20-field{margin-bottom:12px}
 .s20-field-label{font-size:12px;font-weight:700;color:#1a1a2e;margin-bottom:6px;font-family:Georgia,serif}
 .s20-option-row{display:flex;gap:8px;flex-wrap:wrap}
-.s20-option{padding:8px 16px;border-radius:6px;border:1.5px solid #d0cdc6;background:#fff;font-size:12px;font-weight:500;color:#555;cursor:pointer;transition:all 0.15s;font-family:Georgia,serif}
+.s20-option{padding:10px 18px;border-radius:8px;border:1.5px solid #d0cdc6;background:#fff;font-size:13px;font-weight:600;color:#444;cursor:pointer;transition:all 0.15s;font-family:Georgia,serif}
 .s20-option.active{border-color:#b8960a;color:#b8960a;background:#faf5e8}
-.s20-input{width:100%;padding:10px 14px;border-radius:10px;border:1.5px solid #d0cdc6;background:#fff;font-size:13px;font-family:Georgia,serif;color:#1a1a2e;box-sizing:border-box;outline:none;transition:border-color 0.15s}
-.s20-input:focus{border-color:#b8960a}
+.s20-input{width:100%;padding:10px 14px;border-radius:8px;border:1.5px solid #c8c4bc;background:#fff;font-size:13px;font-family:Georgia,serif;color:#1a1a2e;box-sizing:border-box;outline:none;transition:all 0.15s}
+.s20-input:focus{border-color:#b8960a;box-shadow:0 0 0 2px rgba(184,150,10,0.12)}
 .s20-input-row{display:flex;gap:8px}
 .s20-input-half{flex:1}
 .s20-input-half .s20-input{width:100%}
 .s20-range-row{display:flex;align-items:center;gap:8px}
 .s20-range-row .s20-input{width:70px;text-align:center;padding:8px 6px}
 .s20-range-dash{color:#aaa;font-size:14px}
-.s20-toggle-row{display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:6px;padding:12px 14px;box-shadow:0 1px 4px rgba(0,0,0,0.06);margin-bottom:8px}
+.s20-input[type="number"]{max-width:90px}
+.s20-input[type="text"][placeholder*="5'"]{max-width:140px}
+.s20-toggle-row{display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:8px;padding:11px 14px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:6px;border:1px solid rgba(0,0,0,0.04)}
 .s20-toggle-label{font-size:13px;color:#1a1a2e;font-family:Georgia,serif}
 .s20-toggle{width:40px;height:22px;border-radius:11px;background:#d0cdc6;cursor:pointer;position:relative;transition:background 0.2s}
 .s20-toggle.on{background:#b8960a}
