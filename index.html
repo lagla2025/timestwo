@@ -2301,24 +2301,29 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
         <div class="s20-option-row">
           <div class="s20-option" onclick="toggleOption(this)">Something casual</div>
           <div class="s20-option" onclick="toggleOption(this)">Something serious</div>
+        </div>
+        <div class="s20-option-row" style="margin-top:6px">
           <div class="s20-option" onclick="toggleOption(this)">Open to anything</div>
           <div class="s20-option" onclick="toggleOption(this)">Just good conversation</div>
         </div>
       </div>
 
       <div class="s20-field">
-        <div class="s20-field-label">Age</div>
-        <div class="s20-input-row">
-          <div class="s20-input-half"><input class="s20-input" type="number" placeholder="Your age" min="18" max="99"></div>
+        <div class="s20-field-label">Your age</div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <input type="range" min="18" max="65" value="28" oninput="this.nextElementSibling.textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
+          <span style="font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a1a2e;min-width:24px;text-align:center">28</span>
         </div>
       </div>
 
       <div class="s20-field">
         <div class="s20-field-label">Age range you are open to</div>
-        <div class="s20-range-row">
-          <input class="s20-input" type="number" placeholder="Min" min="18" max="99">
-          <div class="s20-range-dash">&ndash;</div>
-          <input class="s20-input" type="number" placeholder="Max" min="18" max="99">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-family:Georgia,serif;font-size:12px;color:#888;min-width:20px;text-align:center" id="s20-age-min">22</span>
+          <input type="range" min="18" max="65" value="22" oninput="document.getElementById('s20-age-min').textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
+          <span style="font-family:Georgia,serif;font-size:12px;color:#888;padding:0 2px">&ndash;</span>
+          <input type="range" min="18" max="65" value="38" oninput="document.getElementById('s20-age-max').textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
+          <span style="font-family:Georgia,serif;font-size:12px;color:#888;min-width:20px;text-align:center" id="s20-age-max">38</span>
         </div>
       </div>
 
@@ -2338,10 +2343,9 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
       <div class="s20-field">
         <div class="s20-field-label">Distance</div>
-        <div class="s20-option-row">
-          <div class="s20-option" onclick="toggleOption(this)">My city</div>
-          <div class="s20-option" onclick="toggleOption(this)">Nearby</div>
-          <div class="s20-option" onclick="toggleOption(this)">Anywhere</div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <input type="range" min="5" max="200" value="25" oninput="document.getElementById('s20-km').textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
+          <span style="font-family:Georgia,serif;font-size:13px;color:#1a1a2e;min-width:50px;text-align:right"><span id="s20-km">25</span> km</span>
         </div>
       </div>
 
@@ -2354,21 +2358,21 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
       <div class="s20-field">
         <div class="s20-field-label">Status</div>
-        <div class="s20-option-row">
-          <div class="s20-option" onclick="toggleOption(this)">Single</div>
-          <div class="s20-option" onclick="toggleOption(this)">Divorced</div>
-          <div class="s20-option" onclick="toggleOption(this)">Widowed</div>
-          <div class="s20-option" onclick="toggleOption(this)">Separated</div>
+        <div class="s20-option-row" style="flex-wrap:nowrap">
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Single</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Divorced</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Widowed</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Separated</div>
         </div>
       </div>
 
       <div class="s20-field">
         <div class="s20-field-label">Children</div>
-        <div class="s20-option-row">
-          <div class="s20-option" onclick="toggleOption(this)">No kids</div>
-          <div class="s20-option" onclick="toggleOption(this)">Have kids</div>
-          <div class="s20-option" onclick="toggleOption(this)">Want kids</div>
-          <div class="s20-option" onclick="toggleOption(this)">Open to kids</div>
+        <div class="s20-option-row" style="flex-wrap:nowrap">
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">No kids</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">Have kids</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">Want kids</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">Open to kids</div>
         </div>
       </div>
     </div>
