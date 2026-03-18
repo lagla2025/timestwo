@@ -255,7 +255,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s20-worlds{display:flex;flex-direction:column;gap:6px}
 .s20-world-row{display:flex;align-items:center;gap:12px;background:#fff;border-radius:8px;padding:10px 12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);cursor:pointer;transition:border-color 0.15s;border:1.5px solid rgba(0,0,0,0.04)}
 .s20-world-row.checked{border-color:#b8960a}
-.s20-world-icon{font-size:20px;flex-shrink:0;width:28px;text-align:center}
+.s20-world-icon{display:none}
 .s20-world-text{flex:1}
 .s20-world-name{font-size:13px;font-weight:700;color:#1a1a2e}
 .s20-world-desc{font-size:11px;color:#888;margin-top:1px;line-height:1.4}
@@ -268,7 +268,6 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s20-section[style*="1a1a2e"] .s20-world-desc{color:rgba(255,255,255,0.4)}
 .s20-section[style*="1a1a2e"] .s20-world-check{border-color:rgba(255,255,255,0.2)}
 .s20-section[style*="1a1a2e"] .s20-world-row.checked .s20-world-check{background:#c9a84c;border-color:#c9a84c}
-.s20-section[style*="1a1a2e"] .s20-world-icon span{color:#f5f2eb!important}
 .s20-section[style*="1a1a2e"] 
 /* Dual range slider */
 #s20-range-min::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#b8960a;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);cursor:pointer;pointer-events:auto}
@@ -2432,67 +2431,54 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
       <div class="s20-worlds" id="s20-worlds">
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:'UnifrakturMaguntia',Georgia,serif;font-size:18px;color:#1a1a2e">N</span></div>
           <div class="s20-world-text"><div class="s20-world-name">News</div><div class="s20-world-desc">U.S., World, Politics, New York</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:#1a1a2e">B</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Business</div><div class="s20-world-desc">Economics, finance, markets, companies</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:'Inter',sans-serif;font-size:16px;font-weight:700;color:#1a1a2e;letter-spacing:-0.5px">T.</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Technology</div><div class="s20-world-desc">Tech news, AI, startups, digital culture</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:700;font-style:italic;color:#1a1a2e">Op</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Opinion</div><div class="s20-world-desc">Columnists, editorials, guest essays</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:16px;color:#1a1a2e">&#9733;</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Culture &amp; Arts</div><div class="s20-world-desc">Film, books, art, TV, music, theatre</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="display:inline-grid;grid-template-columns:repeat(3,6px);gap:1.5px"><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#c9b458;border-radius:1px"></span><span style="width:6px;height:6px;background:#787c7e;border-radius:1px"></span><span style="width:6px;height:6px;background:#787c7e;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#c9b458;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span><span style="width:6px;height:6px;background:#6aaa64;border-radius:1px"></span></span></div>
           <div class="s20-world-text"><div class="s20-world-name">Games</div><div class="s20-world-desc">Wordle, Connections, Spelling Bee, Strands</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:14px;color:#c4391d;font-weight:700">NYT</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Cooking</div><div class="s20-world-desc">Recipes, meal plans, food writing</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:'Inter',sans-serif;font-size:16px;font-weight:900;font-style:italic;color:#1a1a2e;letter-spacing:-1px">A</span></div>
           <div class="s20-world-text"><div class="s20-world-name">The Athletic</div><div class="s20-world-desc">In-depth sports coverage and analysis</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="display:inline-flex;align-items:center;gap:1.5px;height:16px"><span style="width:2.5px;height:6px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:12px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:8px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:14px;background:#1a1a2e;border-radius:1px"></span><span style="width:2.5px;height:5px;background:#1a1a2e;border-radius:1px"></span></span></div>
           <div class="s20-world-text"><div class="s20-world-name">Audio</div><div class="s20-world-desc">The Daily, Serial, The Ezra Klein Show</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:16px;color:#1a1a2e">&#9883;</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Science</div><div class="s20-world-desc">Health, climate, cosmos, Science Times</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:Georgia,serif;font-size:16px;color:#c4391d">&#9825;</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Modern Love</div><div class="s20-world-desc">Essays on relationships, love, loss</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:'Playfair Display',Georgia,serif;font-size:17px;font-style:italic;color:#1a1a2e">T</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Travel &amp; Style</div><div class="s20-world-desc">Destinations, fashion, T Magazine</div></div>
           <div class="s20-world-check"></div>
         </div>
         <div class="s20-world-row" onclick="toggleWorld(this)">
-          <div class="s20-world-icon"><span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:800;color:#1a1a2e;letter-spacing:-0.3px">W</span></div>
           <div class="s20-world-text"><div class="s20-world-name">Wirecutter</div><div class="s20-world-desc">Product reviews, recommendations, buying guides</div></div>
           <div class="s20-world-check"></div>
         </div>
