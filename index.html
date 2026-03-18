@@ -524,12 +524,12 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 /* ── Crossword reveal thumbnail ── */
 .xword-thumb{position:relative;width:44px;height:44px;border-radius:8px;overflow:hidden;cursor:pointer;display:inline-block;vertical-align:middle;border:2px solid #b8a04a;flex-shrink:0}
 .xword-thumb img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
-.xword-grid{position:absolute;top:0;left:0;width:100%;height:100%;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(5,1fr);gap:0.5px;background:rgba(0,0,0,0.15);transition:opacity 0.8s ease}
+.xword-grid{position:absolute;top:0;left:0;width:100%;height:100%;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(5,1fr);gap:0.5px;background:rgba(0,0,0,0.15);transition:opacity 0.4s ease, transform 0.4s ease}
 .xword-grid span{font-family:'Libre Baskerville',Georgia,serif;font-size:6px;font-weight:700;display:flex;align-items:center;justify-content:center;color:#333;line-height:1;transition:background 0.3s ease, color 0.3s ease}
 .xword-grid .xw-filled{background:rgba(255,255,255,0.82)}
 .xword-grid .xw-empty{background:rgba(245,240,224,0.45)}
 .xword-grid .xw-black{background:#1a1a1a}
-.xword-thumb.revealed .xword-grid{opacity:0;pointer-events:none}
+.xword-thumb.revealed .xword-grid{opacity:0;transform:translateY(-6px);pointer-events:none}
 .xword-thumb.revealed{border-color:#c9a84c;box-shadow:0 0 8px rgba(201,168,76,0.4)}
 .xword-name{display:none;font-family:Georgia,serif;font-size:12px;font-weight:700;color:#2a2a2a;margin-left:8px}
 .xword-thumb.revealed~.xword-name{display:inline}
@@ -2953,24 +2953,9 @@ function revealXword(el, targetScreen) {
     show(targetScreen);
     return;
   }
-  if (el.classList.contains('revealing')) return;
-  el.classList.add('revealing');
-  var empties = el.querySelectorAll('.xw-empty');
-  var letters = ['S','E','A','R','C','H','I','N','G'];
-  var delay = 150;
-  empties.forEach(function(sq, i) {
-    setTimeout(function() {
-      sq.textContent = letters[i % letters.length];
-      sq.classList.remove('xw-empty');
-      sq.classList.add('xw-filled');
-    }, i * delay);
-  });
-  setTimeout(function() {
-    el.classList.add('revealed');
-    el.classList.remove('revealing');
-    var nameEl = el.parentNode.querySelector('.xword-name');
-    if (nameEl) nameEl.style.display = 'inline-block';
-  }, empties.length * delay + 400);
+  el.classList.add('revealed');
+  var nameEl = el.parentNode.querySelector('.xword-name');
+  if (nameEl) nameEl.style.display = 'inline-block';
 }
 
 </script>
