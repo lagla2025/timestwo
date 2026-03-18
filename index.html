@@ -2794,8 +2794,8 @@ function show(n){
   if(n===7) { s7current=1; s7Go(1); }
   if(n===16) initS16Personals();
   if(n===17) initS17Personals();
-    if(n===18) initS18();
-  if(n===19) initS19();
+    if(n===18) { initS18(); resetBroadsheetXword('s18', 'xword18b'); }
+  if(n===19) { initS19(); resetBroadsheetXword('s19', 'xword19b'); }
 }
 
 // Photo carousel dot sync
@@ -3078,6 +3078,29 @@ function revealBroadsheetPersonals(el, targetScreen, prefix) {
     tapHint.style.color = '#1a1a1a';
     tapHint.style.marginTop = '5px';
   }
+}
+
+
+function resetBroadsheetXword(prefix, xwordId) {
+  var el = document.getElementById(xwordId);
+  if (el) {
+    el.classList.remove('revealed', 'phase2');
+    var grid = el.querySelector('.xword-grid');
+    if (grid) grid.style.opacity = '1';
+    if (grid) grid.style.transform = 'none';
+  }
+  var xwordArea = document.getElementById(prefix + '-xword-area');
+  if (xwordArea) xwordArea.style.display = '';
+  var tapHint = xwordArea ? xwordArea.querySelector('div[style*="font-size:7px"], div[style*="font-size:10px"]') : null;
+  if (tapHint) {
+    tapHint.textContent = 'Tap to reveal';
+    tapHint.style.fontStyle = 'italic';
+    tapHint.style.fontWeight = '400';
+    tapHint.style.fontSize = '7px';
+    tapHint.style.color = 'rgba(41,34,25,0.35)';
+  }
+  var textArea = document.getElementById(prefix + '-broadsheet-personals');
+  if (textArea) textArea.style.display = 'none';
 }
 
 </script>
