@@ -269,7 +269,11 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s20-section[style*="1a1a2e"] .s20-world-check{border-color:rgba(255,255,255,0.2)}
 .s20-section[style*="1a1a2e"] .s20-world-row.checked .s20-world-check{background:#c9a84c;border-color:#c9a84c}
 .s20-section[style*="1a1a2e"] .s20-world-icon span{color:#f5f2eb!important}
-.s20-section[style*="1a1a2e"] .s20-min-note{color:#c9a84c}
+.s20-section[style*="1a1a2e"] 
+/* Dual range slider */
+#s20-range-min::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#b8960a;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);cursor:pointer;pointer-events:auto}
+#s20-range-max::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#b8960a;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2);cursor:pointer;pointer-events:auto}
+.s20-min-note{color:#c9a84c}
 .s20-min-note{font-size:10px;color:#b8960a;font-weight:600;text-align:center;margin-top:8px;letter-spacing:0.3px}
 .s20-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
 .s20-chip{padding:7px 14px;border-radius:20px;border:1.5px solid #d0cdc6;background:#fff;font-size:12px;font-weight:500;color:#555;cursor:pointer;transition:all 0.15s;font-family:Georgia,serif}
@@ -2310,20 +2314,23 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
       <div class="s20-field">
         <div class="s20-field-label">Your age</div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <input type="range" min="18" max="65" value="28" oninput="this.nextElementSibling.textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
-          <span style="font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a1a2e;min-width:24px;text-align:center">28</span>
+        <div style="display:flex;align-items:center;gap:6px">
+          <input class="s20-input" type="number" placeholder="28" min="18" max="99" style="width:60px;text-align:center;padding:8px 6px">
+          <span style="font-family:Georgia,serif;font-size:13px;font-style:italic;color:#888">-ish</span>
         </div>
       </div>
 
       <div class="s20-field">
         <div class="s20-field-label">Age range you are open to</div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <span style="font-family:Georgia,serif;font-size:12px;color:#888;min-width:20px;text-align:center" id="s20-age-min">22</span>
-          <input type="range" min="18" max="65" value="22" oninput="document.getElementById('s20-age-min').textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
-          <span style="font-family:Georgia,serif;font-size:12px;color:#888;padding:0 2px">&ndash;</span>
-          <input type="range" min="18" max="65" value="38" oninput="document.getElementById('s20-age-max').textContent=this.value" style="flex:1;accent-color:#b8960a;height:4px">
-          <span style="font-family:Georgia,serif;font-size:12px;color:#888;min-width:20px;text-align:center" id="s20-age-max">38</span>
+        <div style="position:relative;height:30px;margin-top:4px">
+          <div style="position:absolute;top:13px;left:0;right:0;height:4px;background:#d0cdc6;border-radius:2px"></div>
+          <div id="s20-range-fill" style="position:absolute;top:13px;left:15%;right:35%;height:4px;background:#b8960a;border-radius:2px"></div>
+          <input type="range" min="18" max="65" value="22" style="position:absolute;top:0;left:0;width:100%;height:30px;-webkit-appearance:none;appearance:none;background:transparent;pointer-events:none;z-index:2" oninput="updateAgeRange()" id="s20-range-min">
+          <input type="range" min="18" max="65" value="38" style="position:absolute;top:0;left:0;width:100%;height:30px;-webkit-appearance:none;appearance:none;background:transparent;pointer-events:none;z-index:3" oninput="updateAgeRange()" id="s20-range-max">
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:2px">
+          <span style="font-family:Georgia,serif;font-size:12px;color:#1a1a2e;font-weight:600" id="s20-age-min-label">22</span>
+          <span style="font-family:Georgia,serif;font-size:12px;color:#1a1a2e;font-weight:600" id="s20-age-max-label">38</span>
         </div>
       </div>
 
@@ -2369,10 +2376,10 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
       <div class="s20-field">
         <div class="s20-field-label">Children</div>
         <div class="s20-option-row" style="flex-wrap:nowrap">
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">No kids</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">Have kids</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">Want kids</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 10px;font-size:12px">Open to kids</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">None</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">Have</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">Want</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">Open</div>
         </div>
       </div>
     </div>
@@ -2986,6 +2993,21 @@ function revealXword(el, targetScreen, nameId) {
     var nameEl = document.getElementById(nameId);
     if (nameEl) nameEl.style.display = 'inline';
   }
+}
+
+
+function updateAgeRange(){
+  var mn=document.getElementById('s20-range-min');
+  var mx=document.getElementById('s20-range-max');
+  var minV=Math.min(parseInt(mn.value),parseInt(mx.value)-1);
+  var maxV=Math.max(parseInt(mx.value),parseInt(mn.value)+1);
+  mn.value=minV;mx.value=maxV;
+  document.getElementById('s20-age-min-label').textContent=minV;
+  document.getElementById('s20-age-max-label').textContent=maxV;
+  var pMin=((minV-18)/(65-18))*100;
+  var pMax=((maxV-18)/(65-18))*100;
+  document.getElementById('s20-range-fill').style.left=pMin+'%';
+  document.getElementById('s20-range-fill').style.right=(100-pMax)+'%';
 }
 
 </script>
