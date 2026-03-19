@@ -13,6 +13,8 @@ Right.
 
 But here's what's interesting. Every one of those people also subscribes to things. They read articles. They listen to podcasts. They play Wordle at 7am before they've spoken to anyone. And none of that is performed. Nobody reads an opinion piece to impress a match. They read it because something in it mattered to them.
 
+One of our participants put it perfectly: what you engage with every day is truly who you are. What you say in a bio is what you think you like. What you actually read, finish, play, and save is a completely different signal.
+
 That behaviour is sitting inside publisher subscriber data right now. Untouched. Nobody is using it.
 
 We are.
@@ -29,7 +31,7 @@ Revenue tells the same story. Match Group did three and a half billion last year
 
 She hate-swipes. He ego-swipes. Neither they nor the business wins.
 
-[REVISIT — bridge line from closer to "That's the gap we're walking into." Parked for fresh eyes.]
+And here's where it gets dark. Four of the top twenty most-used AI tools globally are AI companions. People are choosing simulated intimacy over real connection because real connection has been made so miserable. That's the market telling you something.
 
 That's the gap we're walking into.
 
@@ -41,6 +43,8 @@ So what do we actually use?
 
 Four types of signal. Read. What someone finishes. What they save. What they come back to. Listen. The Daily every morning. That's a habit, and habits tell you more about someone than any bio ever could. Watch. Did they finish the video or swipe past it? Completion is the signal. Play. Wordle in two. Connections with no mistakes. You can't fake that.
 
+And the games are not just a signal. They're an opener. Instead of typing "hey," she sends a Connections challenge. The interaction starts in the shared activity. No performance. No small talk. Just "think you can keep up?"
+
 Now imagine two people. They both read the same piece. Neither of them knew. Until we told them.
 
 That's the introduction.
@@ -51,9 +55,17 @@ That's the introduction.
 
 We call it the Wingman. Think of it like a very well-informed friend who's been paying quiet attention.
 
-Step one, it watches what you engage with. Your feed, your content, your rhythm. Step two, when it spots a genuine overlap with someone, it introduces you. Not before the signal is strong enough. Step three, it gives you something to say. Not a generic opener. Something drawn from what you actually share. It finishes the sentence you were already thinking. And step four, it suggests meeting up. Not coffee. The thing you both already love doing. If you both cook, it's a cooking class. If you both follow rugby, it's a match.
+Step one, it watches what you engage with. Your feed, your content, your rhythm. Step two, when it spots a genuine overlap with someone, it introduces you. Not before the signal is strong enough. And when it does, it gives you a brief. Not a summary. A brief. Three lines. With opinions.
 
-The Wingman is looking out for you. It knows when to step in. And it never acts for you. It acts on you. That's what keeps it human.
+Here's what one looks like. "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often. Connections before 8am. Every day. The kind of discipline you pretend to have. Friday night. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
+
+Notice what the Wingman just did. It didn't list facts. It took a position. "You'd get along." The Wingman has an opinion on whether this match is worth your time. That's the difference. Every other app gives you data and says "you decide." The Wingman says "I've been paying attention. This one's worth it. Don't overthink it."
+
+Step three, it gives you something to say. A game challenge. A sentence you were already thinking. And step four, it suggests meeting up. Not coffee. The thing you both already love doing.
+
+And the Wingman doesn't stop there. It helps you get better at this. After three conversations that didn't click, it might say: "You keep matching on Games but the conversations that go longest start from Culture. That's your best material. Use it." No dating app in history offers that. No course correction. No learning loop. The Wingman is the first.
+
+The Wingman never acts for you. It acts on you. That's what keeps it human.
 
 ---
 
@@ -105,7 +117,7 @@ We build the engine. They keep the brand.
 
 Every other platform in this space tracks users for the platform's benefit. We invert that completely.
 
-Most algorithms track you to sell ads. We track you to find you a better person. One read-only OAuth scope. The data never touches ad systems. Never flows to marketers. Never gets resold.
+One of our participants, a software engineer, put it this way: AdSense harvests your data to sell you things. Times Two harvests your data to find you a better person. Same data infrastructure. Opposite purpose. One read-only OAuth scope. The data never touches ad systems. Never flows to marketers. Never gets resold.
 
 Under GDPR and CCPA, this is the cleanest possible basis for processing: a user consenting to their own data being used for their own benefit. The publisher's brand stays clean. The user has genuine agency.
 
@@ -139,7 +151,7 @@ The moat is multi-publisher signal aggregation. The FT alone can't build what NY
 
 The risk here isn't technical. It's behavioural. Will people form deeper connections when they're introduced through content instead of profiles? That's exactly what we're testing first.
 
-We've run 15 qualitative interviews at TCD Business School. 10 countries represented. The thesis holds. People get it immediately. One participant said he wished it was already an app so he could try it.
+We've run 16 qualitative interviews at TCD Business School. 10 countries represented. The thesis holds. People get it immediately. One participant estimated a traditional profile shows five percent of the real person. Times Two shows fifteen to twenty. His reasoning: media consumption is subconscious. You cannot curate it the way you curate a bio. It is closer to the real person by definition.
 
 The plan is straightforward. Guardian validates. NYT scales.
 

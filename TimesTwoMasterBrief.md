@@ -946,6 +946,97 @@ Same data. Same intelligence underneath. Completely different relationship with 
 - All the same intelligence, matching logic, and content signals remain. The wrapper changes. The soul changes with it.
 
 
+## The Wingman Brief -- Build Spec (confirmed Mar 2026)
+
+### The cardinal rule
+**The Wingman has an opinion. It takes a position on whether this match is worth the user's time.** Every other app gives you data and says "you decide." The Wingman says "I've been paying attention. This one's worth it." That is the fundamental difference. A Wingman that doesn't have opinions is just a search engine.
+
+### What it is
+The brief is the Wingman's match reveal. Three lines. First person. Spoken directly to the user about their match. It is not a summary. It is not a data readout. It is the Wingman talking to a friend.
+
+### The formula
+Every line has three layers: **observation + synthesis + opinion.**
+- Observation: what the match did
+- Synthesis: why it means something
+- Opinion: what the Wingman thinks about it
+
+**Not this:** "He saved a recipe on Friday night."
+**This:** "Friday night. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
+
+**Not this:** "He plays Connections every morning before 8am."
+**This:** "Connections before 8am. Every day. The kind of discipline you pretend to have."
+
+**Not this:** "He finished the same long-read article that you also finished."
+**This:** "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often."
+
+### Voice rules
+- Short sentences. Present tense.
+- A little dry. Occasionally a gentle dig at the user. The Wingman knows you well enough to be cheeky.
+- Not sycophantic. Not robotic. Opinionated.
+- First person. The Wingman says "I" and addresses the user as "you."
+- Never neutral. The Wingman has a take.
+- Duolingo owl energy: knows you better than you know yourself, slightly passive-aggressive, impossible to ignore.
+
+### Structure
+- Three lines maximum. Each line covers one content signal.
+- End on the Wingman's verdict. One short sentence that is a push, not a summary.
+- Verdicts: "You'd get along." / "This one's worth it." / "Don't overthink it." / "Trust me on this one."
+
+### What the Wingman never does in a brief
+- Lists things
+- Uses bullet points
+- Says "both of you" repeatedly
+- Describes behaviour without interpreting it
+- Stays neutral
+- Sounds like a system notification or a LinkedIn summary
+
+### The test
+Read the brief aloud. Does it sound like a person talking to a friend, or a database query? If it sounds like LinkedIn, rewrite it.
+
+### Example briefs (canonical)
+
+**Saoirse's brief on Cian:**
+"He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often.
+Connections before 8am. Every day. The kind of discipline you pretend to have.
+Friday night. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
+
+**Cian's brief on Saoirse:**
+"She saved the Cities piece you've been putting off. She actually read it. Twice.
+Spelling Bee Genius before breakfast. You got to Amazing. She's ahead of you.
+Don't overthink it."
+
+
+## The Wingman as Self-Improvement Engine (confirmed Mar 2026)
+
+### The gap no app fills
+No dating app in history offers a learning loop. They all treat dating like a slot machine: pull the lever, see what comes out, repeat. Nobody helps you get better at this. No course correction. No reflection. No growth.
+
+### What the Wingman does differently
+The Wingman reflects your own patterns back at you. Not as a therapist. Not as a coach. As the friend who knows you better than you know yourself and is not afraid to say it.
+
+**Pattern recognition examples:**
+- "You've passed on three people who shared Culture content with you this month. But your longest conversations all started from Culture. Worth thinking about."
+- "You keep matching on Games but never mention them in chat. That's your best material. Use it."
+- "Last three times someone suggested coffee, you said 'not yet.' The Wingman thinks you're ready. Trust the process."
+- "You tend to go quiet around day 3. That's when the other person starts wondering. A quick message goes a long way."
+
+### The Wingman's full role (expanded)
+Not a concierge. Not a butler. Not an assistant. The friend who tells you what you need to hear, not what you want to hear:
+- **Matchmaker:** introduces you when the signal is strong enough
+- **Briefer:** gives you three lines on your match, with opinions
+- **Opener:** suggests a game challenge or conversation starter
+- **Closer:** suggests meeting up at the right moment
+- **Conscience:** nudges you when you're ghosting or stalling
+- **Mirror:** reflects your dating patterns so you can learn from them
+- **Cheerleader:** celebrates when it works out, nudges the flywheel
+
+### Why this is a moat
+No other app can do this because no other app has the data depth. Hinge sees swipes. Bumble sees messages. Neither can see that you read a 4,000-word piece at 11pm on a Tuesday and saved it. The depth of the content signal IS the depth of the Wingman's insight. The richer the reading data, the smarter the Wingman gets. That is a compounding advantage, not just a feature.
+
+### Voice reference
+Duolingo's owl: knows you better than you know yourself. Slightly passive-aggressive. Makes you feel something. The Wingman is the dating version of that. Not annoying. Not preachy. Just relentlessly, affectionately honest.
+
+
 ## AI-Assisted Chat Prompts (the full thinking)
 
 ### The problem
@@ -1065,4 +1156,85 @@ A singles supper club at TCD could run in April 2026. No app required. Curate at
 
 ### Pitch line
 "The app gets them talking. The events get them together. The stories bring everyone else."
+
+
+## Interview Findings -- Interviews 14-16 (March 19, 2026)
+
+### Interview 14: Meg, 31 (American, New York, cybersecurity, Blackstone/Oracle background)
+
+**Profile:** Never used a dating app personally. Proxy experience through close friends in their mid-30s in New York. Married, trailing spouse in Dublin. MSc cohort. Came in as a reporter and left as a prospective user of the community product.
+
+**Key findings:**
+- **Mission Impossible brief concept (Wingman UX):** "Wingman, top three things, go." Wants a fast, scannable, actionable brief at the match reveal. Not a scroll. Three bullet points. Each one a different content signal. You read it, you know enough to decide. This reshapes the match reveal design.
+- **Wingman as two-way self-improvement channel:** The Wingman should check in after dates, collect feedback, help the user iterate on what is and isn't working. A data capture layer that serves the user, not the platform. Thinks about the feedback loop, not just the matching mechanic.
+- **Proxy-to-convert story:** Has never used a dating app and has no intention of starting, but said "I would use this" for the community/friend-matching layer. That is the product's second revenue case validated by a non-dater in a single interview.
+- **Profile dishonesty pattern (via friend Jenny):** Men presenting as open-minded and progressive to attract more matches, arriving as the opposite. The incentive structure of the app produces dishonesty. You can curate a bio. You cannot curate your reading history.
+- **Jenny's dating approach:** Mid-30s NYC women wait for the guy to message first. When contact happens, they want it direct. "Here's when I'm free, let's get a drink." No small talk, no pen pal phase. Validates the Wingman cafe feature's urgency.
+- Confirmed Guardian as similar demo to NYT. Mentioned Irish Times as local consideration.
+- Offered to help with technical requirements documentation. Suggested CTO-type co-founder over just an engineer. Recommended $50-60K to pilot.
+
+**CAPSTONE HIGHLIGHTS (Meg):**
+- **Jenny's dishonesty pattern is one of the cleaner articulations of the incentive misalignment the content-based model solves. Worth a line in the methodology.**
+- **The Wingman feedback loop idea emerged independently from a participant with a technical background. Worth noting as a product direction in the discussion.**
+
+
+### Interview 15: Akshay, 25 (Indian, Dubai/UAE, TCD MSc, coder/app builder)
+
+**Profile:** Tech-forward. Hackathon regular. Used Bumble and Hinge, never paid for either. Used dating apps as personal development (improving communication) rather than as a matching tool. Analytical, not bitter, about the structural asymmetry men face.
+
+**Key findings:**
+- **5% vs 15-20% improvement framing:** Traditional profiles show 5% of the real person. Times Two shows 15-20%. His reasoning: media consumption is subconscious and habitual. You cannot curate it the way you curate a bio. It is closer to the real person by definition. Most quantified articulation of the improvement case in the sample.
+- **AdSense inversion (independently arrived at):** "They harvest your data to sell you things. This harvests your data to find you a better person." Cleaner than most versions of the data inversion argument. Made the connection without prompting.
+- **Blind matching validated (male):** Completely fine without the photo. Said directly that someone could become more attractive through the quality of the conversation. Counter-example to the gendered photo-timing split.
+- **AI companions as counter-argument:** Four of the top twenty most-used AI tools globally are AI companions. People substituting artificial connection for real connection. Times Two is the counter-argument.
+- **Time Left validation:** Pointed to Time Left (supper club app) as the model that actually works for him. No dating intent, lower pressure, more genuine interaction. Independently validates the community events layer.
+- **Demographic pushback (25-35 beachhead):** 18-21 year olds are not reading the NYT even with free academic access. The realistic target for organic adoption is 25-35 working professionals consuming premium content on commutes. University pilot is proof of concept, not primary market.
+- **Wingman clarity:** The Wingman's job is the introduction. Once it has done that, it has done everything it can. The brief has to be done well. A poorly written brief would be worse than no brief.
+- Dubai context: significant escort/fake profile problem on Tinder. Dublin is better. Adds texture to global category dysfunction.
+
+**CAPSTONE HIGHLIGHTS (Akshay):**
+- **"Media consumption is subconscious and therefore more honest than a self-curated bio" is the best single-sentence articulation of the core thesis in the entire interview sample. Write it into the capstone verbatim.**
+- **Time Left comparison is footnote evidence for the community events thesis. A product with no dating intent that produces better social outcomes than a dating app validates that lower-stakes group formats produce more genuine interaction.**
+- **25-35 working professionals as real beachhead (not students) should be addressed directly in the methodology. The university pilot is proof of concept and lifetime value capture. The real market is the cohort that comes next.**
+- **Blind matching counter-example breaks the gendered photo-timing split. The split may be personality-driven rather than gender-driven. Worth a note in the findings -- Alex wanted photos immediately, Akshay doesn't. Both male.**
+
+
+### Interview 16: Ahijah (TCD MSc cohort)
+
+**Key findings:**
+- **Game as conversation opener:** The games layer is not just a match signal. It is an interaction mechanism. Send a game challenge rather than an opening line. The interaction starts in the shared activity. No performance, no small talk. This is now reflected in the prototype (Screen 3 chat) and pitch deck.
+- **"What you engage with every day is truly who you are":** His articulation of the revealed-preference thesis. What you say in a bio is what you think you like. What you actually click on, read, finish, play is a different signal entirely. Sharper than any prior version. Now in the pitch.
+- **Daily ritual as identity signal:** The fact that someone does Connections every morning at 7am says something about discipline, routine, playfulness. Things no bio captures.
+- **Competition as flirtation:** A game challenge is inherently playful. Creates stakes without vulnerability. Low-risk first interaction. If she sends a Wordle challenge and he bombs it, they laugh. If she sends "hey, you're cute" and he doesn't reply, she feels rejected. The game absorbs the social risk.
+
+**CAPSTONE HIGHLIGHTS (Ahijah):**
+- **"What you engage with every day is truly who you are" should be quoted in the capstone as a participant articulation of the revealed-preference argument.**
+- **Game-as-opener is a design insight with theoretical weight: it removes performative self-presentation from the first interaction entirely. The shared activity replaces the audition.**
+
+
+### Cross-Interview Pattern Update (Interviews 14-16)
+
+**Wingman design converging across participants:**
+- Meg: Mission Impossible brief. Fast, scannable, three things.
+- Akshay: The brief has to be done well. Quality condition.
+- Both independently: the Wingman's job is the introduction + feedback loop.
+- Ahijah: game challenge as the opener the Wingman facilitates.
+
+**Blind matching -- gendered split may be personality, not gender:**
+- Alex (male): wants photo immediately, non-negotiable.
+- Akshay (male): completely fine without photo, person can become more attractive through conversation.
+- Previous female participants: generally willing to defer photo reveal.
+- Conclusion: the split is not cleanly gendered. Both positions exist within male participants. Worth reframing in capstone as individual variation rather than gender pattern.
+
+**Community events validated independently by third participant:**
+- Interview 1: scarcity as feature
+- Tessa: daily limits, match expiry
+- Akshay: Time Left (supper club app with no dating intent) as the thing that actually works
+- Meg: "I would use this" for friend matching, not dating
+
+**Profile dishonesty problem -- strongest articulations:**
+- Meg/Jenny: men presenting as progressive, arriving as the opposite
+- Akshay: profiles show 5% of real person
+- Ahijah: what you say vs what you do are different signals
+- All three independently validate the content-over-bio thesis from different angles
 

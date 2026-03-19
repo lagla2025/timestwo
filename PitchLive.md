@@ -10,6 +10,7 @@
 - 80% of college students have stopped using dating apps. The next generation has already walked away.
 - The app wins when you stay. You win when you leave. That's the problem.
 - You can fake a bio. You can't fake the content you consume.
+- What you engage with every day is truly who you are. What you say in a bio is what you think you like.
 - That behaviour is sitting inside every publisher's subscriber data. Untouched.
 
 ---
@@ -22,6 +23,7 @@
 - Bumble: $966M (FY2025). Down 10%. Losing users faster. Market cap down 92%.
 - $50B in market cap lost since 2021. 1.5M paying users gone in a single year.
 - She hate-swipes. He ego-swipes. Neither they nor the business wins.
+- 4 of the top 20 most-used AI tools are AI companions. People are choosing simulated intimacy over real connection.
 
 ---
 
@@ -32,7 +34,7 @@
 - **Read** — What they finish. What they save.
 - **Listen** — The Daily at 7am. Every morning.
 - **Watch** — Watched fully, or swiped past.
-- **Play** — Wordle in 2. No mistakes.
+- **Play** — Wordle in 2. No mistakes. And the game is the opener. She sends a Connections challenge instead of "hey."
 
 You both read the same piece. Neither of you knew.
 
@@ -43,11 +45,11 @@ You both read the same piece. Neither of you knew.
 # Four steps. One friend.
 
 1. **Discover** — Your feed. The Wingman is paying attention.
-2. **Introduce** — When the signal is strong enough. Not before.
-3. **Connect** — Finishes the sentence you were already thinking.
+2. **Introduce** — Three things. With opinions. "You'd get along." The Wingman takes a position.
+3. **Connect** — A game challenge. A sentence you were already thinking.
 4. **Close** — Not coffee. The thing you both already love doing.
 
-The Wingman is looking out for you and knows when to step in.
+The Wingman has an opinion on whether this match is worth your time. No other app does that. And it helps you get better: "Your longest conversations start from Culture. That's your best material. Use it."
 
 ---
 
@@ -95,7 +97,7 @@ We build the engine. They keep the brand. NYT 12.78M · Guardian 1.3M · WSJ 4.2
 
 # Your data works for you.
 
-- Most algorithms track you to sell ads. We invert that model so your data works for YOU.
+- AdSense harvests your data to sell you things. We harvest your data to find you a better person. Same infrastructure. Opposite purpose.
 - Every signal you generate yields a better introduction. Not a better ad.
 - One OAuth scope. Read-only. Never touches ad systems.
 - GDPR clean. CCPA clean. The simplest consent architecture possible.
@@ -143,7 +145,8 @@ Under 1% of SAM by Year 3. We'd rather be credible than impressive.
 # Build it. Test it. Prove the behaviour.
 
 - The risk isn't technical. It's behavioural. That's exactly what we're testing first.
-- 15 qualitative interviews at TCD Business School. 10 countries represented. The thesis holds.
+- 16 qualitative interviews at TCD Business School. 10 countries represented. The thesis holds.
+- One participant: traditional profiles show 5% of the real person. Times Two shows 15-20%. "Media consumption is subconscious. You can't curate it."
 - Guardian validates. NYT scales.
 
 **$60K** removes the behavioural uncertainty before asking publishers to take a risk.
@@ -160,6 +163,9 @@ Under 1% of SAM by Year 3. We'd rather be credible than impressive.
 - *"It balances out me being superficial."* — Tessa
 - *"It's very difficult to fake it because this is what they have actually been reading."* — Wissam
 - *"I wish it is actually an app so I can try it out."* — Wissam
+- *"They harvest your data to sell you things. This harvests your data to find you a better person."* — Akshay
+- *"Wingman, top three things, go."* — Meg
+- *"What you engage with every day is truly who you are."* — Ahijah
 
 ---
 
