@@ -3035,15 +3035,8 @@ function updateAgeRange(){
 
 function xwordPersonals(el, prefix, targetScreen) {
   var label = document.getElementById(prefix + '-xword-label');
-  var xwArea = document.getElementById(prefix + '-xword-area');
-  var persArea = document.getElementById(prefix + '-personals-area');
-  if (persArea && persArea.style.display !== 'none') {
-    show(targetScreen);
-    return;
-  }
   if (el.classList.contains('revealed')) {
-    if (xwArea) xwArea.style.display = 'none';
-    if (persArea) persArea.style.display = 'block';
+    show(targetScreen);
     return;
   }
   el.classList.add('revealed');
@@ -3052,7 +3045,7 @@ function xwordPersonals(el, prefix, targetScreen) {
     label.textContent = name;
     label.style.fontStyle = 'normal';
     label.style.fontWeight = '700';
-    label.style.fontSize = '10px';
+    label.style.fontSize = '11px';
     label.style.color = '#1a1a1a';
   }
 }
