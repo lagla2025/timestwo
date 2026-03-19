@@ -55,9 +55,9 @@ That's the introduction.
 
 We call it the Wingman. Think of it like a very well-informed friend who's been paying quiet attention.
 
-Step one, it watches what you engage with. Your feed, your content, your rhythm. Step two, when it spots a genuine overlap with someone, it introduces you. Not before the signal is strong enough. And when it does, it gives you a brief. Not a summary. A brief. Three lines. With opinions.
+Step one, it watches what you engage with. Your feed, your content, your habits. Step two, when it spots a genuine overlap with someone, it introduces you. Not before the signal is strong enough. And when it does, it gives you a brief. Not a summary. A brief. Three lines. With opinions.
 
-Here's what one looks like. "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often. Connections before 8am. Every day. The kind of discipline you pretend to have. Friday night. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
+Here's what one looks like. "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often. Connections. Every day. No mistakes. The kind of discipline you pretend to have. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
 
 Notice what the Wingman just did. It didn't list facts. It took a position. "You'd get along." The Wingman has an opinion on whether this match is worth your time. That's the difference. Every other app gives you data and says "you decide." The Wingman says "I've been paying attention. This one's worth it. Don't overthink it."
 

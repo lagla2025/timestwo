@@ -963,8 +963,8 @@ Every line has three layers: **observation + synthesis + opinion.**
 **Not this:** "He saved a recipe on Friday night."
 **This:** "Friday night. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
 
-**Not this:** "He plays Connections every morning before 8am."
-**This:** "Connections before 8am. Every day. The kind of discipline you pretend to have."
+**Not this:** "He plays Connections every day."
+**This:** "Connections. Every day. No mistakes. The kind of discipline you pretend to have."
 
 **Not this:** "He finished the same long-read article that you also finished."
 **This:** "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often."
@@ -997,12 +997,12 @@ Read the brief aloud. Does it sound like a person talking to a friend, or a data
 
 **Saoirse's brief on Cian:**
 "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often.
-Connections before 8am. Every day. The kind of discipline you pretend to have.
-Friday night. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
+Connections. Every day. No mistakes. The kind of discipline you pretend to have.
+Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
 
 **Cian's brief on Saoirse:**
 "She saved the Cities piece you've been putting off. She actually read it. Twice.
-Spelling Bee Genius before breakfast. You got to Amazing. She's ahead of you.
+Spelling Bee Genius. You got to Amazing. She's ahead of you.
 Don't overthink it."
 
 
@@ -1035,6 +1035,81 @@ No other app can do this because no other app has the data depth. Hinge sees swi
 
 ### Voice reference
 Duolingo's owl: knows you better than you know yourself. Slightly passive-aggressive. Makes you feel something. The Wingman is the dating version of that. Not annoying. Not preachy. Just relentlessly, affectionately honest.
+
+
+## Wingman Personalisation (confirmed Mar 2026)
+
+### The paradox
+A wingman at a bar is YOUR friend. Biased in your favour. Times Two's Wingman matches both people. It wrote her brief on him AND his brief on her. That is not a wingman. That is a matchmaker pretending to be a wingman.
+
+### The resolution: experienced loyalty
+The Wingman's intelligence is bilateral (it knows both people). The EXPERIENCE is singular (you only see your side). You never see the other person's brief. You never know how the Wingman framed you to them. That asymmetry preserves trust.
+
+**Design rule:** The user never sees the other person's brief. Ever. The Wingman's loyalty is experienced as one-sided even though its knowledge is not.
+
+### What makes YOUR Wingman yours
+The Wingman is personalised through YOUR data, not the match's. It knows:
+- What content worlds you go deep on (completion, saves, return visits)
+- Your habits (daily Wordle player, weekend Cooking browser, Wirecutter deep-diver)
+- What's working in your conversations (which openers lead to longer chats, where conversations stall)
+- What you're NOT doing (stalling on coffee, going quiet, ignoring game challenges)
+- Whether you're snacking or investing (headline scanning vs finishing a 4,000-word piece)
+
+So Saoirse's Wingman and Cian's Wingman emphasise different things. Same match, different briefs, because each Wingman is calibrated to what matters to THAT user.
+
+### The surveillance line (hard rule)
+Times Two tracks WHAT, not WHEN. No timestamps. No session times. No "morning reader" or "late-night diver" language. That reads as surveillance even if technically benign.
+
+Acceptable signals:
+- What you read (content, not timing)
+- How deep you went (completion rate, not time spent)
+- What you saved (deliberate action)
+- Game scores (already shared socially by millions)
+- Return visits to content (you came back to the same piece)
+- Browse depth (six Wirecutter reviews in one session = nesting signal)
+
+Not acceptable:
+- Time of day
+- Session duration
+- App open frequency
+- Location
+- Device type
+
+### Signal hierarchy (what the Wingman actually uses)
+Foundation principle: the Wingman runs on passive behaviour. The stuff you do without thinking about it. The moment you require active curation, you reintroduce the performance problem you are trying to solve.
+
+1. **Completion** (strongest) -- finished a long piece. That is investment, not snacking. Entirely passive. NYT already tracks this.
+2. **Game scores** (strong) -- Wordle in 2, Connections no mistakes. Daily. Habitual. Already shared socially by millions. People are PROUD of these. Most natural, least effortful signal in the stack. Also doubles as conversation opener.
+3. **Return visits** (solid) -- came back to the same section. Daily Spelling Bee player. Weekend Cooking browser. Habit signal, entirely passive.
+4. **Browse depth** (solid) -- Wirecutter deep-dive on toasters. Six product reviews in one session. Someone in a life moment. Passive.
+5. **Saves** (weak) -- requires a deliberate tap. Some people do it. Most don't. Bonus signal, not foundation.
+6. **Featured/starred** (weakest) -- almost nobody will do this. Cherry on top for engaged users. Cannot be the foundation.
+
+The Wingman works on signals 1-4 without the user lifting a finger. Signals 5-6 are bonuses. The product must never depend on active user curation.
+
+### Tone picker (onboarding, Screen 20)
+Users choose their Wingman's voice at setup. Four options:
+
+**Straight shooter** -- Direct. No fluff. "This one's worth it. Go."
+**Gentle nudge** -- Warm. Encouraging. "I think you'd really like this person. Take a look when you're ready."
+**Cheeky friend** -- Snarky. Duolingo owl energy. "Connections. Every day. No mistakes. The kind of discipline you pretend to have."
+**Hype person** -- All enthusiasm. "OK this is a GOOD one. Trust me."
+
+The tone changes. The intelligence doesn't. Same data, same matching logic, different wrapper. Like choosing a voice for your GPS. The route is the same. The vibe is yours.
+
+Over time the Wingman adapts: if you consistently ignore gentle nudges but act on snarky ones, it drifts snarky. The tone calibrates to what makes you respond.
+
+### The snacking vs investing distinction
+The Wingman knows the difference between someone who scans headlines and someone who goes deep. If someone only dips in for Wordle and nothing else, the Wingman's brief reflects that honestly. Not every user generates rich signals. The Wingman works with what it has and is transparent about depth.
+
+"He does Wordle. Every day. That's about it for now." is a valid brief. It is honest. It respects the user's attention. It does not invent depth that isn't there.
+
+### Data access reality check (pinned for CTO conversation)
+- **Available via standard publisher APIs/OAuth:** saved articles, game scores (shared), subscription tier, content section preferences
+- **Available via publisher partnership integration:** completion rates, scroll depth, return visits, browse depth
+- **MVP signals (Phase 1):** saves + game scores + content sections. Enough for the Wingman brief.
+- **Deep signals (Phase 2):** completion rates + browse depth + return patterns. Requires partnership-level data sharing agreement with each publisher. This is why it is B2B SaaS, not a scraper.
+- Akshay's granularity question (INTV #15): can we track these movements in a granular way? Answer: yes, with publisher partnership. No, with standard OAuth alone. The business model IS the answer to the data access question.
 
 
 ## AI-Assisted Chat Prompts (the full thinking)
