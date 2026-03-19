@@ -2447,6 +2447,23 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
     <div class="s20-divider"></div>
 
+    <!-- Personals moment -->
+    <div style="margin:0 0 18px;padding:14px 16px;background:#f5f1ea;border-radius:8px;border:1.5px solid #d0cbc0">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+        <div style="height:1.5px;flex:1;background:rgba(41,34,25,0.4)"></div>
+        <span style="font-size:7px;color:rgba(41,34,25,0.35);letter-spacing:.4em">&#10022; &#10022; &#10022;</span>
+        <div style="height:1.5px;flex:1;background:rgba(41,34,25,0.4)"></div>
+      </div>
+      <div style="font-size:8px;font-weight:700;color:rgba(41,34,25,0.5);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:4px;font-family:Georgia,serif">Personal Notices</div>
+      <div style="font-family:Georgia,serif;font-style:italic;font-size:11px;color:#2a2a2a;line-height:1.5" id="s20-personal-text"><em>Gentleman, 38, Dublin. Has all his hair. This is mentioned because it won't always be the case.</em></div>
+      <div style="display:flex;align-items:center;gap:6px;margin:6px 0 4px">
+        <div style="height:1px;flex:1;background:rgba(41,34,25,0.2)"></div>
+        <span style="font-size:6px;color:rgba(41,34,25,0.25)">&#9670;</span>
+        <div style="height:1px;flex:1;background:rgba(41,34,25,0.2)"></div>
+      </div>
+      <div style="font-family:Georgia,serif;font-size:8px;color:rgba(41,34,25,0.35);letter-spacing:0.5px" id="s20-personal-source">The Irish Times &middot; Personals &middot; 1944</div>
+    </div>
+
     <!-- Section 3: Content Worlds -->
     <div class="s20-section" style="background:#1a1a2e;margin:0 -16px;padding:18px 16px;border-radius:0">>
       <div class="s20-section-num" style="color:#c9a84c">Your content worlds</div>
@@ -3037,6 +3054,24 @@ function xwordPersonals(el, prefix, targetScreen) {
     label.style.color = '#1a1a1a';
   }
 }
+
+
+function initS20Personal() {
+  var lines = [
+    { html: '<em>Gentleman, 38, Dublin. Has all his hair. This is mentioned because it won\'t always be the case.</em>', source: 'The Irish Times &middot; Personals &middot; 1944' },
+    { html: '<span style="font-family:\'Playfair Display\',serif;font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:.05em">Wanted:</span> a woman who reads slowly and laughs easily. Own teeth preferred but not required.', source: 'The Times &middot; Personals &middot; 1923' },
+    { html: '<span style="font-family:\'Playfair Display\',serif;font-weight:900;font-size:11px;text-transform:uppercase;letter-spacing:.05em">Wanted:</span> a man who orders the second-best wine and doesn\'t mention it.', source: 'The Times &middot; Personals &middot; 1947' },
+    { html: '<em>Widower, 41. Good coat. Seeks companion for long walks and short arguments.</em>', source: 'The Times &middot; Personals &middot; 1938' },
+    { html: '<em>Seeks: a woman with opinions about olive oil and the grace not to share all of them.</em>', source: 'The Irish Times &middot; Personals &middot; 1931' }
+  ];
+  var dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(),0,0)) / 86400000);
+  var idx = dayOfYear % lines.length;
+  var textEl = document.getElementById('s20-personal-text');
+  var srcEl = document.getElementById('s20-personal-source');
+  if(textEl) textEl.innerHTML = lines[idx].html;
+  if(srcEl) srcEl.innerHTML = lines[idx].source;
+}
+initS20Personal();
 
 </script>
 
