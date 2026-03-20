@@ -2514,6 +2514,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 ═══════════════════════════════════════════════════════════ -->
 <div class="screen s1-bg" id="screen21" style="overflow-y:auto;flex-direction:column;display:none">
 <div class="status-bar" style="background:transparent;color:rgba(255,255,255,0.6);position:relative;z-index:5"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9679; &#9679;&#9679;</span></div>
+<div id="s21-back-to-deck" style="display:none;position:absolute;top:46px;left:12px;z-index:20;padding:6px 12px;background:rgba(0,0,0,0.6);border-radius:16px;font-family:Georgia,serif;font-size:12px;color:#fff;cursor:pointer;backdrop-filter:blur(8px)" onclick="s22Go(s22ReturnSlide);show(22)">&#9664; Pitch</div>
 <div class="s1-photo-outer">
 <div class="s1-photo-wrap" id="s21-photo-wrap">
 <div class="s1-photo-track">
@@ -2581,16 +2582,18 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
   </div>
   <div class="s7-deck" id="s22-deck">
 
-  <!-- S22 Slide 1: This is 5% of me -->
+  <!-- S22 Slide 1: This is 5% of me — tap to see founder profile -->
   <div class="s7-slide active" id="s22-slide-1">
-    <div class="pitch-card pitch-card-dark">
+    <div class="pitch-card pitch-card-dark" onclick="s22ReturnSlide=2;show(21)" style="cursor:pointer">
       <div class="pitch-eyebrow">The problem</div>
-      <div class="pitch-heading" style="font-size:18px;line-height:1.35">This is 5% of me.</div>
-      <div style="margin-top:14px;font-size:12.5px;color:rgba(255,255,255,0.7);line-height:1.65;font-family:Georgia,serif">
-        <div style="margin-bottom:10px">A traditional profile shows 5% of the real person. Best photo. Best bio. That's it.</div>
-        <div style="margin-bottom:10px">The market has already decided these products are broken.</div>
+      <div class="pitch-heading" style="font-size:22px;line-height:1.35">This is 5% of me.</div>
+      <div style="margin-top:20px;font-size:12.5px;color:rgba(255,255,255,0.7);line-height:1.65;font-family:Georgia,serif;text-align:center">
+        <div style="margin-bottom:16px">A traditional profile shows 5% of the real person. Best photo. Best bio. That's it.</div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+      <div style="text-align:center;margin-top:10px">
+        <div style="display:inline-block;padding:14px 28px;border:1.5px solid rgba(201,168,76,0.4);border-radius:10px;font-family:Georgia,serif;font-size:14px;color:#c9a84c;font-weight:600">Tap to see the profile &rarr;</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px">
         <div style="background:rgba(255,255,255,0.05);border-radius:10px;padding:14px 12px;text-align:center">
           <div style="font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Match Group</div>
           <div style="font-size:18px;font-weight:700;color:#f9df6d;font-family:Georgia,serif">$48B</div>
@@ -2890,7 +2893,9 @@ function show(n){
   if(screenLabel) screenLabel.innerHTML = labels[n]||'';
   if(n>=10&&n<=17){var feed=document.querySelector('#screen'+n+' .s2-feed');if(feed)feed.scrollTop=0;}
   if(n===7) { s7current=1; s7Go(1); }
-  if(n===22) { s22current=1; s22Go(1); }
+  if(n===22) { s22current=1; s22Go(1); s22ReturnSlide=0; }
+  var s21back = document.getElementById('s21-back-to-deck');
+  if(s21back) s21back.style.display = (n===21 && s22ReturnSlide > 0) ? 'block' : 'none';
   if(n===16) initS16Personals();
   if(n===17) initS17Personals();
     if(n===18) initS18();
@@ -3024,6 +3029,7 @@ function s7Prev(){ s7Go(s7current-1); }
 
 /* ── Screen 22 deck navigation ── */
 var s22current = 1;
+var s22ReturnSlide = 0;
 var s22total = 6;
 function s22Go(n) {
   if(n < 1 || n > s22total) return;
