@@ -2882,7 +2882,7 @@ function show(n){
   var phoneWrap = document.querySelector('.phone-wrap');
   var screenLabel = document.getElementById('screen-label');
   if(phoneWrap) phoneWrap.style.display='';
-  for(var i=0;i<=21;i++){
+  for(var i=0;i<=22;i++){
     var s=document.getElementById('screen'+i);
     if(s){s.style.display=(i===n)?'flex':'none';s.classList.toggle('active',i===n);}
   }
