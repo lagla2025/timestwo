@@ -2709,15 +2709,23 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     </div>
   </div>
 
+  <!-- S22 Slide 7: ×2 end card -->
+  <div class="s7-slide" id="s22-slide-7" style="display:none">
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
+      <div onclick="show(0)" style="font-size:32px;color:#c9a84c;font-weight:600;letter-spacing:2px;cursor:pointer">&times;2</div>
+      <div style="font-size:14px;color:rgba(255,255,255,0.3);font-style:italic;font-family:Georgia,serif;margin-top:8px">Times Two</div>
+    </div>
+  </div>
+
   </div><!-- /s22-deck -->
 
   <!-- Progress indicator -->
-  <div class="s7-progress"><span id="s22-counter">1 / 6</span></div>
+  <div class="s7-progress"><span id="s22-counter">1 / 7</span></div>
   <!-- Tap zones -->
   <div class="s7-tap-prev" onclick="s22Prev()"></div>
   <div class="s7-tap-next" onclick="s22Next()"></div>
   <!-- Dot indicators -->
-  <div class="s7-dots" id="s22-dots"><span class="s7-dot active" onclick="s22Go(1)"></span><span class="s7-dot" onclick="s22Go(2)"></span><span class="s7-dot" onclick="s22Go(3)"></span><span class="s7-dot" onclick="s22Go(4)"></span><span class="s7-dot" onclick="s22Go(5)"></span><span class="s7-dot" onclick="s22Go(6)"></span></div>
+  <div class="s7-dots" id="s22-dots"><span class="s7-dot active" onclick="s22Go(1)"></span><span class="s7-dot" onclick="s22Go(2)"></span><span class="s7-dot" onclick="s22Go(3)"></span><span class="s7-dot" onclick="s22Go(4)"></span><span class="s7-dot" onclick="s22Go(5)"></span><span class="s7-dot" onclick="s22Go(6)"></span><span class="s7-dot" onclick="s22Go(7)"></span></div>
 </div><!-- /screen22 -->
 
 
@@ -3030,7 +3038,7 @@ function s7Prev(){ s7Go(s7current-1); }
 /* ── Screen 22 deck navigation ── */
 var s22current = 1;
 var s22ReturnSlide = 0;
-var s22total = 6;
+var s22total = 7;
 function s22Go(n) {
   if(n < 1 || n > s22total) return;
   var prev = document.getElementById('s22-slide-' + s22current);
