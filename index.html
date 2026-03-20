@@ -473,7 +473,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
   .phone > div[style*="background:#1a1a24"] {
     display: none !important;
   }
-  #screen7 { height: 100svh !important; height: 100vh !important; }
+  #screen7, #screen22 { height: 100svh !important; height: 100vh !important; }
 }
 
 /* ── Wingman & Featured indicator (screens 10-12) ── */
@@ -520,6 +520,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
 /* ── Screen 7 deck / swipeable slides ── */
 #screen7{position:relative;overflow:hidden}
+#screen22{height:700px;max-height:700px;overflow-y:scroll;overflow-x:hidden;flex-shrink:0;display:none;position:relative;overflow:hidden}
 .s7-deck{flex:1;position:relative;overflow:hidden;display:flex;flex-direction:column}
 .s7-slide{position:absolute;top:0;left:0;right:0;bottom:0;overflow-y:auto;padding:14px 16px 36px;display:none;-webkit-overflow-scrolling:touch;box-sizing:border-box}
 .s7-slide.active{display:flex;flex-direction:column}
