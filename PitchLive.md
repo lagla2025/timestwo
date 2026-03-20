@@ -49,7 +49,9 @@ You both read the same piece. Neither of you knew.
 3. **Connect** — A game challenge. A sentence you were already thinking.
 4. **Close** — Not coffee. The thing you both already love doing.
 
-The Wingman has an opinion on whether this match is worth your time. No other app does that. And it helps you get better: "Your longest conversations start from Culture. That's your best material. Use it."
+The Wingman has an opinion on whether this match is worth your time. No other app does that.
+
+And it doesn't stop at introductions. After dates, it checks in. After patterns emerge, it tells you. "Your longest conversations start from Culture. That's your best material. Use it." No dating app helps you get better at dating. The Wingman is the first.
 
 ---
 
@@ -62,6 +64,7 @@ The Wingman has an opinion on whether this match is worth your time. No other ap
 - That content brings the next couple.
 - The publisher gets fresh material. For free.
 - It doesn't stay digital. Singles supper clubs. Meet cute meetups. Storytime nights (The Moth meets Modern Love).
+- One participant who has never used a dating app said: "I would use this." Not for dating. For the community layer. That's a second product hiding inside the first.
 
 > *"We both saved the same soup recipe. Neither of us knew. Three months later, we made it together."*
 

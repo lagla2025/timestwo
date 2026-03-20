@@ -63,7 +63,9 @@ Notice what the Wingman just did. It didn't list facts. It took a position. "You
 
 Step three, it gives you something to say. A game challenge. A sentence you were already thinking. And step four, it suggests meeting up. Not coffee. The thing you both already love doing.
 
-And the Wingman doesn't stop there. It helps you get better at this. After three conversations that didn't click, it might say: "You keep matching on Games but the conversations that go longest start from Culture. That's your best material. Use it." No dating app in history offers that. No course correction. No learning loop. The Wingman is the first.
+And the Wingman doesn't stop there. After a date, it checks in. "How did it go?" Not for data collection. Because a real wingman asks. And it learns from the answer.
+
+After three conversations that didn't click, it might say: "You keep matching on Games but the conversations that go longest start from Culture. That's your best material. Use it." No dating app in history offers that. No course correction. No learning loop. No one helping you get better at the thing you're trying to do. The Wingman is the first.
 
 The Wingman never acts for you. It acts on you. That's what keeps it human.
 
@@ -80,6 +82,8 @@ That story is a Modern Love essay. It's a 30-second video. It's an ad. And it's 
 That story attracts the next couple. And the next one. The publisher gets fresh, emotionally resonant content for free. Every couple that meets through Times Two is a story. Every story is content. Every piece of content brings the next couple.
 
 And it doesn't stay digital. Singles supper clubs for Wordlers. Meet cute meetups at galleries for Culture readers. Storytime nights where couples get up on stage and tell the story of how they met. The Moth meets Modern Love. Live audience. Recorded. Published. More content. More couples. More stories.
+
+And here's something we didn't expect. One of our participants has never used a dating app. Never will. But she said "I would use this." Not for dating. For the community. The supper clubs, the meetups, the shared-interest gatherings. That's a second product hiding inside the first. A community layer that expands the TAM beyond singles.
 
 The flywheel never stops.
 
