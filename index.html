@@ -192,6 +192,12 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 .s3-shared-cat{font-size:9px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:1px}
 .s3-shared-title{font-family:Georgia,serif;font-size:13px;font-weight:700;color:#1a1a2e;margin-top:2px;line-height:1.3}
 .s3-shared-note{font-size:11px;color:#999;margin-top:4px;margin-bottom:4px}
+.s3-game-card{background:#fff;border-radius:12px;padding:0;margin:4px 0;border:1.5px solid #e8d9a8;max-width:80%;align-self:flex-start;overflow:hidden}
+.s3-game-top{display:flex;align-items:center;gap:6px;padding:10px 12px 6px;border-bottom:1px solid #f0ebe0}
+.s3-game-icon{font-size:11px;letter-spacing:1px}
+.s3-game-label{font-size:10px;font-weight:700;color:#b8960a;text-transform:uppercase;letter-spacing:1.2px}
+.s3-game-result{padding:8px 12px 10px;text-align:center}
+.s3-game-cta{background:#faf5e8;padding:8px 12px;text-align:center;font-family:Georgia,serif;font-size:12px;font-style:italic;color:#1a1a2e;border-top:1px solid #f0ebe0}
 .s3-input-row{background:#fff;border-top:1px solid #eee;padding:10px 14px 24px;display:flex;gap:10px;align-items:center}
 .s3-input{flex:1;background:#f5f3ef;border:none;border-radius:20px;padding:10px 16px;font-size:14px;outline:none}
 .s3-wingman-card{background:#faf5e8;border:1.5px solid #e8d9a8;border-radius:12px;padding:14px 16px;margin:4px 20px;align-self:center;max-width:88%;text-align:center}
@@ -715,6 +721,26 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     <button class="s3-ai-btn" onclick="s3AiSuggest()" style="width:auto;border-radius:16px;padding:5px 12px;font-size:11px;font-weight:600;letter-spacing:0.3px">AI assist</button>
   </div>
   <div class="s3-messages">
+    <!-- Game challenge card (opener) — Spelling Bee -->
+    <div class="msg-them-wrap">
+      <div class="s3-game-card">
+        <div class="s3-game-top">
+          <div class="s3-game-icon">🐝</div>
+          <div class="s3-game-label">Spelling Bee</div>
+        </div>
+        <div class="s3-game-result">
+          <div style="font-family:Georgia,serif;font-size:13px;font-weight:700;color:#1a1a2e;line-height:1.3">Saoirse played today's puzzle</div>
+          <div style="margin:6px 0 2px">
+            <div style="background:#f0ebe0;border-radius:8px;padding:8px 12px;display:inline-block">
+              <div style="font-size:16px;font-weight:700;color:#1a1a2e;font-family:Georgia,serif">🐝 38 words &middot; 156 pts</div>
+            </div>
+          </div>
+        </div>
+        <div class="s3-game-cta">Have you played today?</div>
+      </div>
+      <div class="msg-time">Today 8:44 am</div>
+    </div>
+
     <div class="msg-them-wrap"><div class="msg msg-them">I am a Genius</div><div class="msg-time">Today 8:47 am</div></div>
     <div class="msg-me-wrap"><div class="msg msg-me">today or in general</div><div class="msg-time">Today 8:49 am</div></div>
     <div class="msg-them-wrap"><div class="msg msg-them">both obviously</div></div>
@@ -2306,7 +2332,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     <div class="s20-section">
       <div class="s20-section-num">About you</div>
       <div class="s20-section-heading">The basics.</div>
-      <div class="s20-section-sub">Just enough for your Wingman to get started.</div>
+      <div class="s20-section-sub">Just the essentials. Your Wingman will ask for the rest when it matters.</div>
 
       <div class="s20-field">
         <div class="s20-field-label">I am</div>
@@ -2339,6 +2365,19 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
       </div>
 
       <div class="s20-field">
+        <div class="s20-field-label">Your Wingman's voice</div>
+        <div style="font-family:Georgia,serif;font-size:11px;color:#888;line-height:1.4;margin-bottom:8px">How should your Wingman talk to you?</div>
+        <div class="s20-option-row">
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Straight shooter</div>
+          <div class="s20-option active" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Cheeky friend</div>
+        </div>
+        <div class="s20-option-row" style="margin-top:6px">
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Gentle nudge</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Hype person</div>
+        </div>
+      </div>
+
+      <div class="s20-field">
         <div class="s20-field-label">Your age</div>
         <div style="display:flex;align-items:center;gap:6px">
           <input class="s20-input" type="number" placeholder="28" min="18" max="99" style="width:60px;text-align:center;padding:8px 6px">
@@ -2346,111 +2385,25 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
         </div>
       </div>
 
-      <div class="s20-field">
-        <div class="s20-field-label">Age range you are open to</div>
-        <div style="position:relative;height:30px;margin-top:4px">
-          <div style="position:absolute;top:13px;left:0;right:0;height:4px;background:#d0cdc6;border-radius:2px"></div>
-          <div id="s20-range-fill" style="position:absolute;top:13px;left:15%;right:35%;height:4px;background:#b8960a;border-radius:2px"></div>
-          <input type="range" min="18" max="65" value="22" style="position:absolute;top:0;left:0;width:100%;height:30px;-webkit-appearance:none;appearance:none;background:transparent;pointer-events:none;z-index:2" oninput="updateAgeRange()" id="s20-range-min">
-          <input type="range" min="18" max="65" value="38" style="position:absolute;top:0;left:0;width:100%;height:30px;-webkit-appearance:none;appearance:none;background:transparent;pointer-events:none;z-index:3" oninput="updateAgeRange()" id="s20-range-max">
-        </div>
-        <div style="display:flex;justify-content:space-between;margin-top:2px">
-          <span style="font-family:Georgia,serif;font-size:12px;color:#1a1a2e;font-weight:600" id="s20-age-min-label">22</span>
-          <span style="font-family:Georgia,serif;font-size:12px;color:#1a1a2e;font-weight:600" id="s20-age-max-label">38</span>
-        </div>
-      </div>
 
-      <div class="s20-field">
-        <div class="s20-field-label">Height</div>
-        <div class="s20-input-row">
-          <div class="s20-input-half"><input class="s20-input" type="text" placeholder="e.g. 5'7&quot; or 170cm"></div>
-        </div>
-      </div>
 
-      <div class="s20-field">
-        <div class="s20-field-label">City</div>
-        <div class="s20-input-row">
-          <div class="s20-input-half"><input class="s20-input" type="text" placeholder="Where you are based"></div>
-        </div>
-      </div>
 
-      <div class="s20-field">
-        <div class="s20-field-label">Distance</div>
-        <div class="s20-option-row" style="flex-wrap:nowrap">
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Home turf</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Nearish by</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Out of town</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 11px;font-size:12px">Far off</div>
-        </div>
-      </div>
 
-      <div class="s20-field">
-        <div class="s20-field-label">Languages</div>
-        <div class="s20-input-row">
-          <div class="s20-input-half"><input class="s20-input" type="text" placeholder="e.g. English, French, Spanish"></div>
-        </div>
-      </div>
 
-      <div class="s20-field">
-        <div class="s20-field-label">Status</div>
-        <div class="s20-option-row" style="flex-wrap:nowrap">
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Single</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Divorced</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Widowed</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 12px;font-size:12px">Separated</div>
-        </div>
-      </div>
 
-      <div class="s20-field">
-        <div class="s20-field-label">Children</div>
-        <div class="s20-option-row" style="flex-wrap:nowrap">
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">None</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">Have</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">Want</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="padding:10px 14px;font-size:12px">Open</div>
-        </div>
-      </div>
+
+
+
+
+
+
+
     </div>
+
 
     <div class="s20-divider"></div>
 
-    <!-- Section 2: Daily matches -->
-    <div class="s20-section">
-      <div class="s20-section-num">Daily matches</div>
-      <div class="s20-section-heading">How many introductions per day?</div>
-      <div class="s20-section-sub">Quality over quantity. Your Wingman will only introduce people worth meeting.</div>
 
-      <div class="s20-field">
-        <div class="s20-option-row">
-          <div class="s20-option active" onclick="toggleOption(this)">1 per day</div>
-          <div class="s20-option" onclick="toggleOption(this)">2 per day</div>
-          <div class="s20-option" onclick="toggleOption(this)">3 per day</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="s20-divider"></div>
-
-    <!-- Section 3: Dealbreakers (optional) -->
-    <div class="s20-section">
-      <div class="s20-section-num">Dealbreakers <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#aaa">(optional)</span></div>
-      <div class="s20-section-sub" style="margin-bottom:10px">Set these if they matter to you. Leave them off if they do not.</div>
-
-      <div class="s20-toggle-row" onclick="toggleSwitch(this)">
-        <div class="s20-toggle-label">Non-smoker only</div>
-        <div class="s20-toggle"><div class="s20-toggle-knob"></div></div>
-      </div>
-      <div class="s20-toggle-row" onclick="toggleSwitch(this)">
-        <div class="s20-toggle-label">Non-drinker only</div>
-        <div class="s20-toggle"><div class="s20-toggle-knob"></div></div>
-      </div>
-      <div class="s20-toggle-row" onclick="toggleSwitch(this)">
-        <div class="s20-toggle-label">No recreational drugs</div>
-        <div class="s20-toggle"><div class="s20-toggle-knob"></div></div>
-      </div>
-    </div>
-
-    <div class="s20-divider"></div>
 
     <!-- Personals moment -->
     <div style="margin:0 0 18px;padding:14px 16px;background:#f5f1ea;border-radius:8px;border:1.5px solid #d0cbc0">

@@ -1313,3 +1313,68 @@ A singles supper club at TCD could run in April 2026. No app required. Curate at
 - Ahijah: what you say vs what you do are different signals
 - All three independently validate the content-over-bio thesis from different angles
 
+
+## Onboarding Phasing Spec (confirmed Mar 2026)
+
+### The problem
+Meg (INTV #14) flagged that the onboarding felt overwhelming. Too many questions before the user has any context for why they matter. Onboarding should feel like a conversation, not a form. The Wingman asks for what it needs, when it needs it.
+
+### Design principle
+Ask for the minimum to start matching. Defer everything else to Wingman-prompted moments when the user has context for why the question matters. Each deferred field is asked by the Wingman in the user's chosen tone, at a specific behavioural milestone.
+
+### Phase 1: On-screen (Screen 20, pre-product)
+These stay in onboarding because the Wingman literally cannot function without them:
+
+1. **I am / Show me** -- matching cannot begin without this
+2. **Your age (-ish)** -- basic demographic filter
+3. **Looking for** -- casual / serious / open / good conversation. Sets the Wingman's calibration
+4. **Your Wingman's voice** -- tone picker (NEW). Four options: Straight shooter, Gentle nudge, Cheeky friend, Hype person. Default: Cheeky friend. Establishes the relationship immediately. The existence of the choice tells the user: this is not one-size-fits-all
+5. **Personals card** -- palate cleanser between form sections. Daily rotation
+6. **Content worlds** -- minimum 3. This is the core matching signal
+7. **Privacy control** -- what can the Wingman share. Three tiers. Default: recommended middle tier
+8. **CTA: "Let the fun begin"**
+
+### Phase 2: Wingman-prompted (deferred fields with triggers)
+Each field is surfaced as a Wingman prompt at a behavioural milestone. The prompt uses the user's chosen tone. The user can skip or answer. Skipping does not penalise matching quality.
+
+| Field | Trigger | Why now |
+|---|---|---|
+| Age range | Before first match is revealed | Wingman needs to know boundaries before introducing anyone |
+| Height | After first match profile is viewed | Context: user has now seen what a match looks like |
+| City / Distance | Before first match is revealed | Location filter is needed for relevant intros |
+| Languages | After first week of use | Only matters if pool is multilingual |
+| Status | After profile is created (gentle prompt) | Sensitive. Ask once they trust the product |
+| Children | After a few matches viewed | Personal. Defer until user is invested |
+| Dealbreakers | After first week of use | Users need to experience matches before knowing what matters |
+| Daily matches | After first match is experienced | "Now that you've seen one, would you like more per day?" |
+
+### Example Wingman prompts by tone (Age range trigger)
+
+**Straight shooter:** "Before I introduce anyone: what age range works for you?"
+
+**Gentle nudge:** "One quick thing before your first introduction. Any age preferences I should know about?"
+
+**Cheeky friend:** "Almost ready to set you up. Quick question: how old is too old? Asking for a friend. (Me. I'm the friend.)"
+
+**Hype person:** "Your first match is almost ready! Just need to know your age range and we're off."
+
+### Example Wingman prompts by tone (Children trigger, after a few matches)
+
+**Straight shooter:** "Do kids factor into what you're looking for?"
+
+**Gentle nudge:** "This one's personal, so skip it if you like. Do children matter in who I introduce you to?"
+
+**Cheeky friend:** "Delicate question incoming. Kids: none, have, want, or open to surprises?"
+
+**Hype person:** "Getting to know you better! Quick one: where do you stand on kids?"
+
+### What this achieves
+- Onboarding goes from 11 fields + 3 sections to 6 fields. Feels like a 60-second setup, not a questionnaire
+- Every deferred question arrives with context: the user understands WHY it matters because they have experienced the product
+- The Wingman's first interactions are useful and personal, not transactional
+- Skipping is always safe. The Wingman works with what it has
+- The tone picker in Phase 1 means every Phase 2 prompt already feels like YOUR Wingman, not a system message
+
+### Prototype note
+In the static prototype, Phase 2 prompts are not implemented. Screen 20 shows Phase 1 only. The phasing spec exists in this document for interview discussion and capstone methodology.
+
