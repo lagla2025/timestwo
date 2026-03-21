@@ -2594,16 +2594,11 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
 
   <!-- S22 Slide 2: Go on. Swipe right. — tap to see founder profile -->
-  <div class="s7-slide" id="s22-slide-2" style="display:none">
-    <div class="pitch-card pitch-card-dark">
-      <div class="pitch-heading" style="font-size:26px;line-height:1.35">Go on. Swipe right.</div>
-      <div style="text-align:center;margin-top:32px;padding:0 20px">
-        <div id="s22-swipe-track" style="position:relative;height:56px;background:rgba(255,255,255,0.06);border-radius:28px;border:1.5px solid rgba(201,168,76,0.2);overflow:hidden;touch-action:pan-y">
-          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:Georgia,serif;font-size:13px;color:rgba(201,168,76,0.35);letter-spacing:1px;pointer-events:none;white-space:nowrap">swipe to see the profile</div>
-          <div id="s22-swipe-thumb" style="position:absolute;left:4px;top:4px;width:48px;height:48px;border-radius:24px;background:linear-gradient(135deg,#c9a84c,#b8960a);display:flex;align-items:center;justify-content:center;cursor:grab;z-index:2;transition:none;box-shadow:0 2px 8px rgba(0,0,0,0.3)">
-            <span style="color:#1a1a2e;font-size:20px;font-weight:700">&rarr;</span>
-          </div>
-        </div>
+  <div class="s7-slide" id="s22-slide-2" style="display:none;overflow:hidden;position:relative">
+    <div id="s22-swipe-card" style="position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;touch-action:pan-y;cursor:grab">
+      <div class="pitch-card pitch-card-dark" style="pointer-events:none;position:relative">
+        <div class="pitch-heading" style="font-size:26px;line-height:1.35">Go on. Swipe right.</div>
+        <div style="text-align:center;margin-top:24px;opacity:0.4;font-family:Georgia,serif;font-size:13px;color:#c9a84c;letter-spacing:0.5px">&larr; swipe &rarr;</div>
       </div>
     </div>
   </div>
@@ -3081,15 +3076,14 @@ function s22Go(n) {
 function s22Next(){ s22Go(s22current+1); }
 function s22Prev(){ s22Go(s22current-1); }
 
-/* ── Slide 2 swipe-right slider ── */
+/* ── Slide 2: swipe card like a dating app ── */
 (function(){
-  var thumb, track, startX, startLeft, trackW, thumbW, dragging=false, fired=false;
-  function initSwipe(){
-    thumb = document.getElementById('s22-swipe-thumb');
-    track = document.getElementById('s22-swipe-track');
-    if(!thumb||!track) return;
-    thumb.addEventListener('touchstart', onStart, {passive:true});
-    thumb.addEventListener('mousedown', onStart);
+  var card, startX, currentX, dragging=false, fired=false;
+  function init(){
+    card = document.getElementById('s22-swipe-card');
+    if(!card) return;
+    card.addEventListener('touchstart', onStart, {passive:true});
+    card.addEventListener('mousedown', onStart);
     document.addEventListener('touchmove', onMove, {passive:false});
     document.addEventListener('mousemove', onMove);
     document.addEventListener('touchend', onEnd);
@@ -3100,51 +3094,50 @@ function s22Prev(){ s22Go(s22current-1); }
     dragging=true;
     var t = e.touches ? e.touches[0] : e;
     startX = t.clientX;
-    trackW = track.offsetWidth;
-    thumbW = thumb.offsetWidth;
-    startLeft = thumb.offsetLeft;
-    thumb.style.transition='none';
-    thumb.style.cursor='grabbing';
-    e.preventDefault && e.preventDefault();
+    currentX = 0;
+    card.style.transition='none';
+    card.style.cursor='grabbing';
   }
   function onMove(e){
     if(!dragging) return;
     var t = e.touches ? e.touches[0] : e;
-    var dx = t.clientX - startX;
-    var newLeft = Math.max(4, Math.min(startLeft + dx, trackW - thumbW - 4));
-    thumb.style.left = newLeft + 'px';
+    currentX = t.clientX - startX;
+    var rotate = currentX * 0.08;
+    var opacity = Math.max(0, 1 - Math.abs(currentX) / 400);
+    card.style.transform = 'translateX(' + currentX + 'px) rotate(' + rotate + 'deg)';
+    card.style.opacity = opacity;
     if(e.cancelable) e.preventDefault();
   }
   function onEnd(){
     if(!dragging) return;
     dragging=false;
-    thumb.style.cursor='grab';
-    var pos = thumb.offsetLeft;
-    var maxPos = trackW - thumbW - 4;
-    if(pos > maxPos * 0.65){
+    card.style.cursor='grab';
+    if(currentX > 80){
       fired=true;
-      thumb.style.transition='left 0.2s ease';
-      thumb.style.left = maxPos + 'px';
-      thumb.style.background='#c9a84c';
+      card.style.transition='transform 0.35s ease, opacity 0.35s ease';
+      card.style.transform='translateX(500px) rotate(30deg)';
+      card.style.opacity='0';
       setTimeout(function(){
         s22ReturnSlide=2;
         show(21);
-        setTimeout(resetSwipe, 500);
-      }, 250);
+        setTimeout(resetCard, 500);
+      }, 300);
     } else {
-      thumb.style.transition='left 0.3s ease';
-      thumb.style.left='4px';
+      card.style.transition='transform 0.3s ease, opacity 0.3s ease';
+      card.style.transform='translateX(0) rotate(0deg)';
+      card.style.opacity='1';
     }
+    currentX=0;
   }
-  function resetSwipe(){
-    if(!thumb) return;
+  function resetCard(){
+    if(!card) return;
     fired=false;
-    thumb.style.transition='none';
-    thumb.style.left='4px';
-    thumb.style.background='linear-gradient(135deg,#c9a84c,#b8960a)';
+    card.style.transition='none';
+    card.style.transform='translateX(0) rotate(0deg)';
+    card.style.opacity='1';
   }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initSwipe);
-  else initSwipe();
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
+  else init();
 })();
 
 function initS18() {
