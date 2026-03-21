@@ -23,7 +23,7 @@ This is me on a dating app. I used the system the way it's designed to be used. 
 
 [Crisis stats on screen. Let them land.]
 
-Match Group was worth 48 billion dollars in 2021. Today, 7 billion. Bumble peaked at 8 billion. Today, under 500 million. 1.5 million paying users gone in a single year. 79% of women report negative emotional effects from dating apps.
+Match Group: 48 billion to 7 billion. Down 85%. Bumble: 8 billion to 480 million. Down 94%. 1.5 million paying users gone in a single year.
 
 The swipe era is ending. Nothing has replaced it.
 
