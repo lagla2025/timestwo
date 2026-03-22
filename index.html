@@ -3097,9 +3097,8 @@ function s22Prev(){ s22Go(s22current-1); }
     if(!dragging) return;
     var t = e.touches ? e.touches[0] : e;
     currentX = t.clientX - startX;
-    var rotate = currentX * 0.04;
-    var opacity = Math.max(0.2, 1 - Math.abs(currentX) / 500);
-    card.style.transform = 'translateX(' + currentX + 'px) rotate(' + rotate + 'deg)';
+    var opacity = Math.max(0.3, 1 - Math.abs(currentX) / 350);
+    card.style.transform = 'translateX(' + currentX + 'px)';
     card.style.opacity = opacity;
     if(e.cancelable) e.preventDefault();
   }
@@ -3109,8 +3108,8 @@ function s22Prev(){ s22Go(s22current-1); }
     card.style.cursor='grab';
     if(currentX > 80){
       fired=true;
-      card.style.transition='transform 0.45s cubic-bezier(0.4,0,0.2,1), opacity 0.4s ease';
-      card.style.transform='translateX(450px) rotate(12deg)';
+      card.style.transition='transform 0.3s ease-out, opacity 0.25s ease-out';
+      card.style.transform='translateX(400px)';
       card.style.opacity='0';
       setTimeout(function(){
         s22ReturnSlide=3;
@@ -3118,8 +3117,8 @@ function s22Prev(){ s22Go(s22current-1); }
         setTimeout(resetCard, 500);
       }, 300);
     } else {
-      card.style.transition='transform 0.3s ease, opacity 0.3s ease';
-      card.style.transform='translateX(0) rotate(0deg)';
+      card.style.transition='transform 0.25s ease, opacity 0.2s ease';
+      card.style.transform='translateX(0)';
       card.style.opacity='1';
     }
     currentX=0;
@@ -3128,7 +3127,7 @@ function s22Prev(){ s22Go(s22current-1); }
     if(!card) return;
     fired=false;
     card.style.transition='none';
-    card.style.transform='translateX(0) rotate(0deg)';
+    card.style.transform='translateX(0)';
     card.style.opacity='1';
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
