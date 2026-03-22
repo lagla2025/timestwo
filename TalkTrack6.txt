@@ -23,9 +23,11 @@ This is me on a dating app. I used the system the way it's designed to be used. 
 
 [Crisis stats on screen. Let them land.]
 
-Match Group: 48 billion to 7 billion. Down 85%. Bumble: 8 billion to 480 million. Down 94%. 1.5 million paying users gone in a single year. 78% of users report burnout.
+Match Group. 48 billion to 7 billion. Down 85%. Bumble. 8 billion to 480 million. Down 94%. 1.5 million paying users lost across both platforms. In a single year.
 
-The swipe era is ending. Nothing has replaced it.
+Finding you someone means losing you as a customer. They can't fix it.
+
+The bottleneck is the introduction. Every app starts with who you want to be. Times Two starts with what you read, what you play, and how you show up.
 
 ---
 
