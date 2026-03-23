@@ -217,6 +217,16 @@ Under GDPR and CCPA, this is the cleanest possible basis for data processing: a 
 
 The pitch to NYT's product team is not "give us your martech stack." It is: **"We need one OAuth scope: read-only access to reading history. Everything else we build."** That's a much easier yes.
 
+### The consent architecture (three pillars)
+
+Times Two's opt-in model is actually GDPR's preferred architecture. Three pieces make it work:
+
+1. **Explicit consent.** The user opts in to share their content behaviour for matching. No defaults. No dark patterns. They choose.
+2. **Single purpose.** The data is used for one thing only: finding them a better person. Not ads. Not resale. Not engagement optimisation.
+3. **User benefit.** Every signal the user generates improves their introductions, not the platform's ad revenue. The data works for the subscriber, not against them.
+
+With these three pillars in place, the regulator has nothing to object to. The publisher's brand stays clean. And the user has genuine agency over what their Wingman knows.
+
 ---
 
 ## THE BROADER VISION
@@ -964,7 +974,7 @@ Every line has three layers: **observation + synthesis + opinion.**
 **This:** "Friday night. Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
 
 **Not this:** "He plays Connections every day."
-**This:** "Connections. Every day. No mistakes. The kind of discipline you pretend to have."
+**This:** "Connections. Every day. No mistakes. The kind of discipline you aspire to have."
 
 **Not this:** "He finished the same long-read article that you also finished."
 **This:** "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often."
@@ -997,7 +1007,7 @@ Read the brief aloud. Does it sound like a person talking to a friend, or a data
 
 **Saoirse's brief on Cian:**
 "He finished the same long-read you couldn't put down. Neither of you knew. That doesn't happen often.
-Connections. Every day. No mistakes. The kind of discipline you pretend to have.
+Connections. Every day. No mistakes. The kind of discipline you aspire to have.
 Marcella Hazan's tomato sauce. No occasion. Just because. You'd get along."
 
 **Cian's brief on Saoirse:**
@@ -1092,7 +1102,7 @@ Users choose their Wingman's voice at setup. Four options:
 
 **Straight shooter** -- Direct. No fluff. "This one's worth it. Go."
 **Gentle nudge** -- Warm. Encouraging. "I think you'd really like this person. Take a look when you're ready."
-**Cheeky friend** -- Snarky. Duolingo owl energy. "Connections. Every day. No mistakes. The kind of discipline you pretend to have."
+**Cheeky friend** -- Snarky. Duolingo owl energy. "Connections. Every day. No mistakes. The kind of discipline you aspire to have."
 **Hype person** -- All enthusiasm. "OK this is a GOOD one. Trust me."
 
 The tone changes. The intelligence doesn't. Same data, same matching logic, different wrapper. Like choosing a voice for your GPS. The route is the same. The vibe is yours.
@@ -1110,6 +1120,47 @@ The Wingman knows the difference between someone who scans headlines and someone
 - **MVP signals (Phase 1):** saves + game scores + content sections. Enough for the Wingman brief.
 - **Deep signals (Phase 2):** completion rates + browse depth + return patterns. Requires partnership-level data sharing agreement with each publisher. This is why it is B2B SaaS, not a scraper.
 - Akshay's granularity question (INTV #15): can we track these movements in a granular way? Answer: yes, with publisher partnership. No, with standard OAuth alone. The business model IS the answer to the data access question.
+
+
+## Picks: The User-Curated Taste Grid (confirmed Mar 2026)
+
+### What it is
+A 2x2 grid of four thumbnails with short captions. Each user curates their own Picks to show matches what they're into right now. Not algorithmic. Not scraped. Entirely user-chosen.
+
+### How it works
+1. User taps an empty square (or "Edit picks" on their own profile)
+2. Search bar appears (like Spotify search or Apple Music)
+3. User types a short phrase: "The Weeknd" or "White Lotus S3" or "Marcella Hazan's tomato sauce"
+4. Platform auto-pulls a thumbnail from the publisher/content ecosystem: album art, show poster, recipe photo, book cover, game icon. Same way Spotify generates a card when you share a song. User never touches an image editor.
+5. For NYT-native content (recipes, articles, podcasts), the thumbnail is already in the system. For external content (concerts, TV shows), it pulls from a media database.
+6. User writes a caption. Character-limited: 40 characters max. Enough for "Got tix!" or "Third rewatch" or "Friday night staple." Not enough for a paragraph. Not enough to perform.
+7. Save. Done. Visible to matches immediately.
+
+### Why this avoids self-presentation creep
+- No bio. No "describe yourself." No open text field.
+- Thumbnail is auto-generated so it looks consistent, editorial, native to the platform. Not a selfie grid.
+- Caption constraint forces shorthand. "Got tix!" is a fact, not a performance. You can't write a personal essay in 40 characters.
+- Four slots only. Not ten. Not a scrollable list. Four. That constraint is the design.
+
+### Refresh cadence
+- Entirely up to the user. No forced refresh.
+- Wingman nudges if stale: "Your picks haven't changed in 3 weeks. New season of anything?"
+- The constraint of four means swapping one out is a decision: "Do I replace The Weeknd with Severance?" That curation is itself a signal without being performative.
+
+### Where it lives (not onboarding)
+- Profile photo = onboarding. Non-negotiable. One step. "Add a photo." Tap. Done.
+- Picks = NOT onboarding. Picks require browsing, thinking, writing captions. That's a sit-down-and-enjoy activity, not a sign-up-quickly activity. Better after the user has spent a day or two on the platform and understands the tone.
+- First feed visit: Picks quadrant shows empty with a gentle prompt. Four empty squares. "Your picks. Four things you're into right now." Tap any square to add.
+- Wingman nudge (Day 2 or 3): "You haven't added your picks yet. People who do get 3x more conversations." Or cheekier: "Four squares. Fill them. Trust me."
+- Edit anytime: Tap the Picks section on your own profile to swap anything out. No friction. No settings menu to find.
+
+### Prototype implementation (Screens 18/19)
+- Screen 18: "Cian's picks" quadrant with four thumbnails (The Weeknd / "Got tix!", etc.)
+- Screen 19: "Saoirse's picks" quadrant with four thumbnails
+- Styled as 2x2 grid, editorial parchment background, 1.5px border
+
+### Connection to Tessa's pinned content insight (INTV #5)
+Tessa proposed 4-5 permanently pinned items. Picks is the designed version of that instinct. Modest in scope. Not performance. "The rest is behaviour based. It's an actual representation of how you interact, instead of this self-portrayal."
 
 
 ## AI-Assisted Chat Prompts (the full thinking)
