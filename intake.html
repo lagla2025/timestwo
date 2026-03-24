@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Times Two — Research Study</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --paper: #f7f5f0;
+    --cream: #edeae3;
+    --rule: #c8b89a;
+    --gold: #c9a84c;
+    --gold-dim: rgba(201,168,76,0.15);
+    --muted: #7a7268;
+    --accent: #326891;
+    --error: #8b2020;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Masthead */
+  .masthead {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 36px 24px 32px;
+    position: relative;
+  }
+
+  .masthead::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, var(--gold) 30%, var(--gold) 70%, transparent 100%);
+    opacity: 0.4;
+  }
+
+  .masthead-eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  .masthead h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 8vw, 56px);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .masthead h1 .x2 {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 0.6em;
+    vertical-align: super;
+    margin-left: 4px;
+  }
+
+  .masthead-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.04em;
+    font-weight: 300;
+    max-width: 380px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  /* Dateline */
+  .dateline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 24px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .dateline .sep { color: var(--gold); opacity: 0.5; }
+
+  /* Container */
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 36px 24px 80px;
+  }
+
+  /* Intro */
+  .intro {
+    border: 1px solid var(--rule);
+    padding: 24px 28px;
+    margin-bottom: 36px;
+    background: white;
+    position: relative;
+  }
+
+  .intro::before {
+    content: '×2';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--paper);
+    padding: 0 10px;
+    color: var(--gold);
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .intro p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+
+  .intro p strong {
+    font-weight: 700;
+  }
+
+  /* Section headers */
+  .section-rule {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 40px 0 24px;
+  }
+
+  .section-rule::before,
+  .section-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .section-rule span {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  /* Fields */
+  .field {
+    margin-bottom: 26px;
+  }
+
+  .field label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .field .hint {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .field input[type="text"],
+  .field input[type="email"],
+  .field input[type="number"],
+  .field select,
+  .field textarea {
+    width: 100%;
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 11px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .field select {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237a7268'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-dim);
+  }
+
+  .field textarea {
+    resize: vertical;
+    min-height: 90px;
+    line-height: 1.6;
+  }
+
+  /* Inline fields (two columns) */
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* Checkbox grid */
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 6px;
+  }
+
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+
+  .checkbox-item:hover {
+    border-color: var(--gold);
+    background: var(--gold-dim);
+  }
+
+  .checkbox-item input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .checkbox-item span {
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  /* Radio cards */
+  .radio-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .radio-cards.three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .radio-card {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: white;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    user-select: none;
+  }
+
+  .radio-card:hover {
+    border-color: var(--gold);
+    background: var(--gold-dim);
+  }
+
+  .radio-card input[type="radio"] {
+    margin-top: 2px;
+    accent-color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .radio-card-content .radio-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .radio-card-content .radio-desc {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  /* Scale */
+  .scale-row {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .scale-label {
+    font-size: 10px;
+    color: var(--muted);
+    white-space: nowrap;
+    min-width: 70px;
+    letter-spacing: 0.02em;
+  }
+
+  .scale-label:last-child { text-align: right; }
+
+  .scale-options {
+    display: flex;
+    gap: 4px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .scale-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+  }
+
+  .scale-option input[type="radio"] {
+    accent-color: var(--gold);
+    width: 16px;
+    height: 16px;
+  }
+
+  .scale-option span {
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* Consent */
+  .consent-box {
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--gold);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+  }
+
+  .consent-box p {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .consent-box .pillars {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-bottom: 14px;
+  }
+
+  .consent-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .consent-check input {
+    margin-top: 2px;
+    accent-color: var(--gold);
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+  }
+
+  .consent-check span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  /* Submit */
+  .submit-area { text-align: center; margin-top: 8px; }
+
+  .submit-btn {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 4px;
+    padding: 16px 48px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .submit-btn:hover {
+    background: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .submit-note {
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* Thank you */
+  .thank-you {
+    display: none;
+    text-align: center;
+    padding: 60px 24px;
+  }
+
+  .thank-you .ty-mark {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .thank-you h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .thank-you p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* Decorative */
+  .deco-rule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 32px 0;
+    color: var(--gold);
+    font-size: 11px;
+    opacity: 0.5;
+  }
+
+  .deco-rule::before,
+  .deco-rule::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .req { color: var(--error); margin-left: 2px; font-size: 10px; }
+
+  @media (max-width: 480px) {
+    .radio-cards, .radio-cards.three-col { grid-template-columns: 1fr; }
+    .checkbox-grid { grid-template-columns: 1fr 1fr; }
+    .field-row { grid-template-columns: 1fr; }
+    .scale-label { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="masthead-eyebrow">Research Study . 2026</div>
+  <h1>Times Two<span class="x2"></span></h1>
+  <div class="masthead-sub">What you read, play, and engage with. That's who you are.</div>
+</div>
+
+<div class="dateline">
+  <span>Confidential</span> <span class="sep">.</span> <span>Research Use Only</span> <span class="sep">.</span> <span>MSc Entrepreneurship . Trinity College Dublin</span>
+</div>
+
+<div class="container">
+
+  <div class="intro">
+    <p>What you read, play, and engage with is more revealing than anything you'd put in a bio on a people matching site whether for friendship or dating. We're testing whether that signal is enough to find someone genuinely worth talking to. This short survey will take about 15 minutes.</p>
+  </div>
+
+  <form id="intakeForm">
+
+    <!-- Section 1: About You -->
+    <div class="section-rule"><span>Section One . About You</span></div>
+
+    <div class="field">
+      <label>First name <span class="req">*</span></label>
+      <input type="text" name="first_name" placeholder="Just your first name" required>
+    </div>
+
+    <div class="field">
+      <label>Email <span class="req">*</span></label>
+      <div class="hint">Used only to send your match introduction. Nothing else. Ever.</div>
+      <input type="email" name="email" placeholder="your@email.com" required>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label>Where are you based? <span class="req">*</span></label>
+        <input type="text" name="location" placeholder="City, country" required>
+      </div>
+      <div class="field">
+        <label>Age <span class="req">*</span></label>
+        <select name="age_range" required>
+          <option value="" disabled selected>Select</option>
+          <option>22 . 28</option>
+          <option>29 . 35</option>
+          <option>36 . 42</option>
+          <option>43 . 50</option>
+          <option>51 . 60</option>
+          <option>60+</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label>I am <span class="req">*</span></label>
+        <select name="gender" required>
+          <option value="" disabled selected>Select</option>
+          <option>A woman</option>
+          <option>A man</option>
+          <option>Non-binary</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Show me <span class="req">*</span></label>
+        <select name="show_me" required>
+          <option value="" disabled selected>Select</option>
+          <option>Women</option>
+          <option>Men</option>
+          <option>Everyone</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label>Relationship status <span class="req">*</span></label>
+        <select name="status" required>
+          <option value="" disabled selected>Select</option>
+          <option>Single</option>
+          <option>In a relationship</option>
+          <option>It's complicated</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Looking for <span class="req">*</span></label>
+        <select name="seeking" required>
+          <option value="" disabled selected>Select</option>
+          <option>Friends</option>
+          <option>Dates</option>
+          <option>Both</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Section 2: Your Subscription -->
+    <div class="section-rule"><span>Section Two . Your Subscription</span></div>
+
+    <div class="field">
+      <label>How do you access NYT? <span class="req">*</span></label>
+      <select name="subscription_type" required>
+        <option value="" disabled selected>Select</option>
+        <option>NYT All Access (bundle)</option>
+        <option>Paying subscriber (news only)</option>
+        <option>Academic / university license</option>
+        <option>Gift subscription</option>
+        <option>Family plan</option>
+        <option>Games only</option>
+        <option>Cooking only</option>
+        <option>The Athletic only</option>
+        <option>Other app only</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>How long have you been subscribed?</label>
+      <select name="sub_length">
+        <option value="" disabled selected>Select</option>
+        <option>Less than 6 months</option>
+        <option>6 months to 1 year</option>
+        <option>1 to 3 years</option>
+        <option>3 to 5 years</option>
+        <option>5+ years</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>How likely are you to maintain your NYT subscription over the next 12 months? <span class="req">*</span></label>
+      <div class="hint">Be honest. We are not affiliated with NYT. This is independent research.</div>
+      <div class="scale-row">
+        <span class="scale-label">Very unlikely</span>
+        <div class="scale-options">
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="1" required><span>1</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="2"><span>2</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="3"><span>3</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="4"><span>4</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="5"><span>5</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="6"><span>6</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="7"><span>7</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="8"><span>8</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="9"><span>9</span></label>
+          <label class="scale-option"><input type="radio" name="sub_intent_pre" value="10"><span>10</span></label>
+        </div>
+        <span class="scale-label" style="text-align:right">Definitely staying</span>
+      </div>
+    </div>
+
+    <!-- Section 3: Your NYT Habits -->
+    <div class="section-rule"><span>Section Three . Your NYT Habits</span></div>
+
+    <div class="field">
+      <label>Which sections do you visit most regularly? <span class="req">*</span></label>
+      <div class="hint">Not your all-time favourites. What you actually open in a typical week.</div>
+      <div class="checkbox-grid">
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Opinion"> <span>Opinion</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="News"> <span>News</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Culture"> <span>Culture</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Style"> <span>Style</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Science"> <span>Science</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Business"> <span>Business</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Travel"> <span>Travel</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Food"> <span>Food / Cooking</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Books"> <span>Books</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Health"> <span>Health</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Sports"> <span>Sports / Athletic</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Audio"> <span>Podcasts / Audio</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Modern Love"> <span>Modern Love</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="sections" value="Video"> <span>Video</span></label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Which NYT games do you play? <span class="req">*</span></label>
+      <div class="hint">Everything you have played at least once in the past month.</div>
+      <div class="checkbox-grid">
+        <label class="checkbox-item"><input type="checkbox" name="games" value="Wordle"> <span>Wordle</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="games" value="Connections"> <span>Connections</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="games" value="Spelling Bee"> <span>Spelling Bee</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="games" value="Mini"> <span>Mini Crossword</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="games" value="Crossword"> <span>Full Crossword</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="games" value="Strands"> <span>Strands</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="games" value="CrossPlay"> <span>CrossPlay</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="games" value="None"> <span>I don't play games</span></label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>How often do you engage with NYT content? <span class="req">*</span></label>
+      <select name="frequency" required>
+        <option value="" disabled selected>Select</option>
+        <option>Every day. It's a genuine habit.</option>
+        <option>Most days. 4 or 5 times a week.</option>
+        <option>A few times a week</option>
+        <option>Whenever something catches my eye</option>
+        <option>Mostly just the games</option>
+      </select>
+    </div>
+
+    <!-- Section 4: What You've Been Reading -->
+    <div class="section-rule"><span>Section Four . What You've Actually Been Reading</span></div>
+
+    <div class="field">
+      <label>Name two or three pieces you have read, listened to, or engaged with recently that stuck with you <span class="req">*</span></label>
+      <div class="hint">Not all-time favourites. Recent. Could be an article, podcast episode, recipe, game streak. Whatever has been on your mind.</div>
+      <textarea name="recent_pieces" placeholder="e.g. That piece on the loneliness epidemic in cities. I kept thinking about it all week. The Ezra Klein podcast on AI and labour. A Nigella recipe I have made three times now." rows="5"></textarea>
+    </div>
+
+    <div class="field">
+      <label>Is there a topic, question, or idea you keep coming back to lately?</label>
+      <div class="hint">Something you are reading about, thinking about, or noticing in your own life.</div>
+      <textarea name="recurring_topic" placeholder="e.g. Why cities feel lonelier than they used to. How people make decisions under uncertainty. Whether remote work actually changed anything." rows="3"></textarea>
+    </div>
+
+    <div class="field">
+      <label>Have you ever bonded with someone over something you both read or watched? <span class="req">*</span></label>
+      <div class="hint">A specific memory. Not what you like talking about. A time it actually happened.</div>
+      <textarea name="content_connection" placeholder="e.g. A friend and I both read the same Atlantic piece the same week and spent an entire dinner talking about it. Or: my partner and I got into a long debate after watching the same documentary." rows="4"></textarea>
+    </div>
+
+    <!-- Section 5: Your Dating App History -->
+    <div class="section-rule"><span>Section Five . Dating Apps</span></div>
+
+    <div class="field">
+      <label>Have you used dating apps in the past two years? <span class="req">*</span></label>
+      <div class="radio-cards three-col">
+        <label class="radio-card">
+          <input type="radio" name="app_history" value="current" required>
+          <div class="radio-card-content">
+            <span class="radio-title">Yes, currently</span>
+            <span class="radio-desc">On one or more right now</span>
+          </div>
+        </label>
+        <label class="radio-card">
+          <input type="radio" name="app_history" value="deleted">
+          <div class="radio-card-content">
+            <span class="radio-title">Yes, but deleted</span>
+            <span class="radio-desc">Used to be, gave up</span>
+          </div>
+        </label>
+        <label class="radio-card">
+          <input type="radio" name="app_history" value="never">
+          <div class="radio-card-content">
+            <span class="radio-title">No</span>
+            <span class="radio-desc">Not my thing</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>If yes, which ones?</label>
+      <input type="text" name="which_apps" placeholder="e.g. Hinge, Bumble, Tinder, Raya">
+    </div>
+
+    <div class="field">
+      <label>In one sentence, what is the best and worst thing about them?</label>
+      <textarea name="app_opinion" placeholder="e.g. Best: you meet people you would never cross paths with. Worst: everyone is performing a version of themselves." rows="3"></textarea>
+    </div>
+
+    <!-- Section 6: One Last Thing -->
+    <div class="section-rule"><span>Section Six . One Last Thing</span></div>
+
+    <div class="field">
+      <label>If connecting with interesting people became part of your NYT subscription, how would that affect your likelihood of staying? <span class="req">*</span></label>
+      <select name="connection_impact" required>
+        <option value="" disabled selected>Select</option>
+        <option>It would significantly increase my likelihood of staying</option>
+        <option>It would somewhat increase my likelihood of staying</option>
+        <option>It would not change anything either way</option>
+        <option>I am not sure</option>
+        <option>I subscribe for the content, not the community</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Would you pay $3 to $5 per month extra for this as an add-on to your subscription? <span class="req">*</span></label>
+      <div class="radio-cards">
+        <label class="radio-card">
+          <input type="radio" name="willingness_to_pay" value="yes" required>
+          <div class="radio-card-content">
+            <span class="radio-title">Yes</span>
+          </div>
+        </label>
+        <label class="radio-card">
+          <input type="radio" name="willingness_to_pay" value="maybe">
+          <div class="radio-card-content">
+            <span class="radio-title">Maybe</span>
+          </div>
+        </label>
+        <label class="radio-card">
+          <input type="radio" name="willingness_to_pay" value="no">
+          <div class="radio-card-content">
+            <span class="radio-title">No</span>
+          </div>
+        </label>
+        <label class="radio-card">
+          <input type="radio" name="willingness_to_pay" value="need_to_see">
+          <div class="radio-card-content">
+            <span class="radio-title">Need to see it first</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Anything else you want us to know?</label>
+      <textarea name="anything_else" placeholder="Optional. But sometimes the most useful thing is what people say last." rows="3"></textarea>
+    </div>
+
+    <!-- Consent -->
+    <div class="deco-rule">.</div>
+
+    <div class="consent-box">
+      <p>This study is conducted as part of MSc Entrepreneurship and Innovation research at Trinity Business School, Trinity College Dublin. Your responses are used solely to understand whether content-based matching produces more meaningful connection than profile-based matching.</p>
+      <p>Your data will not be shared with third parties including The New York Times. You will not be added to any mailing list. You can withdraw at any time by emailing the researcher.</p>
+      <div class="pillars">Explicit consent. Single purpose. Your benefit.</div>
+      <label class="consent-check">
+        <input type="checkbox" name="consent" required>
+        <span>I understand how my data will be used and I consent to participate in this study.</span>
+      </label>
+    </div>
+
+    <div class="submit-area">
+      <button type="submit" class="submit-btn">Submit</button>
+      <p class="submit-note">Part 2 is a 20-minute Zoom where we walk you through the product. We will be in touch to schedule.</p>
+    </div>
+
+  </form>
+
+  <div class="thank-you" id="thankYou">
+    <span class="ty-mark">x2</span>
+    <h2>You're in.</h2>
+    <p>We will review your responses and be in touch to schedule your 20-minute demo session. No profile. No photo. Just a reason to talk.</p>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById('intakeForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('intakeForm').style.display = 'none';
+    document.getElementById('thankYou').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
