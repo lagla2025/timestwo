@@ -706,25 +706,37 @@
       </select>
     </div>
 
-    <!-- Section 4: What You've Been Reading -->
-    <div class="section-rule"><span>Section Four . What You've Actually Been Reading</span></div>
+    <!-- Section 4: What's Been On Your Mind -->
+    <div class="section-rule"><span>Section Four . What's Been On Your Mind</span></div>
 
     <div class="field">
-      <label>Name two or three pieces you have read, listened to, or engaged with recently that stuck with you <span class="req">*</span></label>
-      <div class="hint">Not all-time favourites. Recent. Could be an article, podcast episode, recipe, game streak. Whatever has been on your mind.</div>
-      <textarea name="recent_pieces" placeholder="e.g. That piece on the loneliness epidemic in cities. I kept thinking about it all week. The Ezra Klein podcast on AI and labour. A Nigella recipe I have made three times now." rows="5"></textarea>
+      <label>What kind of NYT content has been on your mind lately? <span class="req">*</span></label>
+      <div class="hint">Select as many as feel right.</div>
+      <div class="checkbox-grid">
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="long_read"> <span>A long read I couldn't put down</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="recipe"> <span>A recipe I saved or made</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="podcast"> <span>A podcast episode that stuck with me</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="game_streak"> <span>A game streak I'm proud of</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="opinion"> <span>An opinion piece that made me think</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="relationships"> <span>Something about relationships or love</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="travel"> <span>A travel piece that gave me wanderlust</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="video"> <span>A video or documentary I watched</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="book_review"> <span>A book review that added to my list</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="funny"> <span>Something funny or surprising</span></label>
+        <label class="checkbox-item"><input type="checkbox" name="content_types" value="how_we_live"> <span>Something about how we live now</span></label>
+      </div>
     </div>
 
     <div class="field">
-      <label>Is there a topic, question, or idea you keep coming back to lately?</label>
-      <div class="hint">Something you are reading about, thinking about, or noticing in your own life.</div>
-      <textarea name="recurring_topic" placeholder="e.g. Why cities feel lonelier than they used to. How people make decisions under uncertainty. Whether remote work actually changed anything." rows="3"></textarea>
+      <label>Anything specific you want to mention?</label>
+      <div class="hint">Optional. A headline, a topic, a recipe. Whatever's on your mind.</div>
+      <textarea name="specific_content" placeholder="e.g. That piece about urban loneliness. The Marcella Hazan tomato sauce recipe. My Wordle streak." rows="3"></textarea>
     </div>
 
     <div class="field">
       <label>Have you ever bonded with someone over something you both read or watched? <span class="req">*</span></label>
       <div class="hint">A specific memory. Not what you like talking about. A time it actually happened.</div>
-      <textarea name="content_connection" placeholder="e.g. A friend and I both read the same Atlantic piece the same week and spent an entire dinner talking about it. Or: my partner and I got into a long debate after watching the same documentary." rows="4"></textarea>
+      <textarea name="content_connection" placeholder="e.g. A friend and I both read the same piece the same week and spent an entire dinner talking about it." rows="3"></textarea>
     </div>
 
     <!-- Section 5: Your Dating App History -->
