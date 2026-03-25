@@ -570,34 +570,42 @@
         </select>
       </div>
       <div class="field">
-        <label>Show me <span class="req">*</span></label>
-        <select name="show_me" required>
-          <option value="" disabled selected>Select</option>
-          <option>Women</option>
-          <option>Men</option>
-          <option>Everyone</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="field-row">
-      <div class="field">
         <label>Relationship status <span class="req">*</span></label>
         <select name="status" required>
           <option value="" disabled selected>Select</option>
           <option>Single</option>
           <option>In a relationship</option>
+          <option>Married</option>
           <option>It's complicated</option>
           <option>Prefer not to say</option>
         </select>
       </div>
+    </div>
+
+    <div class="field">
+      <label>What are you looking for? <span class="req">*</span></label>
+      <div class="hint">Select one or both. Each has its own preference.</div>
+    </div>
+
+    <div class="field-row">
       <div class="field">
-        <label>Looking for <span class="req">*</span></label>
-        <select name="seeking" required>
-          <option value="" disabled selected>Select</option>
-          <option>Friends</option>
-          <option>Dates</option>
-          <option>Both</option>
+        <label>Friends</label>
+        <select name="friends_show_me">
+          <option value="" disabled selected>Show me</option>
+          <option>Women</option>
+          <option>Men</option>
+          <option>Everyone</option>
+          <option>Not looking for friends</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Dates</label>
+        <select name="dates_show_me">
+          <option value="" disabled selected>Show me</option>
+          <option>Women</option>
+          <option>Men</option>
+          <option>Everyone</option>
+          <option>Not looking for dates</option>
         </select>
       </div>
     </div>
