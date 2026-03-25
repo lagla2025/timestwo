@@ -91,7 +91,7 @@ We tested with people who engage with the content daily. Paying subscribers enga
 
 **"Who are your competitors?"**
 
-Hinge, Bumble, Tinder own the market. They optimise for engagement, not outcomes. Raya is the closest to a curated model but it's celebrity-gated, not content-driven. Nobody is using publisher subscriber data. Nobody has the Wingman. Nobody has the content flywheel. The competitive advantage is structural: we sit inside an ecosystem no dating app can access.
+Hinge, Bumble, Tinder: performed identity, broken business model. Raya: celebrity-gated, the flex is the membership. The League: LinkedIn-verified, career filter, not content matching. Facebook Dating: 3 billion users, all their data, nobody talks about it. Data without trust is noise. Spotify on Hinge: decorative, still self-presentation. Guardian Soulmates ran for 16 years, 500K members, £15M revenue. Right audience. Wrong mechanism. Killed by free apps. Nobody is using publisher behavioural data as the matching engine. Nobody has built this. That's the white space.
 
 **"What's stopping Hinge or Bumble from just doing what you do?"**
 
