@@ -2909,11 +2909,13 @@ function show(n){
   var phoneWrap = document.querySelector('.phone-wrap');
   var screenLabel = document.getElementById('screen-label');
   if(phoneWrap) phoneWrap.style.display='';
+  var s23el = document.getElementById('screen23');
+  if(s23el && s23el.parentElement !== document.body) document.body.appendChild(s23el);
   for(var i=0;i<=23;i++){
     var s=document.getElementById('screen'+i);
     if(s){s.style.display=(i===n)?'flex':'none';s.classList.toggle('active',i===n);}
   }
-  if(n===23 && phoneWrap) phoneWrap.style.display='none';
+  if(n===23){ if(phoneWrap) phoneWrap.style.display='none'; if(s23el) s23el.style.display='flex'; }
   document.querySelectorAll('.nav-btn').forEach(function(b){b.classList.toggle('active',parseInt(b.dataset.screen)===n);});
   if(screenLabel) screenLabel.innerHTML = labels[n]||'';
   if(n>=10&&n<=17){var feed=document.querySelector('#screen'+n+' .s2-feed');if(feed)feed.scrollTop=0;}
