@@ -11,10 +11,10 @@
       <rect x="0" y="38" width="50" height="32"/>
     </clipPath>
     <clipPath id="fill75">
-      <rect x="0" y="22" width="50" height="48"/>
+      <rect x="0" y="28" width="50" height="42"/>
     </clipPath>
     <clipPath id="fill100">
-      <rect x="0" y="0" width="50" height="70"/>
+      <rect x="-5" y="-5" width="60" height="80"/>
     </clipPath>
   </defs>
   
