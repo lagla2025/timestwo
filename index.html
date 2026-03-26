@@ -2515,7 +2515,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 <div class="screen s1-bg" id="screen21" style="overflow-y:auto;flex-direction:column;display:none">
 <div class="status-bar" style="background:transparent;color:rgba(255,255,255,0.6);position:relative;z-index:5"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9679; &#9679;&#9679;</span></div>
 <div id="s21-back-to-deck" style="display:none;position:absolute;top:46px;right:12px;z-index:20;padding:6px 12px;background:rgba(0,0,0,0.6);border-radius:16px;font-family:Georgia,serif;font-size:12px;color:#fff;cursor:pointer;backdrop-filter:blur(8px)" onclick="s22Go(s22ReturnSlide);show(22)">Pitch &#9654;</div>
-<div id="s21-back-to-s23" style="display:none;position:absolute;top:46px;left:12px;z-index:20;padding:6px 12px;background:rgba(0,0,0,0.6);border-radius:16px;font-family:Georgia,serif;font-size:12px;color:#fff;cursor:pointer;backdrop-filter:blur(8px)" onclick="s23Go(s23ReturnSlide);show(23)">Pitch &#9654;</div>
+<div id="s21-back-to-s23" style="display:none;position:absolute;top:46px;right:12px;z-index:20;padding:8px 16px;background:rgba(201,168,76,0.9);border-radius:16px;font-family:Georgia,serif;font-size:13px;color:#fff;cursor:pointer;backdrop-filter:blur(8px);font-weight:600" onclick="s23Go(s23ReturnSlide);show(23)">Pitch &#9654;</div>
 <div class="s1-photo-outer">
 <div class="s1-photo-wrap" id="s21-photo-wrap">
 <div class="s1-photo-track">
@@ -3399,6 +3399,11 @@ function s23Prev(){ s23Go(s23current-1); }
 
 /* ── Keyboard arrows for screen 23 ── */
 document.addEventListener('keydown', function(e){
+  // If on screen 21 and came from screen 23, pressing right arrow returns to pitch
+  var s21 = document.getElementById('screen21');
+  if(s21 && s21.style.display!=='none' && s23ReturnSlide > 0){
+    if(e.key==='ArrowRight' || e.key===' '){ s23Go(s23ReturnSlide); show(23); e.preventDefault(); return; }
+  }
   var s23 = document.getElementById('screen23');
   if(!s23 || s23.style.display==='none') return;
   if(e.key==='ArrowRight' || e.key===' ') { if(s23current!==2) s23Next(); e.preventDefault(); }
