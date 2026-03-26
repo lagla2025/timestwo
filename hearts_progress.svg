@@ -5,13 +5,13 @@
     <path id="heart" d="M25,45 C25,20 0,10 0,35 C0,55 25,70 25,70 C25,70 50,55 50,35 C50,10 25,20 25,45 Z"/>
     
     <clipPath id="fill25">
-      <rect x="0" y="52.5" width="50" height="17.5"/>
+      <rect x="0" y="55" width="50" height="15"/>
     </clipPath>
     <clipPath id="fill50">
-      <rect x="0" y="35" width="50" height="35"/>
+      <rect x="0" y="38" width="50" height="32"/>
     </clipPath>
     <clipPath id="fill75">
-      <rect x="0" y="17.5" width="50" height="52.5"/>
+      <rect x="0" y="22" width="50" height="48"/>
     </clipPath>
     <clipPath id="fill100">
       <rect x="0" y="0" width="50" height="70"/>
