@@ -1,9 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
   <rect width="800" height="120" fill="white"/>
-  
+
   <defs>
     <path id="heart" d="M25,45 C25,20 0,10 0,35 C0,55 25,70 25,70 C25,70 50,55 50,35 C50,10 25,20 25,45 Z"/>
-    
+
+    <pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#CC0000"/>
+    </pattern>
+
     <clipPath id="fill25">
       <rect x="0" y="55" width="50" height="15"/>
     </clipPath>
@@ -17,25 +21,25 @@
       <rect x="-5" y="-5" width="60" height="80"/>
     </clipPath>
   </defs>
-  
+
   <!-- Heart 1: 25% filled -->
   <g transform="translate(115,25)">
     <use href="#heart" fill="none" stroke="#CC0000" stroke-width="2"/>
-    <use href="#heart" fill="#CC0000" clip-path="url(#fill25)"/>
+    <use href="#heart" fill="url(#dots)" clip-path="url(#fill25)"/>
   </g>
-  
+
   <!-- Heart 2: 50% filled -->
   <g transform="translate(280,25)">
     <use href="#heart" fill="none" stroke="#CC0000" stroke-width="2"/>
-    <use href="#heart" fill="#CC0000" clip-path="url(#fill50)"/>
+    <use href="#heart" fill="url(#dots)" clip-path="url(#fill50)"/>
   </g>
-  
+
   <!-- Heart 3: 75% filled -->
   <g transform="translate(445,25)">
     <use href="#heart" fill="none" stroke="#CC0000" stroke-width="2"/>
-    <use href="#heart" fill="#CC0000" clip-path="url(#fill75)"/>
+    <use href="#heart" fill="url(#dots)" clip-path="url(#fill75)"/>
   </g>
-  
+
   <!-- Heart 4: 100% filled -->
   <g transform="translate(610,25)">
     <use href="#heart" fill="none" stroke="#CC0000" stroke-width="2"/>
