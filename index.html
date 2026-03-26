@@ -3304,6 +3304,7 @@ function initS20Personal() {
 
   <!-- Back to menu -->
   <div class="intv-back-btn" onclick="show(0)" style="color:rgba(0,0,0,0.3);position:absolute;top:12px;left:12px;z-index:20">&#9664; Menu</div>
+  <div onclick="s23Fullscreen()" style="position:absolute;top:12px;right:12px;z-index:20;padding:6px 12px;background:rgba(0,0,0,0.08);border-radius:8px;font-family:Georgia,serif;font-size:11px;color:rgba(0,0,0,0.4);cursor:pointer">&#9974; Present</div>
 
   <!-- Slide 1: Cover (classifieds) -->
   <div class="s23-slide active" id="s23-slide-1" style="display:flex;width:100%;height:100%;background:#f5f0e8;flex-direction:column;align-items:center;justify-content:center;padding:24px">
@@ -3356,8 +3357,8 @@ function initS20Personal() {
   </div>
 
   <!-- Navigation tap zones -->
-  <div style="position:absolute;top:0;left:0;width:50%;height:100%;z-index:5" onclick="if(s23current!==2)s23Prev()"></div>
-  <div style="position:absolute;top:0;right:0;width:50%;height:100%;z-index:5" onclick="if(s23current!==2)s23Next()"></div>
+  <div id="s23-tap-prev" style="position:absolute;top:0;left:0;width:50%;height:100%;z-index:15;cursor:pointer" onclick="s23Prev()"></div>
+  <div id="s23-tap-next" style="position:absolute;top:0;right:0;width:50%;height:100%;z-index:15;cursor:pointer" onclick="s23Next()"></div>
 
   <!-- Progress dots -->
   <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:10" id="s23-dots">
@@ -3388,9 +3389,33 @@ function s23Go(n) {
   dots.forEach(function(d,i){
     d.style.background = (i===n-1) ? '#1a1a2e' : 'rgba(26,26,46,0.2)';
   });
+  var tp = document.getElementById('s23-tap-prev');
+  var tn = document.getElementById('s23-tap-next');
+  if(tp) tp.style.display = (n===2) ? 'none' : 'block';
+  if(tn) tn.style.display = (n===2) ? 'none' : 'block';
 }
 function s23Next(){ s23Go(s23current+1); }
 function s23Prev(){ s23Go(s23current-1); }
+
+/* ── Keyboard arrows for screen 23 ── */
+document.addEventListener('keydown', function(e){
+  var s23 = document.getElementById('screen23');
+  if(!s23 || s23.style.display==='none') return;
+  if(e.key==='ArrowRight' || e.key===' ') { if(s23current!==2) s23Next(); e.preventDefault(); }
+  if(e.key==='ArrowLeft') { if(s23current!==2) s23Prev(); e.preventDefault(); }
+  if(e.key==='Escape') { show(0); e.preventDefault(); }
+});
+
+/* ── Fullscreen toggle for screen 23 ── */
+function s23Fullscreen(){
+  var el = document.getElementById('screen23');
+  if(!el) return;
+  if(document.fullscreenElement || document.webkitFullscreenElement){
+    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+  } else {
+    (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+  }
+}
 
 /* ── Slide 2: swipe card for screen 23 ── */
 (function(){
