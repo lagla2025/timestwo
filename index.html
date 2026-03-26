@@ -2909,10 +2909,11 @@ function show(n){
   var phoneWrap = document.querySelector('.phone-wrap');
   var screenLabel = document.getElementById('screen-label');
   if(phoneWrap) phoneWrap.style.display='';
-  for(var i=0;i<=22;i++){
+  for(var i=0;i<=23;i++){
     var s=document.getElementById('screen'+i);
     if(s){s.style.display=(i===n)?'flex':'none';s.classList.toggle('active',i===n);}
   }
+  if(n===23 && phoneWrap) phoneWrap.style.display='none';
   document.querySelectorAll('.nav-btn').forEach(function(b){b.classList.toggle('active',parseInt(b.dataset.screen)===n);});
   if(screenLabel) screenLabel.innerHTML = labels[n]||'';
   if(n>=10&&n<=17){var feed=document.querySelector('#screen'+n+' .s2-feed');if(feed)feed.scrollTop=0;}
