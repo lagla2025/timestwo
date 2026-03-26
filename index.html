@@ -3361,6 +3361,10 @@ function s23Go(n){
   s23current=n;
   var c=document.getElementById('s23-counter'); if(c) c.textContent=n+' / '+s23total;
   document.querySelectorAll('#s23-dots span').forEach(function(d,i){ d.className=(i===n-1)?'on':''; });
+  var tp=document.getElementById('s23-tap-prev');
+  var tn=document.getElementById('s23-tap-next');
+  if(tp) tp.style.display=(n===2||n===12)?'none':'block';
+  if(tn) tn.style.display=(n===2||n===12)?'none':'block';
   if(n===12){
     next.style.cursor='pointer';
     next.onclick=function(){ document.getElementById('screen23').style.display='none'; document.querySelector('.phone-wrap').style.display=''; show(0); };
