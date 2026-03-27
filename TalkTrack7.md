@@ -77,27 +77,51 @@ Nobody is using publisher behavioural data as the matching engine. Times Two rev
 
 ## SLIDE 8 — GUARDIAN SOULMATES.
 
-The Guardian already did this. Soulmates ran for 16 years. Half a million members. 15 million pounds in annual revenue at peak. 87% of members said they had a better chance of meeting someone suitable here than anywhere else.
+The Guardian already did this. Let me walk you through the numbers.
+
+Soulmates launched in 2004 as a premium dating site for Guardian readers. By 2010 they had 350,000 active members with 1,500 new members joining every week. They charged 10 to 32 pounds a month. Free to browse, pay to message. Essentially our freemium model.
+
+By 2013, the subscriptions and e-commerce division hit 15 million pounds. Soulmates was the primary driver. That revenue was subsidising the Guardian's journalism during years they were losing 44 million annually. This was not a side project. It was keeping the lights on.
+
+87% of members said they had a better chance of meeting someone suitable on Soulmates than on any other platform. 80% were happy to tell their friends they used it. In an era when online dating still carried real stigma. That's the power of publisher brand trust.
 
 Right audience. Wrong mechanism.
 
-It was still a profile-based dating product competing against free apps on the same terms. Same mechanism as everyone else. Different brand. That wasn't enough.
+It was still profile-based. Photos, bios, self-presentation. Same mechanism as every other dating product. When Tinder launched at zero cost, paying 32 pounds a month for the same mechanic became indefensible. Soulmates closed in June 2020.
 
-Times Two uses the data Soulmates never touched. That's not iteration. That's a different product.
+One more thing worth noting. The Guardian didn't build the technology themselves. They licensed it from a company called The Dating Lab. That's our model. We build the engine. They keep the brand. The precedent exists.
+
+Times Two uses the data Soulmates never touched. The behavioural signals. What people actually read, play, and engage with. That's not iteration. That's a different product.
 
 ---
 
 ## SLIDE 9 — THE MARKET.
 
-25.85 million subscribers across premium publishers. 9.2 million potential users for friends and dates. 3.7 million eligible singles for dating only.
+Let me walk you through the math.
 
-For context, Bumble has 3.7 million paying users globally. Our dating pool alone matches that.
+25.85 million subscribers across eight premium English-language publishers. NYT, Wall Street Journal, FT, Economist, Guardian, Washington Post, The Atlantic, The New Yorker. All sourced from earnings calls and annual reports.
 
-TAM at 8 dollars a month: 885 million for the full platform. 350 million dating only.
+First filter: 55% are dating age, 18 to 65. That's based on publisher demographic data. NYT's median subscriber age is 43. 62% are under 50. The "NYT skews old" myth is exactly that.
 
-The model is B2B2C. We don't acquire consumers directly. We are the infrastructure layer. Revenue from publisher licensing, freemium user subscriptions, venue partnerships, and on-ground events. The free tier proves the product. The paid tier unlocks the full experience.
+Second filter: 38% are unpartnered. That's the age-weighted figure from Pew Research. That gives us 3.7 million eligible singles.
 
-On privacy. Opt in. Your data serves you, not advertisers. GDPR by design.
+But this product is not just dating. It's friendship too. Our own survey data shows 62% of respondents want friendship, not dates. When you include everyone open to meaningful connection, the pool is 9.2 million.
+
+For context, Bumble has 3.7 million paying users globally. Our dating pool alone matches that. Ours were pre-qualified by a publisher paywall before we ever met them.
+
+On pricing. NYT Cooking is 6 dollars a month standalone. NYT All Access is 25. Hinge is 7. Bumble is 5 to 10. We are modelling at 8 dollars a month as an add-on or standalone. Competitive with dating apps and below NYT's own pricing for Cooking.
+
+At 8 dollars a month. TAM is 885 million for the full platform. 350 million dating only. SAM focusing on English-speaking markets and active daily users: roughly 100 million.
+
+The model is B2B2C. We don't acquire consumers. We are the infrastructure layer. Four revenue streams. Publisher licensing at 2 to 3 dollars per active user per month. Freemium user subscriptions. Venue partnerships. On-ground events like supper clubs, spelling bee circles, book clubs.
+
+On freemium. The product is free to start. The Wingman watches. You get matched. You can chat. The paid tier unlocks the full experience. We don't gate the number of matches. We gate the depth of the experience. The timing for conversion depends on the publisher partner and the market. We are flexible by design.
+
+On the target demographic. The product naturally attracts 35 and older. But the population is always aging. Today's Gen Z digital natives become tomorrow's core users. The audience compounds year over year.
+
+On launch markets. US and UK simultaneously. That's where 85% of premium English-language publisher subscribers live. Ireland is our proof of concept through the TCD connection. Australia and Canada follow in Year 3.
+
+On privacy. Opt in. Your data serves you, not advertisers. GDPR compliant by design, not by adjustment.
 
 ---
 
