@@ -99,21 +99,21 @@ Times Two uses the data Soulmates never touched. The behavioural signals. What p
 
 Let me walk you through the math.
 
-25.85 million subscribers across eight premium English-language publishers. NYT, Wall Street Journal, FT, Economist, Guardian, Washington Post, The Atlantic, The New Yorker. All sourced from earnings calls and annual reports.
+19 million subscribers across six premium English-language publishers. NYT, Guardian, The Atlantic, The New Yorker, FT, and The Economist. Every one of them editorially rich with content signals that reveal who their readers are. All figures sourced from earnings calls and annual reports.
 
 First filter: 55% are dating age, 18 to 65. That's based on publisher demographic data. NYT's median subscriber age is 43. 62% are under 50. The "NYT skews old" myth is exactly that.
 
-Second filter: unpartnered rates by age. This is from Pew Research, 2023 Census data. 18 to 24: 86% single. 25 to 39: 42%. 40 to 54: 29%. 55 to 64: 32%. 65 plus: 41%. The age-weighted average across the publisher subscriber base is approximately 38%. That gives us 3.7 million eligible singles.
+Second filter: unpartnered rates by age. This is from Pew Research, 2023 Census data. 18 to 24: 86% single. 25 to 39: 42%. 40 to 54: 29%. 55 to 64: 32%. 65 plus: 41%. The age-weighted average across the publisher subscriber base is approximately 38%. That gives us roughly 4 million eligible singles.
 
-Of those 3.7 million, roughly half sit in the 35 to 54 age range. That's our core. Established careers. Paying subscribers. Digitally fluent. The 55 plus cohort is the next largest group and is completely underserved by every dating app on the market. The 25 to 34 cohort is smaller in publisher subscriptions today but growing as digital natives age into the platform.
+Of those 4 million, roughly half sit in the 35 to 54 age range. That's our core. Established careers. Paying subscribers. Digitally fluent. The 55 plus cohort is the next largest group and is completely underserved by every dating app on the market. The 25 to 34 cohort is smaller in publisher subscriptions today but growing as digital natives age into the platform.
 
-But this product is not just dating. It's friendship too. Our own survey data shows 62% of respondents want friendship, not dates. When you include everyone open to meaningful connection, not just singles, the pool is 9.2 million.
+But this product is not just dating. It's friendship too. Our own survey data shows 62% of respondents want friendship, not dates. When you include everyone open to meaningful connection, not just singles, the pool is roughly 6.8 million.
 
-For context, Bumble has 3.7 million paying users globally. Our dating pool alone matches that. Ours were pre-qualified by a publisher paywall before we ever met them.
+For context, Bumble has 3.7 million paying users globally. Our dating pool alone exceeds that. And ours were pre-qualified by a publisher paywall before we ever met them.
 
 On pricing. NYT Cooking is 6 dollars a month standalone. NYT All Access is 25. Hinge is 7. Bumble is 5 to 10. We are modelling at 8 dollars a month as an add-on or standalone. Competitive with dating apps and below NYT's own pricing for Cooking.
 
-At 8 dollars a month. TAM is 885 million for the full platform. 350 million dating only. SAM focusing on English-speaking markets and active daily users: roughly 100 million.
+At 8 dollars a month. TAM is 650 million for the full platform. 380 million dating only. SAM focusing on English-speaking markets and active daily users: roughly 90 million.
 
 The model is B2B2C. We don't acquire consumers. We are the infrastructure layer. Four revenue streams. Publisher licensing at 2 to 3 dollars per active user per month. Freemium user subscriptions. Venue partnerships. On-ground events like supper clubs, spelling bee circles, book clubs.
 
