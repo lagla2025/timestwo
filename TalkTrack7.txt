@@ -101,11 +101,13 @@ Let me walk you through the math.
 
 19 million subscribers across six premium English-language publishers. NYT, Guardian, The Atlantic, The New Yorker, FT, and The Economist. Every one of them editorially rich with content signals that reveal who their readers are. All figures sourced from earnings calls and annual reports.
 
-First filter: 55% are dating age, 18 to 65. That's based on publisher demographic data. NYT's median subscriber age is 43. 62% are under 50. The "NYT skews old" myth is exactly that.
+Now who are these subscribers. NYT's median subscriber age is 43. 62% are under 50. The Guardian is similar at 44. FT averages 49. Economist skews older at 61. The 18 to 29 cohort exists but they're largely on academic licenses, not paying. Our real market is paying subscribers aged 30 and up.
 
-Second filter: unpartnered rates by age. This is from Pew Research, 2023 Census data. 18 to 24: 86% single. 25 to 39: 42%. 40 to 54: 29%. 55 to 64: 32%. 65 plus: 41%. The age-weighted average across the publisher subscriber base is approximately 38%. That gives us roughly 4 million eligible singles.
+Our core demo is 35 to 54. That's roughly 45% of the paid subscriber base. About 8.5 million people. At the Pew Research unpartnered rate for that age group, 29 to 35%, that gives us 2.7 million eligible singles in the sweet spot. Established careers. Digitally fluent. Already paying for content.
 
-Of those 4 million, roughly half sit in the 35 to 54 age range. That's our core. Established careers. Paying subscribers. Digitally fluent. The 55 plus cohort is the next largest group and is completely underserved by every dating app on the market. The 25 to 34 cohort is smaller in publisher subscriptions today but growing as digital natives age into the platform.
+The 55 plus cohort adds another 1.5 million singles. This group is growing and completely underserved by every dating app on the market. The 25 to 34 cohort is smaller in publisher subscriptions today but it grows every year as digital natives age into the platform. The audience compounds.
+
+Total eligible singles across the paid subscriber base: roughly 4 million.
 
 But this product is not just dating. It's friendship too. Our own survey data shows 62% of respondents want friendship, not dates. When you include everyone open to meaningful connection, not just singles, the pool is roughly 6.8 million.
 
