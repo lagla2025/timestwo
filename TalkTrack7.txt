@@ -103,9 +103,11 @@ Let me walk you through the math.
 
 First filter: 55% are dating age, 18 to 65. That's based on publisher demographic data. NYT's median subscriber age is 43. 62% are under 50. The "NYT skews old" myth is exactly that.
 
-Second filter: 38% are unpartnered. That's the age-weighted figure from Pew Research. That gives us 3.7 million eligible singles.
+Second filter: unpartnered rates by age. This is from Pew Research, 2023 Census data. 18 to 24: 86% single. 25 to 39: 42%. 40 to 54: 29%. 55 to 64: 32%. 65 plus: 41%. The age-weighted average across the publisher subscriber base is approximately 38%. That gives us 3.7 million eligible singles.
 
-But this product is not just dating. It's friendship too. Our own survey data shows 62% of respondents want friendship, not dates. When you include everyone open to meaningful connection, the pool is 9.2 million.
+Of those 3.7 million, roughly half sit in the 35 to 54 age range. That's our core. Established careers. Paying subscribers. Digitally fluent. The 55 plus cohort is the next largest group and is completely underserved by every dating app on the market. The 25 to 34 cohort is smaller in publisher subscriptions today but growing as digital natives age into the platform.
+
+But this product is not just dating. It's friendship too. Our own survey data shows 62% of respondents want friendship, not dates. When you include everyone open to meaningful connection, not just singles, the pool is 9.2 million.
 
 For context, Bumble has 3.7 million paying users globally. Our dating pool alone matches that. Ours were pre-qualified by a publisher paywall before we ever met them.
 
