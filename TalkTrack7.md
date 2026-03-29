@@ -61,7 +61,7 @@ Churn. Subscribers leave. Content alone is not enough to make people stay when f
 
 And unused data. Publishers are sitting on the richest behavioural dataset in media. European privacy law prevents them from selling it or using it for advertising without consent. But using it to directly benefit the subscriber, with their explicit opt-in. That's not just legal. That's exactly what privacy law was designed to encourage. Nobody has built a product to do it.
 
-Publishers have the data. The audience. The trust. They just need a product that connects all three. That's what we're setting out to do.
+Publishers have the data. The audience. The trust. Times Two connects all three.
 
 And think about the switching costs across the bundle. NYT Cooking creates functional switching costs. Cancel and you lose your recipe box. NYT Games creates habit switching costs. Lose your streak. Times Two creates personal switching costs. Cancel and you lose the connection. That is categorically different. No other product in the publisher ecosystem creates it.
 
