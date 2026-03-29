@@ -21,7 +21,7 @@ Match Group. 48 billion to 7 billion. Down 85%. Bumble. 8 billion to 480 million
 
 Finding you someone means losing you as a customer. There's no incentive to fix it.
 
-The bottleneck is the introduction. Dating apps start with who you want to be. Times Two starts with what you read, what you play, and how you show up.
+The bottleneck is the introduction. Dating apps start with what you say about yourself. Times Two starts with what you actually do.
 
 ---
 
@@ -45,7 +45,7 @@ Listen. The Daily. Every morning. Before she's ready to talk to anyone. That's n
 
 Watch. A street food video. She stayed for the people, not the food.
 
-Play. He invited her to CrossPlay. She said yes before she saw his profile pic.
+Play. Crossplay invite. She accepted before she saw his pic.
 
 That behaviour is sitting inside publisher subscriber data right now. Untouched. Times Two uses it to find you someone worth talking to.
 
@@ -55,15 +55,15 @@ That behaviour is sitting inside publisher subscriber data right now. Untouched.
 
 So why would a publisher do this. Because publishers have three problems they haven't solved.
 
-Passive engagement. Readers engage with games, share scores, compare streaks. The social instinct is already there. Nobody has connected it to relationships yet.
+Passive engagement. Readers already share scores, compare streaks, and play Crossplay with strangers. The engagement is there. Nobody has deepened it.
 
-Churn. Subscribers leave. Content alone is not enough to make people stay when free alternatives are everywhere. Every product in the publisher ecosystem is replaceable. Recipes, sports news, word games. All available elsewhere. Times Two creates switching costs that are personal, not functional. Cancel your subscription and you lose the person you have been talking to. No other publisher product does that.
+Churn. Subscribers leave. Content alone is not enough to make people stay when free alternatives are everywhere. Every product in the publisher ecosystem is replaceable. Recipes, sports news, word games. All available elsewhere. Times Two creates switching costs that are personal, not functional. Cancel your subscription and you lose the connection you have been talking to. No other publisher product does that.
 
-And unused data. Publishers are sitting on the richest behavioural dataset in media. GDPR prevents selling it. But using it to create value for the subscriber directly. That's legal, ethical, and enormously valuable. Nobody has built a product to do it with.
+And unused data. Publishers are sitting on the richest behavioural dataset in media. European privacy law prevents them from selling it or using it for advertising without consent. But using it to directly benefit the subscriber, with their explicit opt-in. That's not just legal. That's exactly what privacy law was designed to encourage. Nobody has built a product to do it.
 
-Times Two solves all three.
+Publishers have the data. The audience. The trust. They just need a product that connects all three. That's what we're setting out to do.
 
-And think about the switching costs across the bundle. NYT Cooking creates functional switching costs. Cancel and you lose your recipe box. NYT Games creates habit switching costs. Lose your streak. Times Two creates personal switching costs. Cancel and you lose the person. That is categorically different. No other product in the publisher ecosystem creates it.
+And think about the switching costs across the bundle. NYT Cooking creates functional switching costs. Cancel and you lose your recipe box. NYT Games creates habit switching costs. Lose your streak. Times Two creates personal switching costs. Cancel and you lose the connection. That is categorically different. No other product in the publisher ecosystem creates it.
 
 ---
 
@@ -85,7 +85,7 @@ Look at the incentives. Swipe apps make money from engagement. The longer you're
 
 Times Two makes money from subscriptions and publisher licensing. Whether you spend two minutes or two hours, the revenue is the same. Zero incentive to keep you scrolling.
 
-Their revenue grows when you stay on the app. Ours grows when you subscribe. Different incentive. Different product.
+Their revenue grows when you stay on the app. Ours grows when you subscribe. Different incentive. Different outcome.
 
 ---
 
@@ -195,7 +195,7 @@ Free. More personal data than any platform on earth. Nobody talks about it. Data
 
 **"What about the SWOT?"**
 
-Strengths: first mover in publisher-embedded dating, behavioural data nobody else has, built-in trust from publisher brand, direct precedent in Soulmates white-label licensing model. Weaknesses: solo founder, no technical co-founder yet, dependent on publisher partnerships, no users until a publisher says yes. Opportunities: market in decline with no credible replacement, publishers actively seeking new revenue lines, CrossPlay proves willingness. Threats: publisher says no or takes too long, privacy regulation tightens, users find content signals creepy.
+Strengths: first mover in publisher-embedded dating, behavioural data nobody else has, built-in trust from publisher brand, direct precedent in Soulmates white-label licensing model. Weaknesses: solo founder, no technical co-founder yet, dependent on publisher partnerships, no users until a publisher says yes. Opportunities: market in decline with no credible replacement, publishers actively seeking new revenue lines, Crossplay proves willingness. Threats: publisher says no or takes too long, privacy regulation tightens, users find content signals creepy.
 
 **"How does the AI/Wingman work technically?"**
 
@@ -437,7 +437,7 @@ We build and operate all trust and safety. AI message scanning before delivery. 
 
 On pricing. NYT Cooking is 6 dollars a month standalone. NYT All Access is 25. Hinge is 7. Bumble is 5 to 10. We are modelling at 8 dollars a month as an add-on or standalone. Competitive with dating apps and below NYT's own pricing for Cooking.
 
-On freemium. The product is free to start. The Wingman watches. You get matched. You can chat. The paid tier unlocks the full experience. We don't gate the number of matches. We gate the depth of the experience. The timing for conversion depends on the publisher partner and the market. We are flexible by design.
+On freemium. The free tier shows you what you share with someone. The content overlap. The Wingman's observations. But not who they are. No photo. No name. No chat. The paid tier is the reveal. The person. The brief. The starters. The chat. The venue suggestions. Content first. That's the product philosophy built into the pricing. The first match could be free as a full experience trial. If it's good enough, you pay for the next one. If it's not, we didn't earn it.
 
 **"What about launch markets?"**
 
@@ -448,3 +448,7 @@ US and UK simultaneously. That's where 85% of premium English-language publisher
 NYT's median subscriber age is 43. 62% are under 50. The Guardian is similar at 44. FT averages 49. Economist skews older at 61. The 18 to 29 cohort exists but they're largely on academic licenses, not paying. Our real market is paying subscribers aged 30 and up.
 
 The 55 plus cohort adds another 1.5 million singles. This group is growing and completely underserved by every dating app on the market. The 25 to 34 cohort is smaller in publisher subscriptions today but it grows every year as digital natives age into the platform. The audience compounds year over year.
+
+**"What's a SaaS multiple and how does it work?"**
+
+SaaS stands for Software as a Service. It means recurring subscription revenue, not one-off sales. Investors value SaaS companies as a multiple of their annual recurring revenue because that revenue is predictable and compounds. A company earning $2M a year in recurring revenue at a 10x multiple is valued at $20M. The multiple reflects growth rate, market size, and defensibility. 8-10x is standard for seed-stage B2B SaaS. High-growth companies command 15-20x or more. We are using 8-10x because it is conservative and credible at our stage.
