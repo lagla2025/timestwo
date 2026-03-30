@@ -1,0 +1,181 @@
+TIMES TWO — FINAL Q&A (LOCKED)
+
+1. HOW DOES THIS ACTUALLY WORK?
+
+Two parts: data and matching.
+
+On the data side, this works through publisher partnerships.
+Users connect their account using OAuth. Permission-based, fully opt-in, and revocable at any time.
+
+On the matching side, we use existing AI APIs.
+We pass behavioural signals in, generate the Wingman output, and return it to the user.
+
+What we own is the system:
+the data pipeline, the matching logic, the prompt layer, and the product.
+
+2. WHAT STOPS HINGE OR BUMBLE FROM DOING THIS?
+
+Their business depends on the current mechanism.
+
+Swipe, engagement loops, time spent. That's the revenue engine.
+
+They can optimise it, but they can't replace it without breaking their model.
+
+Times Two starts from a different place:
+inside a subscription ecosystem where the goal is connection, not engagement.
+
+3. WHY WON'T PUBLISHERS BUILD THIS THEMSELVES?
+
+They don't build new categories from scratch. They buy proof.
+
+The Athletic. Wordle. Wirecutter.
+
+We're building the proof first.
+
+And even if one publisher built it, they wouldn't aggregate across competitors.
+
+The value sits in how the matching works. Not just where it lives.
+
+4. HAS THIS BEEN TRIED BEFORE?
+
+Yes. Guardian Soulmates.
+
+500,000 members.
+15 million pounds in annual revenue.
+
+It worked.
+
+But it was profile-based, competing against free apps.
+
+Times Two uses behavioural data instead.
+
+Same audience. Different mechanism.
+
+5. WHAT IF PUBLISHERS SAY NO?
+
+We don't need all of them. We need one.
+
+The Guardian is the natural starting point.
+
+If one proves it works, others follow.
+
+If not, we can launch independently using user-connected data and prove the model.
+
+Phase 1 is designed to answer that before we scale.
+
+6. WHAT ABOUT PRIVACY?
+
+Everything is opt-in.
+
+Users explicitly connect their account and choose what they share.
+They can revoke it at any time.
+
+And importantly, this flips the usual model.
+
+Most platforms use your data to target ads.
+
+We use it to introduce you to someone you'll actually want to talk to.
+
+It's one of the few cases where your data is used directly for your benefit.
+
+7. WALK ME THROUGH REVENUE
+
+Three streams:
+
+User subscriptions
+Publisher licensing
+Partnerships and events
+
+Year 3:
+
+~20,000 users
+~30% paid
+plus licensing across the full base
+
+That gets to 1.5 to 2 million.
+
+The key is alignment:
+
+We make money when people connect, not when they stay stuck.
+
+8. WHAT ARE THE RISKS?
+
+There are three real risks.
+
+First, publisher adoption.
+That's why Phase 1 generates evidence using their own subscribers before we ask for a deal.
+
+Second, cold start.
+We're not starting from zero. We're starting inside an existing, paying audience.
+
+These are already engaged users. The behaviour is already there.
+We're just turning it into signal.
+
+Third, perception.
+Behavioural matching is unfamiliar, so the product is designed to feel like a trusted introduction, not a data product.
+
+If those don't hold, we know early.
+The 150K phase is designed to answer exactly that.
+
+CURVEBALLS
+
+9. "THIS FEELS LIKE A FEATURE, NOT A COMPANY."
+
+It only looks like a feature if you ignore where it starts.
+
+This isn't built on a general audience.
+
+It starts inside premium publisher ecosystems. People who already read, think, and engage in similar ways.
+
+That prequalification changes everything.
+
+The matching is stronger from day one.
+And the business model is different. Subscription, not engagement.
+
+That's not a feature. That's a different foundation.
+
+10. "WHY DOES THIS WIN VS JUST BETTER AI ON HINGE?"
+
+Better AI on Hinge still starts from a profile.
+
+You're improving the output, not changing the input.
+
+Times Two changes the input.
+
+That's the difference.
+
+11. "WHY NOW?"
+
+Three things converged:
+
+The swipe model is declining.
+Publishers need new revenue lines.
+AI makes this kind of matching viable at scale.
+
+That combination didn't exist five years ago.
+
+HOSTILE QUESTION
+
+12. "ISN'T THIS JUST SURVEILLANCE DATING WITH A NICER STORY?"
+
+No. Because the user is in control.
+
+Nothing is inferred without consent.
+Nothing is collected passively.
+
+Users choose what to connect, what to share, and can turn it off at any time.
+
+And the intent is completely different.
+
+Most platforms extract value from your data.
+
+This gives value back to the user. In the form of a better introduction.
+
+If it doesn't feel useful, people won't opt in.
+
+That's the check on the system.
+
+10-SECOND "WHY ME"
+
+I've spent 20 years building audience through content.
+This is the first time I've seen a way to turn that behaviour into connection.
