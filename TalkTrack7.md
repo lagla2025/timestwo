@@ -1,53 +1,73 @@
 # Times Two — Talk Track (7 minutes)
-*Cover + 13 slides. April 2026.*
+*Cover + 8 body slides + close. April 2026.*
 
 ---
 
-## SLIDE 1 — COVER
+## SLIDE 1 — COVER (~25 sec)
 
-People used to do this out in the open.
+This is how people used to find each other.
 
-Short, direct, sometimes awkward, but clear.
+Personals. Classifieds. Want ads.
+
+Clear, direct, a little awkward.
+
+But it worked.
 
 That was then.
 
 ---
 
-## SLIDE 2 — SWIPE
+## SLIDE 2 — THE SWIPE (~30 sec)
 
 This is what it looks like now.
 
-You can tell a good story about yourself. Make someone stop. Present a version of who you are.
+A photo. A few lines. A version of yourself designed to be chosen.
+
+And everything that follows depends on that first impression.
 
 ---
 
-## SLIDE 3 — NUMBERS (DO NOT SKIP THESE)
+## SLIDE 3 — THE BREAK (~1 min 20 sec)
 
 And this isn't working.
 
-Match Group. 48 billion to 7. Bumble. 8 billion to under 500 million.
+Match Group went from 48 billion to 7. Bumble from 8 billion to under 500 million.
 
-One and a half million paying users gone. Zero incentive to fix it.
+One and a half million paying users gone in a single year.
 
-The behaviour has changed, but the product hasn't.
+This isn't a discovery problem.
 
-Every app still starts with what you say about yourself. Times Two starts with what you actually do.
+People are matching.
+
+It's an introduction problem.
+
+There's no common ground... so the conversation stalls or dies.
+
+Times Two fixes that.
+
+Instead of showing you a profile, it shows you the overlap. Based on what you actually read, listen to, and engage with.
 
 ---
 
-## SLIDE 4 — WHY ME
+## SLIDE 4 — WHY ME (~35 sec)
 
-I spent 20 years building audiences with content.
+I've spent 20 years building audiences through content.
 
 National Geographic, Discovery, MTV, Ancestry.
 
-The insight isn't technical. It's behavioural.
+The insight behind Times Two isn't technical.
 
-Now I'm using content to build relationships.
+It's behavioural.
+
+Now I'm using that to build relationships.
 
 ---
 
-## SLIDE 5 — BEHAVIOUR
+## SLIDE 5 — BEHAVIOUR + TRACTION (~1 min 20 sec)
+
+The product is simple.
+
+We match on what people actually do, and turn that into a better introduction.
 
 People don't perform what they read. Or what they come back to every day.
 
@@ -57,121 +77,119 @@ She didn't scroll past the Middle Management piece. She listens to The Daily eve
 
 That's not something you write about yourself. That's a pattern.
 
-And that pattern is already there. Times Two uses it to find you someone worth talking to.
+In early interviews, when people saw their own content behaviour reflected back, the reaction was consistent.
+
+They didn't ask "do I like this person?"
+
+They asked "what would I say to them?"
+
+And that pattern is already there.
+
+Times Two uses it to introduce you to someone you already have common ground with.
 
 ---
 
-## SLIDE 6 — PUBLISHER PROBLEM (MATCH THE VISUAL)
+## SLIDE 6 — PUBLISHER + COMPETITION (~1 min 10 sec)
 
-This slide already shows the three problems. Use them.
+Publishers already have the audience, the data, and the trust.
 
-Passive engagement. People are already interacting. Nothing deepens it.
+But engagement doesn't stop people leaving.
 
-Churn. Content alone doesn't keep people. The content is replaceable. The connection isn't.
+Content is replaceable. The relationship isn't.
 
-Unused data. The richest behavioural dataset in media. Not being used for the subscriber.
+What they don't have is a product that turns affinity into connection.
 
-Publishers have the data. The audience. The trust. Times Two connects all three.
+Everyone else is solving the same problem the same way.
 
----
+Hinge, Bumble, Tinder. Present yourself, get judged, repeat.
 
-## SLIDE 7 — COMPETITION
+Raya and The League filter for status.
 
-Hinge, Bumble, Tinder. Same model. Present yourself. Get judged. Repeat.
+Facebook has the data, but not the trust.
 
-Raya. The flex is the membership. The League. Your LinkedIn is your profile. Facebook Dating. All the data, none of the trust.
+The Guardian proved the audience exists. But used a traditional, profile-based model.
 
-The closest anyone got was the Guardian. Right audience. Wrong mechanism.
+They're all still introducing people the same way.
 
-They're all still introducing you the same way.
-
-And when it works in real life, it's never random.
-
-Someone gives you context.
-
-Times Two does.
+Times Two changes that.
 
 ---
 
-## SLIDE 8 — AFFINITY TO CONNECTION (DO NOT RUSH THIS)
+## SLIDE 7 — HOW IT WORKS (~55 sec)
 
-This is the shift.
+This is what's missing today.
 
-Swipe apps make money from your attention. Times Two makes money from your subscription. One needs you stuck. The other needs you matched.
+You consume content naturally.
 
-Here's how it works.
+That behaviour becomes signal.
 
-You consume content as you normally would. That creates signal. When meaningful overlap appears, the introduction happens. The conversation is easier because the common ground was already there.
+The system detects overlap. Surfaces it.
 
-Something real happens. The subscriber stays.
+An introduction is made.
 
----
+The conversation is easier because the common ground was already there.
 
-## SLIDE 9 — GUARDIAN (PROOF)
+Something real starts.
 
-The Guardian already proved this works.
-
-500,000 members. 15 million pounds in revenue. 87% said they had better odds here.
-
-Right audience. Wrong mechanism.
-
-The lesson: license, don't build.
-
-Times Two uses the data Soulmates never touched.
+The subscriber stays.
 
 ---
 
-## SLIDE 10 — MARKET (LET THEM READ, DON'T OVER-TALK)
+## SLIDE 8 — GUARDIAN SOULMATES (~40 sec)
+
+This isn't theoretical.
+
+The Guardian proved this audience will pay.
+
+500,000 members. 15 million pounds in annual revenue.
+
+Same audience.
+
+Traditional mechanism.
+
+This is different.
+
+---
+
+## SLIDE 9 — MARKET, ASK, PLAN, CLOSE (~1 min 20 sec)
 
 There are 19 million subscribers across premium publishers.
 
 Roughly 4 million are eligible singles.
 
-That alone is comparable to Bumble's paying base.
+That's already comparable to Bumble's paying base.
 
-Total addressable market: 380 million for dating. 650 million with friendship.
+This isn't a niche.
 
-This isn't niche. It's pre-qualified.
+It's pre-qualified.
 
----
+The New York Times is the ideal partner for this product.
 
-## SLIDE 11 — ASK
+The Guardian is the natural place to start.
+
+We'll approach both, but the goal is to secure one publisher where this can be proven quickly.
+
+We don't need all publishers.
+
+We need one.
 
 We're raising 1.25 million.
 
-150K to prove the mechanism and build the MVP.
+A 1.25 million investment returns 2.4 to 4 million as we scale.
 
-1.1 million to scale with our first publisher.
+150K is to prove the mechanism and build the MVP.
 
-By year three, we project 1.5 to 2 million in revenue.
+The remaining 1.1 million is to scale with our first publisher. Product, integration, and rollout.
 
-That's a 12 to 20 million valuation.
+From there, the model expands publisher by publisher.
 
-A 1.25 million investment returns 2.4 to 4 million.
+The projections are on the slide.
 
----
-
-## SLIDE 12 — PLAN
-
-We're already running the first subscriber study.
-
-The Guardian is the natural starting point.
-
-They know the category. They know where it broke.
-
-This time, the mechanism is different.
-
-Year 2. First publisher live. 2,500 users. Freemium launched.
-
-Year 3. Multi-publisher aggregation. 20,000 users. Revenue: 1.5 to 2 million. The moat compounds.
-
----
-
-## SLIDE 13 — CLOSE
+The key point is this: once the first publisher proves conversion, the model scales predictably.
 
 This is how people meet next.
 
-[Silence. Tap x2 to demo the prototype if asked.]
+(stop. hold.)
 
 ---
 
