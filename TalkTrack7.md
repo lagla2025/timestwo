@@ -1,23 +1,21 @@
-# Times Two — Talk Track (7 minutes)
-*Cover + 8 body slides + close. April 2026. FINAL.*
+# Times Two — Talk Track (6 minutes)
+*7 slides. April 2026. FINAL.*
 
 ---
 
-## SLIDE 1 — COVER (~25 sec)
+## SLIDE 1 — COVER (~20 sec)
 
 This is how people used to find each other.
 
 Personals. Classifieds. Want ads.
 
-Clear, direct, a little awkward.
-
-But it worked.
+Clear, direct, a little awkward. But it worked.
 
 That was then.
 
 ---
 
-## SLIDE 2 — THE SWIPE (~30 sec)
+## SLIDE 2 — ME (~40 sec)
 
 This is what it looks like now.
 
@@ -25,9 +23,17 @@ A photo. A few lines. A version of yourself designed to be chosen.
 
 And everything that follows depends on that first impression.
 
+I spent 20 years building audiences through content. National Geographic, Discovery, MTV, Ancestry.
+
+The insight behind Times Two isn't technical. It's behavioural.
+
+What you read, watch, listen to, and play. Decompressing. Digesting. Discovering. None of it performative.
+
+Times Two matches people based on the content they already have in common.
+
 ---
 
-## SLIDE 3 — THE BREAK (~1 min 20 sec)
+## SLIDE 3 — THE PROBLEM (~50 sec)
 
 And this isn't working.
 
@@ -35,35 +41,19 @@ Match Group went from 48 billion to 7. Bumble from 8 billion to under 500 millio
 
 One and a half million paying users gone in a single year.
 
+This isn't a discovery problem. People are matching. It's an introduction problem. There's no common ground. So the conversation stalls or dies.
+
 "Show me the incentive and I'll show you the outcome." Charlie Munger said that. *(MUNG-er, rhymes with hunger)*
 
 ---
 
-## SLIDE 4 — WHY ME (~35 sec)
+## SLIDE 4 — THE SOLUTION (~1 min)
 
-So what happens when the incentive changes?
+Meet Times Two.
 
-Think about the content people actually choose to explore and engage with.
+Instead of showing you a profile, it shows you the overlap. Based on what you actually read, listen to, and engage with.
 
-What you read, watch, listen to, and play.
-
-Decompressing. Digesting. Discovering.
-
-None of it performative.
-
-That's where Times Two sits.
-
-It matches people based on the content they already have in common.
-
-I've spent 20 years building audiences. Now I'm building relationships.
-
----
-
-## SLIDE 5 — BEHAVIOUR + TRACTION (~1 min 20 sec)
-
-You see it in small moments.
-
-She didn't scroll past the Middle Management piece. She listens to The Daily every morning before she's ready to talk to anyone. He invited her to Crossplay. She said yes before she knew who he was.
+You see it in small moments. She didn't scroll past the Middle Management piece. She listens to The Daily every morning before she's ready to talk to anyone. He invited her to Crossplay. She said yes before she knew who he was.
 
 That's not something you write about yourself. That's a pattern.
 
@@ -75,85 +65,25 @@ They didn't ask "do I like this person?"
 
 They asked "what would I say to them?"
 
-Times Two uses that pattern to introduce you to someone you already have common ground with.
+The conversation is easier because the common ground was already there. Something real starts. And they don't leave where it happened.
 
 ---
 
-## SLIDE 6 — PUBLISHER + COMPETITION (~1 min 10 sec)
-
-Publishers already have the audience, the data, and the trust.
-
-But engagement doesn't stop people leaving.
-
-Content is replaceable. *(beat)* The relationship isn't.
-
-What they don't have is a product that turns affinity into connection.
-
-Everyone else is solving the same problem the same way.
-
-Hinge, Bumble, Tinder. Present yourself, get judged, repeat.
-
-Raya and The League filter for status.
-
-Facebook has the data, but not the trust.
-
-The Guardian proved the audience exists. But used a traditional, profile-based model.
-
-They're all still introducing people the same way.
-
-Times Two fixes the introduction.
-
----
-
-## SLIDE 7 — HOW IT WORKS (~55 sec)
-
-This is what's missing today.
-
-You consume content naturally.
-
-That behaviour becomes signal.
-
-The system detects overlap. Surfaces it.
-
-An introduction is made.
-
-The conversation is easier because the common ground was already there.
-
-Something real starts.
-
-And they don't leave where it happened.
-
----
-
-## SLIDE 8 — GUARDIAN SOULMATES (~40 sec)
+## SLIDE 5 — PROOF (~50 sec)
 
 This isn't theoretical.
 
-The Guardian. A major UK publisher with a global audience. They proved this audience will pay.
+The Guardian already proved this audience will pay. 500,000 members. 15 million pounds in annual revenue. 87% said they had better odds here than anywhere else.
 
-*(slight pause)*
+Same audience. Wrong mechanism. Soulmates was still built on profiles and bios. When free apps arrived, paying 32 pounds a month for the same mechanic became indefensible.
 
-500,000 members. 15 million pounds in annual revenue.
-
-They had the audience. They had the trust.
-
-What they didn't have was the data.
-
-Soulmates was still built on profiles and bios.
-
-The same introduction problem. Different brand.
-
-Times Two starts where Soulmates never went: with what people already have in common.
+Soulmates never used the data. We do.
 
 ---
 
-## SLIDE 9 — MARKET, ASK, CLOSE (~1 min 20 sec)
+## SLIDE 6 — MARKET / ASK (~1 min 10 sec)
 
-19 million subscribers across premium publishers.
-
-Roughly 4 million eligible singles.
-
-Already comparable to Bumble's entire paying base.
+19 million subscribers across premium publishers. Roughly 4 million eligible singles. Already comparable to Bumble's entire paying base.
 
 This isn't a niche. It's pre-qualified.
 
@@ -169,25 +99,17 @@ We're raising 1.25 million.
 
 A 1.25 million investment returns 2.4 to 4 million as we scale.
 
-150K to prove the mechanism and build the MVP.
+150K to prove the mechanism and build the MVP. The remaining 1.1 million to scale with our first publisher.
 
-The remaining 1.1 million is to scale with our first publisher. Product, integration, and rollout.
+The projections are on the slide. Once the first publisher proves conversion, the model scales publisher by publisher.
 
-From there, the model expands publisher by publisher.
+---
 
-The projections are on the slide.
-
-The key point is this: once the first publisher proves conversion, the model scales predictably.
+## SLIDE 7 — CLOSE (~10 sec)
 
 This is how people meet next.
 
 *(stop. hold.)*
-
----
-
-## SLIDE 10 — x2 END CARD
-
-*(Silence. Tap x2 to demo the prototype if asked.)*
 
 ---
 
@@ -278,3 +200,15 @@ Recurring subscription revenue valued as a multiple of annual revenue. $2M at 10
 **"What about existing publisher dating sites?"**
 
 Publisher dating has existed for 22 years. All standalone websites. No content integration. No subscriber data. Publisher logo on the door and nothing else. White Label Dating's parent collapsed in 2024. The old model is breaking. Times Two is embedded, behavioural, subscription-gated. Same licensing model. Completely different product.
+
+**"What about the publisher problem? Why would they do this?"**
+
+Publishers have three unsolved problems. Passive engagement: people are already interacting with content socially but nothing deepens it. Churn: content is replaceable, the relationship isn't. Unused data: the richest behavioural dataset in media, not being used for the subscriber. Times Two connects all three.
+
+**"What about the competition in detail?"**
+
+Hinge, Bumble, Tinder: present yourself, get judged, repeat. Raya and The League filter for status. Facebook has the data but not the trust. The Guardian proved the audience exists but used a traditional profile-based model. Nobody is using publisher behavioural data as the matching engine. White Label Dating powered 6,500 sites before its parent collapsed. 70+ publisher dating sites still running. All standalone. All profile-based. No data integration. Times Two is the first to embed inside the publisher ecosystem and match on behaviour.
+
+**"How does affinity become connection?"**
+
+Content consumed passively. Affinity signal detected. Perceived similarity surfaced. Introduction made. Real conversation starts because common ground already existed. Subscriber stays because something real happened. Behavioural science: Wolf and Tomasello 2020 on shared experience bonding. Byrne 1971 on similarity-attraction. Montoya 2008 meta-analysis confirming perceived similarity as strongest predictor. We create the conditions. We don't guarantee the outcome.
