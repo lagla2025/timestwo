@@ -212,3 +212,7 @@ Hinge, Bumble, Tinder: present yourself, get judged, repeat. Raya and The League
 **"How does affinity become connection?"**
 
 Content consumed passively. Affinity signal detected. Perceived similarity surfaced. Introduction made. Real conversation starts because common ground already existed. Subscriber stays because something real happened. Behavioural science: Wolf and Tomasello 2020 on shared experience bonding. Byrne 1971 on similarity-attraction. Montoya 2008 meta-analysis confirming perceived similarity as strongest predictor. We create the conditions. We don't guarantee the outcome.
+
+**"Is the matching technology feasible? Does the data infrastructure exist?"**
+
+NYT already built the AI matching engine. They call it BrandMatch. It analyses a brand's message from a client brief and uses generative AI to match it with the most contextually relevant content and audience segments across the NYT portfolio. Campaigns using BrandMatch see +30% click-through and 30% higher video completion rates. That's the same matching logic as Times Two, just pointed at advertisers instead of people. We're proposing the same technology matched to subscribers instead of brands. The infrastructure exists. The data exists. We're proposing a new application of it. (Source: The Drum, March 2026, interview with Tusar Barik, SVP Marketing, NYT Advertising.)
