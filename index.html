@@ -2885,6 +2885,17 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 
 
 
+
+<!-- Popover: mini brief triggered by Wingman's "Check it out" CTA (scoped inside phone) -->
+<div id="tt-brief-backdrop" onclick="closeBrief()" style="display:none;position:absolute;inset:0;background:rgba(20,15,10,0.5);z-index:10000;animation:tt-fade 0.25s ease"></div>
+<div id="tt-brief-sheet" style="display:none;position:absolute;left:0;right:0;bottom:0;transform:translateY(100%);background:#faf7f2;border-top-left-radius:16px;border-top-right-radius:16px;z-index:10001;padding:22px 24px 30px;transition:transform 0.35s cubic-bezier(0.22,1,0.36,1);box-shadow:0 -6px 20px rgba(0,0,0,0.18)">
+  <div onclick="closeBrief()" style="position:absolute;top:10px;right:14px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:Georgia,serif;font-size:19px;color:#8a7d6b;line-height:1">&times;</div>
+  <div style="width:36px;height:3px;background:#d8d2c4;border-radius:2px;margin:0 auto 16px"></div>
+  <div id="tt-brief-tone" style="font-size:10px;font-weight:700;color:#9a8230;text-transform:uppercase;letter-spacing:1.6px;margin-bottom:8px;text-align:center"></div>
+  <div id="tt-brief-name" style="font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:900;color:#1a1a1a;line-height:1.05;letter-spacing:-0.5px;margin-bottom:8px;text-align:center"></div>
+  <div id="tt-brief-descriptors" style="font-family:Georgia,serif;font-style:italic;font-size:14px;color:#5a5148;line-height:1.4;max-width:280px;margin:0 auto;text-align:center"></div>
+</div>
+
 </div><!-- /phone -->
 
 <script>
@@ -3513,43 +3524,22 @@ function initS20Personal() {
 
 
 
-<!-- Popover: mini brief triggered by Wingman's "Check it out" CTA -->
-<div id="tt-brief-backdrop" onclick="closeBrief()" style="display:none;position:fixed;inset:0;background:rgba(20,15,10,0.5);z-index:10000;animation:tt-fade 0.25s ease"></div>
-<div id="tt-brief-sheet" style="display:none;position:fixed;left:50%;bottom:0;transform:translateX(-50%) translateY(100%);width:100%;max-width:375px;background:#faf7f2;border-top-left-radius:16px;border-top-right-radius:16px;z-index:10001;padding:26px 28px 34px;transition:transform 0.35s cubic-bezier(0.22,1,0.36,1);box-shadow:0 -6px 20px rgba(0,0,0,0.18)">
-  <!-- Dismiss -->
-  <div onclick="closeBrief()" style="position:absolute;top:12px;right:18px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:Georgia,serif;font-size:20px;color:#8a7d6b;line-height:1">&times;</div>
-
-  <!-- Small grab handle for bottom-sheet cue -->
-  <div style="width:40px;height:3px;background:#d8d2c4;border-radius:2px;margin:0 auto 20px"></div>
-
-  <!-- Tone label (subject's Wingman voice) -->
-  <div id="tt-brief-tone" style="font-size:10px;font-weight:700;color:#9a8230;text-transform:uppercase;letter-spacing:1.6px;margin-bottom:10px;text-align:center"></div>
-
-  <!-- Name, age -->
-  <div id="tt-brief-name" style="font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:900;color:#1a1a1a;line-height:1.05;letter-spacing:-0.5px;margin-bottom:8px;text-align:center"></div>
-
-  <!-- Three descriptors -->
-  <div id="tt-brief-descriptors" style="font-family:Georgia,serif;font-style:italic;font-size:15px;color:#5a5148;line-height:1.4;max-width:300px;margin:0 auto;text-align:center"></div>
-</div>
 
 <style>
   @keyframes tt-fade { from { opacity:0 } to { opacity:1 } }
-  #tt-brief-sheet.open { transform: translateX(-50%) translateY(0) !important; }
+  #tt-brief-sheet.open { transform: translateY(0) !important; }
 </style>
-
 <script>
   function openBrief(name, age, toneOwner, toneName, role, toneLower, passion) {
     document.getElementById('tt-brief-tone').textContent = toneOwner + "'s Wingman \u00B7 " + toneName;
     document.getElementById('tt-brief-name').textContent = name + ', ' + age;
     document.getElementById('tt-brief-descriptors').textContent = role + ', ' + toneLower + ', ' + passion + '.';
-
     var backdrop = document.getElementById('tt-brief-backdrop');
     var sheet = document.getElementById('tt-brief-sheet');
     backdrop.style.display = 'block';
     sheet.style.display = 'block';
     requestAnimationFrame(function(){ sheet.classList.add('open'); });
   }
-
   function closeBrief() {
     var backdrop = document.getElementById('tt-brief-backdrop');
     var sheet = document.getElementById('tt-brief-sheet');
@@ -3557,7 +3547,6 @@ function initS20Personal() {
     backdrop.style.display = 'none';
     setTimeout(function(){ sheet.style.display = 'none'; }, 350);
   }
-
   function openCianBrief() {
     openBrief('Cian', 24, 'Cian', 'Straight shooter', 'Architectural grad', 'straight shooter', 'mad sports fan');
   }
@@ -3565,6 +3554,5 @@ function initS20Personal() {
     openBrief('Saoirse', 23, 'Saoirse', 'Cheeky', 'Product Manager', 'cheeky', 'Spelling Bee Queen');
   }
 </script>
-
 </body>
 </html>
