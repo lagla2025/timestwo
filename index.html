@@ -3427,7 +3427,7 @@ function show(n){
   if(phoneWrap) phoneWrap.style.display='';
   var s23el = document.getElementById('screen23');
   if(s23el && s23el.parentElement !== document.body) document.body.appendChild(s23el);
-  for(var i=0;i<=27;i++){
+  for(var i=0;i<=30;i++){
     var s=document.getElementById('screen'+i);
     if(s){s.style.display=(i===n)?'flex':'none';s.classList.toggle('active',i===n);}
   }
