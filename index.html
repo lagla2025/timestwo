@@ -637,6 +637,7 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
       <button onclick="show(17)" style="font-size:8.5px;padding:2px 5px;border:1px solid #ddd;background:white;border-radius:3px;cursor:pointer">S17</button>
       <button onclick="show(18)" style="font-size:8.5px;padding:2px 5px;border:1px solid #ddd;background:white;border-radius:3px;cursor:pointer">S18</button>
       <button onclick="show(20)" style="font-size:8.5px;padding:2px 5px;border:1px solid #ddd;background:white;border-radius:3px;cursor:pointer">S20</button>
+      <button onclick="show(33)" style="font-size:8.5px;padding:2px 5px;border:1px solid #d4a017;background:#fff4d6;border-radius:3px;cursor:pointer;color:#7a5500;font-weight:600">S33 Onboarding v2</button>
       <button onclick="show(21)" style="font-size:8.5px;padding:2px 5px;border:1px solid #ddd;background:white;border-radius:3px;cursor:pointer">S21</button>
       <button onclick="show(24)" style="font-size:8.5px;padding:2px 5px;border:1px solid #c9a84c;background:#fffdf5;color:#b8960a;border-radius:3px;cursor:pointer;font-weight:700">S24</button>
       <button onclick="show(25)" style="font-size:8.5px;padding:2px 5px;border:1px solid #c9a84c;background:#fffdf5;color:#b8960a;border-radius:3px;cursor:pointer;font-weight:700">S25</button>
@@ -2687,6 +2688,210 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
 <!-- ══════════════════════════════════════════════════════════
      SCREEN 21 — Founder Hinge Profile (Pitch Presentation)
 ═══════════════════════════════════════════════════════════ -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     SCREEN 33 — Onboarding v2 working copy. Clone of Screen 20.
+     Screen 20 remains untouched as the OG reference.
+═══════════════════════════════════════════════════════════ -->
+<div class="screen s5-bg" id="screen33" style="display:none">
+  <div class="status-bar" style="background:#fff"><span>9:41</span><span>●●● &#9679; &#9679;&#9679;</span></div>
+
+  <!-- NYT bar -->
+  <div class="s5-nyt-bar" style="border-bottom:none!important;padding-bottom:6px">
+    <div class="s5-nyt-logo">Times Two</div>
+    <div style="font-size:10px;color:#b8960a;font-weight:700;letter-spacing:0.8px">&times;2</div>
+  </div>
+  <div style="margin:0 16px;height:3px;border-top:1px solid #1a1a2e;border-bottom:1px solid #1a1a2e"></div>
+
+  <!-- Scrollable body -->
+  <div class="s5-body">
+
+    <!-- Eyebrow + main heading -->
+    <div class="s5-eyebrow" style="color:#b8960a">Step 2 of 2</div>
+    <div class="s5-heading" style="font-size:22px">Tell your Wingman what matters.</div>
+    <div class="s5-sub">This shapes who you meet. You can always change it up.</div>
+
+    <!-- Section 1: About You -->
+    <div class="s20-section">
+      <div class="s20-section-num">About you</div>
+      <div class="s20-section-heading">The basics.</div>
+      <div class="s20-section-sub">Just the essentials. Your Wingman will ask for the rest when it matters.</div>
+
+      <div class="s20-field">
+        <div class="s20-field-label">I am</div>
+        <div class="s20-option-row">
+          <div class="s20-option" onclick="toggleOption(this)">Woman</div>
+          <div class="s20-option" onclick="toggleOption(this)">Man</div>
+          <div class="s20-option" onclick="toggleOption(this)">Non-binary</div>
+        </div>
+      </div>
+
+      <div class="s20-field">
+        <div class="s20-field-label">Show me</div>
+        <div class="s20-option-row">
+          <div class="s20-option" onclick="toggleOption(this)">Women</div>
+          <div class="s20-option" onclick="toggleOption(this)">Men</div>
+          <div class="s20-option" onclick="toggleOption(this)">Everyone</div>
+        </div>
+      </div>
+
+      <div class="s20-field">
+        <div class="s20-field-label">Looking for</div>
+        <div class="s20-option-row">
+          <div class="s20-option" onclick="toggleOption(this)">Friends</div>
+          <div class="s20-option" onclick="toggleOption(this)">Dates</div>
+        </div>
+      </div>
+
+      <div class="s20-field">
+        <div class="s20-field-label">Wingman's voice</div>
+        <div style="font-family:Georgia,serif;font-size:11px;color:#888;line-height:1.4;margin-bottom:8px">How should your Wingman talk to you?</div>
+        <div class="s20-option-row">
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:6px 10px;font-size:11px">Straight up</div>
+          <div class="s20-option active" onclick="toggleOption(this)" style="padding:6px 10px;font-size:11px">Cheeky</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:6px 10px;font-size:11px">Gentle</div>
+          <div class="s20-option" onclick="toggleOption(this)" style="padding:6px 10px;font-size:11px">Hyped</div>
+        </div>
+      </div>
+
+      <div class="s20-field">
+        <div class="s20-field-label">Your age</div>
+        <div style="display:flex;align-items:center;gap:6px">
+          <input class="s20-input" type="number" placeholder="28" min="18" max="99" style="width:60px;text-align:center;padding:8px 6px">
+          <span style="font-family:Georgia,serif;font-size:13px;font-style:italic;color:#888">-ish</span>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="s20-divider"></div>
+
+
+
+    <!-- Personals moment -->
+    <div style="margin:0 0 18px;padding:14px 16px;background:#f5f1ea;border-radius:8px;border:1.5px solid #d0cbc0">
+      <div style="display:flex;flex-direction:column;gap:2px;margin-bottom:6px"><div style="height:1px;background:rgba(41,34,25,0.4)"></div><div style="height:1px;background:rgba(41,34,25,0.4)"></div></div>
+      <div style="font-size:9px;font-weight:700;color:rgba(41,34,25,0.6);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:5px;font-family:Georgia,serif">Personal Notices</div>
+      <div style="font-family:Georgia,serif;font-style:italic;font-size:13px;color:#1a1a1a;line-height:1.5;font-weight:500" id="s20-personal-text"><em>Gentleman, 38, Dublin. Has all his hair. This is mentioned because it will not always be the case.</em></div>
+      <div style="display:flex;flex-direction:column;gap:2px;margin:6px 0 4px"><div style="height:1px;background:rgba(41,34,25,0.25)"></div><div style="height:1px;background:rgba(41,34,25,0.25)"></div></div>
+      <div style="font-family:Georgia,serif;font-size:8px;color:rgba(41,34,25,0.35);letter-spacing:0.5px" id="s20-personal-source">The Irish Times &middot; Personals &middot; 1944</div>
+    </div>
+
+    <!-- Section 3: Content Worlds -->
+    <div class="s20-section" style="background:#1a1a2e;margin:0 -16px;padding:18px 16px;border-radius:0">
+      <div class="s20-section-num" style="color:#c9a84c">Your content diet</div>
+      <div class="s20-section-heading" style="color:#f5f2eb;border-left-color:#c9a84c">What content do you want to match on?</div>
+      <div class="s20-section-sub" style="color:rgba(255,255,255,0.5)">Read, listen, watch, play. Your Wingman picks up on all of it.</div>
+
+      <div class="s20-worlds" id="s20-worlds">
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">News</div><div class="s20-world-desc">U.S., World, Politics, New York</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Business</div><div class="s20-world-desc">Economics, finance, markets, companies</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Technology</div><div class="s20-world-desc">Tech news, AI, startups, digital culture</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Opinion</div><div class="s20-world-desc">Columnists, editorials, guest essays</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Culture &amp; Arts</div><div class="s20-world-desc">Film, books, art, TV, music, theatre</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Games</div><div class="s20-world-desc">Wordle, Connections, Spelling Bee, Strands</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Cooking</div><div class="s20-world-desc">Recipes, meal plans, food writing</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">The Athletic</div><div class="s20-world-desc">In-depth sports coverage and analysis</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Audio</div><div class="s20-world-desc">The Daily, Serial, The Ezra Klein Show</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Science</div><div class="s20-world-desc">Health, climate, cosmos, Science Times</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Modern Love</div><div class="s20-world-desc">Essays on relationships, love, loss</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Travel &amp; Style</div><div class="s20-world-desc">Destinations, fashion, T Magazine</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+        <div class="s20-world-row" onclick="toggleWorld(this)">
+          <div class="s20-world-text"><div class="s20-world-name">Wirecutter</div><div class="s20-world-desc">Product reviews, recommendations, buying guides</div></div>
+          <div class="s20-world-check"></div>
+        </div>
+      </div>
+      <div class="s20-min-note" id="s20-min-note">Select at least 3 worlds</div>
+    </div>
+
+    <div class="s20-divider"></div>
+
+    <!-- Section 4: Oracle Privacy Control -->
+    <div class="s20-section">
+      <div class="s20-section-num">Privacy</div>
+      <div class="s20-section-heading">What can your Wingman share?</div>
+      <div class="s20-section-sub">This controls what your Wingman reveals about you in introductions.</div>
+
+      <div class="s20-privacy-options" id="s20-privacy">
+        <div class="s20-privacy-row" onclick="selectPrivacy(this)">
+          <div class="s20-privacy-radio"><div class="s20-privacy-dot"></div></div>
+          <div><div class="s20-privacy-label">Only content I have chosen to share</div><div class="s20-privacy-desc">Most private. Your Wingman only shares what you actively promote.</div></div>
+        </div>
+        <div class="s20-privacy-row selected" onclick="selectPrivacy(this)">
+          <div class="s20-privacy-radio"><div class="s20-privacy-dot"></div></div>
+          <div><div class="s20-privacy-label">Shared content + patterns your Wingman notices <span class="s20-recommended">Recommended</span></div><div class="s20-privacy-desc">What you have chosen to share, plus reading patterns your Wingman finds meaningful.</div></div>
+        </div>
+        <div class="s20-privacy-row" onclick="selectPrivacy(this)">
+          <div class="s20-privacy-radio"><div class="s20-privacy-dot"></div></div>
+          <div><div class="s20-privacy-label">Everything I engage with</div><div class="s20-privacy-desc">Most open. Your Wingman has full access to your content activity.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="s20-cta-area">
+      <button class="s5-cta" id="s20-cta" onclick="show(10)" style="opacity:0.4;pointer-events:none">Let the fun begin</button>
+      <div class="s5-fine">You can always change it up.</div>
+    </div>
+
+  </div>
+
+</div>
+<!-- ══════════════════════════════════════════════════════════
+     SCREEN 21 — Founder Hinge Profile (Pitch Presentation)
+═══════════════════════════════════════════════════════════ -->
+
 <div class="screen s1-bg" id="screen21" style="overflow-y:auto;flex-direction:column;display:none">
 <div class="status-bar" style="background:transparent;color:rgba(255,255,255,0.6);position:relative;z-index:5"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9679; &#9679;&#9679;</span></div>
 <div id="s21-back-to-deck" style="display:none;position:absolute;top:46px;right:12px;z-index:20;padding:6px 12px;background:rgba(0,0,0,0.6);border-radius:16px;font-family:Georgia,serif;font-size:12px;color:#fff;cursor:pointer;backdrop-filter:blur(8px)" onclick="s22Go(s22ReturnSlide);show(22)">Pitch &#9654;</div>
@@ -3752,7 +3957,7 @@ function show(n){
   if(phoneWrap) phoneWrap.style.display='';
   var s23el = document.getElementById('screen23');
   if(s23el && s23el.parentElement !== document.body) document.body.appendChild(s23el);
-  for(var i=0;i<=32;i++){
+  for(var i=0;i<=33;i++){
     var s=document.getElementById('screen'+i);
     if(s){s.style.display=(i===n)?'flex':'none';s.classList.toggle('active',i===n);}
   }
