@@ -2717,13 +2717,13 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     <div class="s20-section">
       <div class="s20-section-num">First things first</div>
       <div class="s20-section-heading">Meet your Wingman, Wingwoman, or Wingperson.</div>
-      <div class="s20-section-sub">They go by Wingy.</div>
+      <div class="s20-section-sub" id="s33-wingy-pronoun-sub">They go by Wingy.</div>
 
       <div class="s20-field">
         <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
-          <div class="s20-option" onclick="toggleOption(this)" style="width:50%;text-align:center">Wingperson</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="width:50%;text-align:center">Wingwoman</div>
-          <div class="s20-option" onclick="toggleOption(this)" style="width:50%;text-align:center">Wingman</div>
+          <div class="s20-option" onclick="toggleOption(this); s33SetWingyPronoun('They', 'go')" style="width:50%;text-align:center">Wingperson</div>
+          <div class="s20-option" onclick="toggleOption(this); s33SetWingyPronoun('She', 'goes')" style="width:50%;text-align:center">Wingwoman</div>
+          <div class="s20-option" onclick="toggleOption(this); s33SetWingyPronoun('He', 'goes')" style="width:50%;text-align:center">Wingman</div>
         </div>
       </div>
     </div>
@@ -4549,6 +4549,13 @@ function initS20Personal() {
 }
 // initS20Personal();
 
+
+function s33SetWingyPronoun(pronoun, verb) {
+  var sub = document.getElementById('s33-wingy-pronoun-sub');
+  if (sub) {
+    sub.textContent = pronoun + ' ' + verb + ' by Wingy.';
+  }
+}
 
 function s33SetHeightUnit(unit) {
   var ftinDiv = document.getElementById('s33-height-ftin');
