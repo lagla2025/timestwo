@@ -471,8 +471,14 @@ body{background:linear-gradient(160deg,#12122a 0%,#1a1a2e 60%,#0f0f20 100%);disp
     width: 100% !important;
     height: 100vh !important;
     height: 100svh !important;
+    height: 100dvh !important;
     transform: none !important;
     margin: 0 !important;
+    overscroll-behavior: contain !important;
+  }
+  .nav a, .compare-pill a, .compare-pill button, .nav button {
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1) !important;
   }
   .phone > div[style*="background:#1a1a24"] {
     display: none !important;
